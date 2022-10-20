@@ -1,3 +1,7 @@
 .logo img {
   width: 177px;
 }
+
+.my-about-btn {
+  padding: 0px !important;
+}

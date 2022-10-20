@@ -1,13 +1,23 @@
 import Landing from './page/Landing';
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import MainLayout from './components/MainLayout';
-import ITProject from './page/ITProject';
+import ITProjectDetail from './page/ITProjectDetail';
+import GraphicProjectDetail from './page/GraphicProjectDetail';
+import Register from './page/Register';
+import Login from './page/Login';
 import './App.css';
 function App() {
   return (
     <>
-      <MainLayout>
-        <Landing />
-      </MainLayout>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainLayout><Landing /></MainLayout>} />
+          <Route path="/it" element={<MainLayout><ITProjectDetail /></MainLayout>} />
+          <Route path="/gd" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

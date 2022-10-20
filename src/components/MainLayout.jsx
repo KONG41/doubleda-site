@@ -14,7 +14,7 @@ const MainLayout = ({ children }) => {
         </div>
       </div>
       <header>
-        <div class="header-area header-transparent">
+        <div class="header-area header-transparent" style={{ position: 'absolute' }}>
           <div class="main-header ">
             <div class="header-bottom  header-sticky">
               <div class="container-fluid">
@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => {
 
                   <div class="col-xl-2 col-lg-2">
                     <div class="logo">
-                      <a href="index.html"><img src="ecohosting-main/assets/img/logo/logo.png" alt="" /></a>
+                      <a href="/"><img src="ecohosting-main/assets/img/logo/logo.png" alt="" /></a>
                     </div>
                   </div>
                   <div class="col-xl-10 col-lg-10">
@@ -30,8 +30,12 @@ const MainLayout = ({ children }) => {
                       <div class="main-menu d-none d-lg-block">
                         <nav>
                           <ul id="navigation">
-                            <li><a href="index.html">Development</a></li>
-                            <li><a href="packages.html">Graphic Design</a></li>
+                            <li><a href="/it">Development</a>
+                              <ul class="submenu">
+                                <li><a href="/it">Portfolio</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="/gd">Graphic Design</a></li>
                             <li><a href="help.html">Blockghain & NFT</a></li>
                             <li><a href="#">Contact</a>
                               <ul class="submenu">
@@ -48,9 +52,9 @@ const MainLayout = ({ children }) => {
                                 <li><a href="elements.html">India</a></li>
                               </ul>
                             </li>
-                            <li class="button-header margin-left "><a href="register.html"
+                            <li class="button-header margin-left "><a href="/register"
                               class="btn">Sign Up</a></li>
-                            <li class="button-header"><a href="login.html" class="btn3">Sign In</a>
+                            <li class="button-header"><a href="/login" class="btn3">Sign In</a>
                             </li>
                           </ul>
                         </nav>

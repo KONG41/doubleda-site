@@ -5,8 +5,7 @@ import '../assets/tournest-master/assets/css/responsive.css';
 const ITProject = () => {
   return (
     <>
-
-      <div>
+      <div className="packages-content">
         <div className="row">
           <div className="col-md-4 col-sm-6">
             <div className="single-package-item">
@@ -37,7 +36,7 @@ const ITProject = () => {
                     <span>254 reviews</span>
                   </p>
                 </div>
-                <div className="about-btn">
+                <div className="about-btn p-0">
                   <button className="about-view packages-btn">
                     book now
                   </button>
@@ -75,7 +74,7 @@ const ITProject = () => {
                     <span>344 reviews</span>
                   </p>
                 </div>
-                <div className="about-btn">
+                <div className="about-btn p-0">
                   <button className="about-view packages-btn">
                     book now
                   </button>
@@ -113,7 +112,7 @@ const ITProject = () => {
                     <span>544 reviews</span>
                   </p>
                 </div>
-                <div className="about-btn">
+                <div className="about-btn p-0">
                   <button className="about-view packages-btn">
                     book now
                   </button>
@@ -122,9 +121,10 @@ const ITProject = () => {
             </div>
 
           </div>
+
+
         </div>
       </div>
-
     </>
   )
 }

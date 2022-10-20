@@ -1,6 +1,7 @@
 import React from 'react';
 import ITProject from './ITProject';
 import GraphicProject from './GraphicProject';
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 const Landing = () => {
   return (
     <>
@@ -132,7 +133,7 @@ const Landing = () => {
           </div>
           <div className="row">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center mb-30">
+              <div className="single-card text-center h-100">
                 <div className="card-top">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>System Development</h4>
@@ -142,7 +143,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center mb-30">
+              <div className="single-card text-center h-100">
                 <div className="card-top">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>Web & Mobile Development</h4>
@@ -152,7 +153,7 @@ const Landing = () => {
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center mb-30">
+              <div className="single-card text-center h-100">
                 <div className="card-top">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>BlockChain & NFT Solution</h4>
@@ -175,7 +176,15 @@ const Landing = () => {
             <div className="col-xl-5 col-lg-5 col-md-8 col-sm-10">
 
               <div className="about-img ">
-                <img src="ecohosting-main/assets/img/gallery/about1.png" alt="" />
+                {/* <img src="ecohosting-main/assets/img/gallery/about1.png" alt="" /> */}
+                <Player
+                  autoplay
+                  loop
+                  src="https://assets10.lottiefiles.com/packages/lf20_w5hernhv.json"
+                  style={{ height: "100%", width: "100%" }}
+                >
+
+                </Player>
               </div>
             </div>
             <div className="col-xl-7 col-lg-7 col-md-12">
@@ -218,6 +227,7 @@ const Landing = () => {
           <GraphicProject />
         </div>
       </section>
+
 
     </>
   )
