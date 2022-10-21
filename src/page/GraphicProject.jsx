@@ -1,12 +1,59 @@
 import React from 'react'
-// import '../assets/satner-master/css/bootstrap.css';
+import Helmet from 'react-helmet'
+import '../assets/satner-master/css/bootstrap.css';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
 import '../assets/satner-master/css/style.css';
-
+import useScript from '../appendScript/useScript';
 const GraphicProject = () => {
+  useScript(
+    "./satner-master/js/jquery-3.2.1.min.js"
+  )
+  useScript(
+    "./satner-master/js/popper.js"
+  )
+  useScript(
+    "./satner-master/js/bootstrap.min.js"
+  )
+
+  useScript(
+    "./satner-master/js/stellar.js"
+  )
+  useScript(
+    "./satner-master/js/jquery.magnific-popup.min.js"
+
+  )
+  useScript(
+    "./satner-master/vendors/nice-select/js/jquery.nice-select.min.js"
+  )
+  useScript(
+    "./satner-master/vendors/isotope/imagesloaded.pkgd.min.js"
+  )
+  useScript(
+    "./satner-master/vendors/isotope/isotope-min.js"
+  )
+
+  useScript(
+    "./satner-master/vendors/owl-carousel/owl.carousel.min.js"
+  )
+  useScript(
+    "./satner-master/js/jquery.ajaxchimp.min.js"
+  )
+  useScript(
+    "./satner-master/js/mail-script.js"
+  )
+
+  useScript(
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"
+  )
+  useScript(
+    "./satner-master/js/gmaps.min.js"
+  )
+  useScript(
+    "./satner-master/js/theme.js"
+  )
   return (
     <>
       <div className="filters-content">

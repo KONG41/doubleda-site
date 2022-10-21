@@ -1,5 +1,5 @@
 import React from 'react'
-
+import useScript from '../appendScript/useScript'
 export default function ITProjectDetail(props) {
 
 

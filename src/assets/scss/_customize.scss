@@ -4,3 +4,13 @@
 .my-about-btn{
   padding: 0px !important;
 }
+.mfp-bg{
+  background: #3F3F3F !important;
+}
+.pricing-card-area .single-card .card-bottom .borders-btn:hover{
+    background: #a077ff !important;
+    background: -moz-linear-gradient(top, #a077ff 0%, #ef67ff 100%) !important;
+    background: -webkit-linear-gradient(top, #a077ff 0%, #ef67ff 100%) !important;
+    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a077ff', endColorstr='#ef67ff',GradientType=0 ) !important;
+}

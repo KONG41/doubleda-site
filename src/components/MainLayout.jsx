@@ -1,68 +1,113 @@
 import React from 'react'
-
+import { Helmet } from "react-helmet";
+import useScript from '../appendScript/useScript'
 const MainLayout = ({ children }) => {
+
+  // useScript("./ecohosting-main/assets/js/vendor/modernizr-3.5.0.min.js");
+  // useScript("./ecohosting-main/assets/js/vendor/jquery-1.12.4.min.js");
+  // useScript("./ecohosting-main/assets/js/popper.min.js");
+  // useScript("./ecohosting-main/assets/js/bootstrap.min.js");
+  // useScript("./ecohosting-main/assets/js/jquery.slicknav.min.js");
+  // useScript("./ecohosting-main/assets/js/owl.carousel.min.js");
+  // useScript("./ecohosting-main/assets/js/slick.min.js");
+  // useScript("./ecohosting-main/assets/js/wow.min.js");
+  // useScript("./ecohosting-main/assets/js/animated.headline.js");
+  // useScript("./ecohosting-main/assets/js/jquery.magnific-popup.js");
+  // useScript("./ecohosting-main/assets/js/gijgo.min.js");
+  // useScript("./ecohosting-main/assets/js/jquery.vide.js");
+  // useScript("./ecohosting-main/assets/js/jquery.nice-select.min.js");
+  // useScript("./ecohosting-main/assets/js/jquery.sticky.js");
+  // useScript("./ecohosting-main/assets/js/jquery.barfiller.js");
+  // useScript("./ecohosting-main/assets/js/jquery.counterup.min.js");
+  // useScript("./ecohosting-main/assets/js/waypoints.min.js");
+  // useScript("./ecohosting-main/assets/js/jquery.countdown.min.js");
+  // useScript("./ecohosting-main/assets/js/hover-direction-snake.min.js");
+  // useScript("./ecohosting-main/assets/js/contact.js");
+  // useScript("./ecohosting-main/assets/js/jquery.form.js");
+  // useScript("./ecohosting-main/assets/js/jquery.validate.min.js");
+  // useScript("./ecohosting-main/assets/js/mail-script.js");
+  // useScript("./ecohosting-main/assets/js/jquery.ajaxchimp.min.js");
+  // useScript("./ecohosting-main/assets/js/plugins.js");
+  // useScript("./ecohosting-main/assets/js/main.js");
   return (
-    <>
+    <div>
+      <Helmet>
+        {/* link from landing page */}
+        <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/flaticon.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/progressbar_barfiller.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/gijgo.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/animate.min.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/animated-headline.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/magnific-popup.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/fontawesome-all.min.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/themify-icons.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/slick.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/css/nice-select.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/scss/style.css" />
+      </Helmet>
       <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-          <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
+        <div className="preloader d-flex align-items-center justify-content-center">
+          <div className="preloader-inner position-relative">
+            <div className="preloader-circle"></div>
+            <div className="preloader-img pere-text">
               <img src="ecohosting-main/assets/img/logo/loder.png" alt="" />
             </div>
           </div>
         </div>
       </div>
       <header>
-        <div class="header-area header-transparent" style={{ position: 'absolute' }}>
-          <div class="main-header ">
-            <div class="header-bottom  header-sticky">
-              <div class="container-fluid">
-                <div class="row align-items-center">
+        <div className="header-area header-transparent" >
+          <div className="main-header ">
+            <div className="header-bottom  header-sticky">
+              <div className="container-fluid">
+                <div className="row align-items-center">
 
-                  <div class="col-xl-2 col-lg-2">
-                    <div class="logo">
+                  <div className="col-xl-2 col-lg-2">
+                    <div className="logo">
                       <a href="/"><img src="ecohosting-main/assets/img/logo/logo.png" alt="" /></a>
                     </div>
                   </div>
-                  <div class="col-xl-10 col-lg-10">
-                    <div class="menu-wrapper d-flex align-items-center justify-content-end">
-                      <div class="main-menu d-none d-lg-block">
+                  <div className="col-xl-10 col-lg-10">
+                    <div className="menu-wrapper d-flex align-items-center justify-content-end">
+                      <div className="main-menu d-none d-lg-block">
                         <nav>
                           <ul id="navigation">
                             <li><a href="/it">Development</a>
-                              <ul class="submenu">
+                              <ul className="submenu">
                                 <li><a href="/it">Portfolio</a></li>
                               </ul>
                             </li>
                             <li><a href="/gd">Graphic Design</a></li>
                             <li><a href="help.html">Blockghain & NFT</a></li>
                             <li><a href="#">Contact</a>
-                              <ul class="submenu">
+                              <ul className="submenu">
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="blog_details.html">Blog Details</a></li>
                                 <li><a href="elements.html">Element</a></li>
                               </ul>
                             </li>
                             <li><a href="contact.html">Language</a>
-                              <ul class="submenu">
+                              <ul className="submenu">
                                 <li><a href="blog.html">Khmer</a></li>
                                 <li><a href="blog_details.html">English</a></li>
                                 <li><a href="elements.html">Korea</a></li>
                                 <li><a href="elements.html">India</a></li>
                               </ul>
                             </li>
-                            <li class="button-header margin-left "><a href="/register"
-                              class="btn">Sign Up</a></li>
-                            <li class="button-header"><a href="/login" class="btn3">Sign In</a>
+                            <li className="button-header margin-left "><a href="/register"
+                              className="btn">Sign Up</a></li>
+                            <li className="button-header"><a href="/login" className="btn3">Sign In</a>
                             </li>
                           </ul>
                         </nav>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <div class="mobile_menu d-block d-lg-none"></div>
+                  <div className="col-12">
+                    <div className="mobile_menu d-block d-lg-none"></div>
                   </div>
                 </div>
               </div>
@@ -91,11 +136,11 @@ const MainLayout = ({ children }) => {
                       <div id="mc_embed_signup">
                         <form target="_blank"
                           action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                          method="get" className="subscribe_form relative mail_part" novalidate="true">
+                          method="get" className="subscribe_form relative mail_part" noValidate={true}>
                           <input type="email" name="EMAIL" id="newsletter-form-email"
                             placeholder=" Email Address " className="placeholder hide-on-focus"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Your email address'" />
+                            onFocus={() => this.placeholder = ''}
+                            onBlur={() => this.placeholder = 'Your email address'} />
                           <div className="form-icon">
                             <button type="submit" name="submit" id="newsletter-submit"
                               className="email_icon newsletter-submit button-contactForm">
@@ -185,7 +230,7 @@ const MainLayout = ({ children }) => {
       <div id="back-top">
         <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt"></i></a>
       </div>
-    </>
+    </div>
   )
 }
 export default MainLayout
