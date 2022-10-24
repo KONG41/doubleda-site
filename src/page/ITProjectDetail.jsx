@@ -5,22 +5,22 @@ export default function ITProjectDetail(props) {
 
   return (
     <>
-      <section class="discount-offer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="dicount-offer-content text-center pt-5">
+      <section className="discount-offer">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="dicount-offer-content text-center pt-5">
                 <h2>Our Portfolio</h2>
-                <div class="campaign-timer">
+                <div className="campaign-timer">
                   <div id="timer">
-                    <div class="time time-after" id="days">-1323<span class="camp">Days</span></div>
-                    <div class="time time-after" id="hours">12<span class="camp">Hour</span></div>
-                    <div class="time time-after" id="minutes">33<span class="camp">Minute</span></div>
-                    <div class="time" id="seconds">35<span class="camp">Second</span></div>
+                    <div className="time time-after" id="days">-1323<span className="camp">Days</span></div>
+                    <div className="time time-after" id="hours">12<span className="camp">Hour</span></div>
+                    <div className="time time-after" id="minutes">33<span className="camp">Minute</span></div>
+                    <div className="time" id="seconds">35<span className="camp">Second</span></div>
                   </div>
                 </div>
-                <div class="about-btn">
-                  <button class="about-view discount-offer-btn">
+                <div className="about-btn">
+                  <button className="about-view discount-offer-btn">
                     join now
                   </button>
                 </div>
@@ -29,9 +29,9 @@ export default function ITProjectDetail(props) {
           </div>
         </div>
       </section>
-      <section id="pack" class="packages">
+      <section id="pack" className="packages">
         <div className="container">
-          <div class="gallary-header text-center">
+          <div className="gallary-header text-center">
             <h2>
               Our Portfolio
             </h2>
@@ -39,7 +39,7 @@ export default function ITProjectDetail(props) {
               Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.
             </p>
           </div>
-          <div class="packages-content">
+          <div className="packages-content">
             <div className="row">
               <div className="col-md-4 col-sm-6">
                 <div className="single-package-item">

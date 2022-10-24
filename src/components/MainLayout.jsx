@@ -1,35 +1,17 @@
 import React from 'react'
+import { useTranslation, withTranslation, Trans } from 'react-i18next';
 import { Helmet } from "react-helmet";
 import useScript from '../appendScript/useScript'
+
 const MainLayout = ({ children }) => {
 
-  // useScript("./ecohosting-main/assets/js/vendor/modernizr-3.5.0.min.js");
-  // useScript("./ecohosting-main/assets/js/vendor/jquery-1.12.4.min.js");
-  // useScript("./ecohosting-main/assets/js/popper.min.js");
-  // useScript("./ecohosting-main/assets/js/bootstrap.min.js");
-  // useScript("./ecohosting-main/assets/js/jquery.slicknav.min.js");
-  // useScript("./ecohosting-main/assets/js/owl.carousel.min.js");
-  // useScript("./ecohosting-main/assets/js/slick.min.js");
-  // useScript("./ecohosting-main/assets/js/wow.min.js");
-  // useScript("./ecohosting-main/assets/js/animated.headline.js");
-  // useScript("./ecohosting-main/assets/js/jquery.magnific-popup.js");
-  // useScript("./ecohosting-main/assets/js/gijgo.min.js");
-  // useScript("./ecohosting-main/assets/js/jquery.vide.js");
-  // useScript("./ecohosting-main/assets/js/jquery.nice-select.min.js");
-  // useScript("./ecohosting-main/assets/js/jquery.sticky.js");
-  // useScript("./ecohosting-main/assets/js/jquery.barfiller.js");
-  // useScript("./ecohosting-main/assets/js/jquery.counterup.min.js");
-  // useScript("./ecohosting-main/assets/js/waypoints.min.js");
-  // useScript("./ecohosting-main/assets/js/jquery.countdown.min.js");
-  // useScript("./ecohosting-main/assets/js/hover-direction-snake.min.js");
-  // useScript("./ecohosting-main/assets/js/contact.js");
-  // useScript("./ecohosting-main/assets/js/jquery.form.js");
-  // useScript("./ecohosting-main/assets/js/jquery.validate.min.js");
-  // useScript("./ecohosting-main/assets/js/mail-script.js");
-  // useScript("./ecohosting-main/assets/js/jquery.ajaxchimp.min.js");
-  // useScript("./ecohosting-main/assets/js/plugins.js");
-  // useScript("./ecohosting-main/assets/js/main.js");
+  const { t, i18n } = useTranslation();
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
+
     <div>
       <Helmet>
         {/* link from landing page */}
@@ -64,7 +46,6 @@ const MainLayout = ({ children }) => {
             <div className="header-bottom  header-sticky">
               <div className="container-fluid">
                 <div className="row align-items-center">
-
                   <div className="col-xl-2 col-lg-2">
                     <div className="logo">
                       <a href="/"><img src="ecohosting-main/assets/img/logo/logo.png" alt="" /></a>
@@ -75,26 +56,21 @@ const MainLayout = ({ children }) => {
                       <div className="main-menu d-none d-lg-block">
                         <nav>
                           <ul id="navigation">
-                            <li><a href="/it">Development</a>
+                            <li><a href="/it">{t('development.dev')}</a>
                               <ul className="submenu">
-                                <li><a href="/it">Portfolio</a></li>
+                                <li><a href="/it">{t('development.portfolio')}</a></li>
                               </ul>
                             </li>
-                            <li><a href="/gd">Graphic Design</a></li>
-                            <li><a href="help.html">Blockghain & NFT</a></li>
-                            <li><a href="#">Contact</a>
-                              <ul className="submenu">
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="blog_details.html">Blog Details</a></li>
-                                <li><a href="elements.html">Element</a></li>
-                              </ul>
+                            <li><a href="/gd">{t('graphic_design')}</a></li>
+                            <li><a href="help.html">{t('blockchain')}</a></li>
+                            <li><a href="#">{t('contact')}</a>
                             </li>
-                            <li><a href="contact.html">Language</a>
+                            <li><a href="contact.html">{t("lang.lng")}</a>
                               <ul className="submenu">
-                                <li><a href="blog.html">Khmer</a></li>
-                                <li><a href="blog_details.html">English</a></li>
-                                <li><a href="elements.html">Korea</a></li>
-                                <li><a href="elements.html">India</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('kh')}>{t("lang.kh")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('eng')}>{t("lang.eng")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('kr')}>{t("lang.kr")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('ind')}>{t("lang.ind")}</a></li>
                               </ul>
                             </li>
                             <li className="button-header margin-left "><a href="/register"

@@ -5,6 +5,7 @@ import ITProjectDetail from './page/ITProjectDetail';
 import GraphicProjectDetail from './page/GraphicProjectDetail';
 import Register from './page/Register';
 import Login from './page/Login';
+import './i18n';
 import useScript from './appendScript/useScript';
 import './App.css';
 function App() {
