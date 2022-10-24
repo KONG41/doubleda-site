@@ -62,8 +62,8 @@ const MainLayout = ({ children }) => {
                               </ul>
                             </li>
                             <li><a href="/gd">{t('graphic_design')}</a></li>
-                            <li><a href="help.html">{t('blockchain')}</a></li>
-                            <li><a href="#">{t('contact')}</a>
+                            <li><a href="/blockchain_&_nft">{t('blockchain')}</a></li>
+                            <li><a href="/contact">{t('contact')}</a>
                             </li>
                             <li><a href="contact.html">{t("lang.lng")}</a>
                               <ul className="submenu">
