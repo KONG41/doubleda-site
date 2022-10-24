@@ -65,7 +65,7 @@ const MainLayout = ({ children }) => {
                             <li><a href="/blockchain_&_nft">{t('blockchain')}</a></li>
                             <li><a href="/contact">{t('contact')}</a>
                             </li>
-                            <li><a href="contact.html">{t("lang.lng")}</a>
+                            <li><a href="#">{t("lang.lng")}</a>
                               <ul className="submenu">
                                 <li><a href="#" onClick={() => changeLanguage('kh')}>{t("lang.kh")}</a></li>
                                 <li><a href="#" onClick={() => changeLanguage('eng')}>{t("lang.eng")}</a></li>

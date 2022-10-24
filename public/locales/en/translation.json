@@ -13,5 +13,6 @@
     "eng": "English",
     "kr": "Korea",
     "ind": "India"
-  }
+  },
+  "error_404":"Error 404"
 }
