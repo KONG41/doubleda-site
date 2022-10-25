@@ -93,6 +93,7 @@ const MainLayout = ({ children }) => {
       </header>
       <main>
         {children}
+
       </main>
       <footer>
         <div className="footer-wrappr" style={{ backgroundImage: "url(" + "ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>

@@ -1,4 +1,15 @@
-
+// a, a:hover, a:active, a:focus {
+//   font-size: inherit !important;
+// }
+.pricing-card-area .single-card .card-bottom .borders-btn{
+  font-size: inherit !important;
+}
+.slider-btns .btn:hover{
+  font-size: 15px !important;
+}
+.pricing-card-area .single-card .card-top p{
+ color:#717081 !important;
+}
 .logo img{
   width: 177px;
 }

@@ -132,34 +132,35 @@ const Landing = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center h-100">
-                <div className="card-top">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
+              <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
+                <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>System Development</h4>
                   <p>Architect robust and scalable backed solutions to offer the best experience, integrating and evolving existing systems, or building a custom solution from-scratch</p>
-                  <a href="#" className="borders-btn mt-30">Get Started</a>
                 </div>
+                <div class="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center h-100">
-                <div className="card-top">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
+              <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
+                <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>Web & Mobile Development</h4>
                   <p>A cross-platform solution is important. We provide an amazing visual experience for your products across all platforms.</p>
-                  <a href="#" className="borders-btn mt-30">Get Started</a>
+
                 </div>
+                <div class="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10">
-              <div className="single-card text-center h-100">
-                <div className="card-top">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
+              <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
+                <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
                   <h4>BlockChain & NFT Solution</h4>
                   <p>We provide blockchain development services to deliver reliable blockchain systems which allow for enhanced traceability, security and faster processing of data and transactions.</p>
-                  <a href="#" className="borders-btn mt-30">Get Started</a>
                 </div>
+                <div class="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
 
@@ -195,7 +196,9 @@ const Landing = () => {
                 </div>
                 <p className="mb-40">Doubleda is specialist in software design and engineering, offering complete services to deliver delightful software solutions.
                   We can help you transform an idea into a fully viable product, starting by defining the goals and building a roadmap to the best possible solution.</p>
-                <a href="#" className="borders-btn">DoubleDa Together</a>
+                <div className="slider-btns">
+                  <a data-animation="fadeInLeft" data-delay="1s" href="/gd" className="btn radius-btn">DoubleDa Together</a>
+                </div>
               </div>
             </div>
           </div>
