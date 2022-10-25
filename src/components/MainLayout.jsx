@@ -1,7 +1,9 @@
 import React from 'react'
 import { useTranslation, withTranslation, Trans } from 'react-i18next';
 import { Helmet } from "react-helmet";
-import useScript from '../appendScript/useScript'
+import useScript from '../appendScript/useScript';
+
+
 
 const MainLayout = ({ children }) => {
 
@@ -15,8 +17,8 @@ const MainLayout = ({ children }) => {
     <div>
       <Helmet>
         {/* link from landing page */}
-        <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
+        {/* <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" /> */}
+        {/* <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/flaticon.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/progressbar_barfiller.css" />
@@ -28,7 +30,7 @@ const MainLayout = ({ children }) => {
         <link rel="stylesheet" href="ecohosting-main/assets/css/themify-icons.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/slick.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/nice-select.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/scss/style.css" />
+        <link rel="stylesheet" href="ecohosting-main/assets/scss/style.css" /> */}
       </Helmet>
       <div id="preloader-active">
         <div className="preloader d-flex align-items-center justify-content-center">
@@ -41,7 +43,7 @@ const MainLayout = ({ children }) => {
         </div>
       </div>
       <header>
-        <div className="header-area header-transparent" >
+        <div className="header-transparent header-area " >
           <div className="main-header ">
             <div className="header-bottom  header-sticky">
               <div className="container-fluid">
@@ -91,10 +93,12 @@ const MainLayout = ({ children }) => {
           </div>
         </div>
       </header>
+
       <main>
         {children}
-
       </main>
+
+
       <footer>
         <div className="footer-wrappr" style={{ backgroundImage: "url(" + "ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
           <div className="footer-area footer-padding ">
@@ -103,11 +107,11 @@ const MainLayout = ({ children }) => {
                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                   <div className="single-footer-caption mb-50">
 
-                    <div className="footer-logo mb-25">
-                      <a href="index.html"><img src="ecohosting-main/assets/img/logo/logo2_footer.png" alt="" /></a>
+                    <div className="footer-logo mb-25 p-0">
+                      <a href="/#"><img src="ecohosting-main/assets/img/logo/logo2_footer.png" alt="" /></a>
                     </div>
                     <div className="footer-tittle mb-50">
-                      <p>Subscribe our newsletter to get updates about our services</p>
+                      <p>Enough Talk, Let's Build Something Together.</p>
                     </div>
                     <div className="footer-form">
                       <div id="mc_embed_signup">
@@ -139,13 +143,12 @@ const MainLayout = ({ children }) => {
                 <div className="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>Company</h4>
+                      <h4>Contact Us</h4>
                       <ul>
-                        <li><a href="#">Why choose us</a></li>
-                        <li><a href="#"> Review</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Carrier</a></li>
+                        <li><a href="mailto:admin@doubleda.net">admin@doubleda.net</a></li>
+                        <li><a href="#">+44)07487540640</a></li>
+                        <li><a href="#">+82)01027099254</a></li>
+
                       </ul>
                     </div>
                   </div>
@@ -189,11 +192,7 @@ const MainLayout = ({ children }) => {
                   <div className="col-xl-12">
                     <div className="footer-copy-right text-center">
                       <p>
-                        Copyright &copy;<script>
-                          document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i
-                          className="fa fa-heart" aria-hidden="true"></i> by <a
-                            href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright © 2022 All rights reserved by Doubleda.
                       </p>
                     </div>
                   </div>

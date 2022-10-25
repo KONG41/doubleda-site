@@ -1,6 +1,9 @@
-import React from 'react'
-import useScript from '../appendScript/useScript'
-export default function ITProjectDetail(props) {
+import React from 'react';
+import useScript from '../appendScript/useScript';
+import '../assets/tournest-master/assets/css/style.css';
+import '../assets/tournest-master/assets/css/animate.css';
+import '../assets/tournest-master/assets/css/responsive.css';
+export default function ITProjectDetail() {
 
 
   return (

@@ -1,6 +1,19 @@
 // a, a:hover, a:active, a:focus {
 //   font-size: inherit !important;
 // }
+body{
+  font-family: "Open Sans",sans-serif !important;
+font-weight: normal !important;
+font-style: normal !important;
+font-size: 16px !important;
+}
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+}
+.header-transparent{
+  position: absolute !important;
+}
 .pricing-card-area .single-card .card-bottom .borders-btn{
   font-size: inherit !important;
 }

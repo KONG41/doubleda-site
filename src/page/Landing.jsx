@@ -18,13 +18,23 @@ const Landing = () => {
                       website analytics, marketing tools, security, and data
                       backups all in one place.</p>
                     <div className="slider-btns">
-                      <a data-animation="fadeInLeft" data-delay="1s" href="industries.html" className="btn radius-btn">get started</a>
+                      <a data-animation="fadeInLeft" data-delay="1s" href="/#" className="btn radius-btn">get started</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
                   <div className="hero__img d-none d-lg-block f-right">
-                    <img src="ecohosting-main/assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s" />
+                    <Player
+                      autoplay
+                      loop
+                      src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
+                      // src="https://assets3.lottiefiles.com/packages/lf20_l3sfdi9x.json"
+
+                      style={{ height: "100%", width: "100%" }}
+                    >
+
+                    </Player>
+                    {/* <img src="ecohosting-main/assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s" /> */}
                   </div>
                 </div>
               </div>
@@ -139,7 +149,7 @@ const Landing = () => {
                   <h4>System Development</h4>
                   <p>Architect robust and scalable backed solutions to offer the best experience, integrating and evolving existing systems, or building a custom solution from-scratch</p>
                 </div>
-                <div class="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -150,7 +160,7 @@ const Landing = () => {
                   <p>A cross-platform solution is important. We provide an amazing visual experience for your products across all platforms.</p>
 
                 </div>
-                <div class="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -160,7 +170,7 @@ const Landing = () => {
                   <h4>BlockChain & NFT Solution</h4>
                   <p>We provide blockchain development services to deliver reliable blockchain systems which allow for enhanced traceability, security and faster processing of data and transactions.</p>
                 </div>
-                <div class="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">Get Started</a></div>
               </div>
             </div>
 
@@ -214,7 +224,10 @@ const Landing = () => {
               </div>
             </div>
           </div>
+
           <ITProject />
+
+
         </div>
       </section>
       <section className="section-padding40">
@@ -227,7 +240,10 @@ const Landing = () => {
               </div>
             </div>
           </div>
+
           <GraphicProject />
+
+
         </div>
       </section>
 

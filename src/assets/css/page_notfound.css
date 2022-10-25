@@ -20,6 +20,7 @@
 	  display: inline-block;
 	  padding-right: 12px;
 	  animation: type .5s alternate infinite;
+		color: #4C1E51;
 }
 
 @keyframes type{

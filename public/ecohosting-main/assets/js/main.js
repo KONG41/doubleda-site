@@ -229,7 +229,7 @@
 
   // 11. ---- Mailchimp js --------//  
   function mailChimp() {
-    $('#mc_embed_signup').find('form').ajaxChimp();
+    // $('#mc_embed_signup').find('form').ajaxChimp();
   }
   mailChimp();
 
@@ -237,19 +237,19 @@
   // 12 Pop Up Img
   var popUp = $('.single_gallery_part, .img-pop-up');
   if (popUp.length) {
-    popUp.magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-    });
+    // popUp.magnificPopup({
+    //   type: 'image',
+    //   gallery: {
+    //     enabled: true
+    //   }
+    // });
   }
   // 12 Pop Up Video
   var popUp = $('.popup-video');
   if (popUp.length) {
-    popUp.magnificPopup({
-      type: 'iframe'
-    });
+    // popUp.magnificPopup({
+    //   type: 'iframe'
+    // });
   }
 
   /* 13. counterUp*/
