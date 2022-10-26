@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet";
 import useScript from '../appendScript/useScript';
 

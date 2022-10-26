@@ -5,75 +5,30 @@ import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
+// import '../assets/satner-master/vendors/owl-carousel/owl.carousel.min.css';
 import '../assets/satner-master/css/style.css';
 import useScript from '../appendScript/useScript';
+
 const GraphicProjectDetail = () => {
-  useScript(
-    "./satner-master/js/jquery-3.2.1.min.js"
-  )
-  useScript(
-    "./satner-master/js/popper.js"
-  )
-  // useScript(
-  //   "./satner-master/js/bootstrap.min.js"
-  // )
 
-  useScript(
-    "./satner-master/js/stellar.js"
-  )
-  useScript(
-    "./satner-master/js/jquery.magnific-popup.min.js"
-
-  )
-  useScript(
-    "./satner-master/vendors/nice-select/js/jquery.nice-select.min.js"
-  )
-  useScript(
-    "./satner-master/vendors/isotope/imagesloaded.pkgd.min.js"
-  )
-  useScript(
-    "./satner-master/vendors/isotope/isotope-min.js"
-  )
-
-  useScript(
-    "./satner-master/vendors/owl-carousel/owl.carousel.min.js"
-  )
-  useScript(
-    "./satner-master/js/jquery.ajaxchimp.min.js"
-  )
-  useScript(
-    "./satner-master/js/mail-script.js"
-  )
-
-  // useScript(
-  //   "https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"
-  // )
-  useScript(
-    "./satner-master/js/gmaps.min.js"
-  )
-  useScript(
-    "./satner-master/js/theme.js"
-  )
   return (
     <>
-      {/* <Helmet>
-
-
-        <script src="../assets/satner-master/js/jquery-3.2.1.min.js"></script>
-        <script src="../assets/satner-master/js/popper.js"></script>
-        <script src="../assets/satner-master/js/bootstrap.min.js"></script>
-        <script src="../assets/satner-master/js/stellar.js"></script>
-        <script src="../assets/satner-master/js/jquery.magnific-popup.min.js"></script>
-        <script src="../assets/satner-master/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="../assets/satner-master/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="../assets/satner-master/vendors/isotope/isotope-min.js"></script>
-        <script src="../assets/satner-master/vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="../assets/satner-master/js/jquery.ajaxchimp.min.js"></script>
-        <script src="../assets/satner-master/js/mail-script.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="../assets/satner-master/js/gmaps.min.js"></script>
-        <script src="../assets/satner-master/js/theme.js"></script>
-      </Helmet> */}
+      <Helmet>
+        <script src="satner-master/js/jquery-3.2.1.min.js"></script>
+        <script src="satner-master/js/popper.js"></script>
+        {/* <script src="satner-master/js/bootstrap.min.js"></script> */}
+        <script src="satner-master/js/stellar.js"></script>
+        <script src="satner-master/js/jquery.magnific-popup.min.js"></script>
+        <script src="satner-master/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="satner-master/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="satner-master/vendors/isotope/isotope-min.js"></script>
+        <script src="satner-master/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="satner-master/js/jquery.ajaxchimp.min.js"></script>
+        <script src="satner-master/js/mail-script.js"></script>
+        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script> */}
+        <script src="satner-master/js/gmaps.min.js"></script>
+        <script src="satner-master/js/theme.js"></script>
+      </Helmet>
 
       <section className="home_banner_area">
         <div className="banner_inner" style={{ background: "linear-gradient(180deg, rgba(76,30,81,1) 0%, rgba(255,255,255,1) 75%)" }}>
