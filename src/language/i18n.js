@@ -16,7 +16,7 @@ export default i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     fallbackLng: ['en', 'ind', 'kh', 'kr'],
-    debug: true,
+    debug: false,
 
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json'
@@ -27,5 +27,3 @@ export default i18n
     },
 
   });
-
-

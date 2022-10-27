@@ -1,32 +1,80 @@
-import { React, useEffect } from 'react';
+import { React, useState } from 'react';
 import Helmet from 'react-helmet';
-// import '../assets/satner-master/css/bootstrap.css';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
-// import '../assets/satner-master/vendors/owl-carousel/owl.carousel.min.css';
 import '../assets/satner-master/css/style.css';
 import useScript from '../appendScript/useScript';
+const data_title = [
+
+  {
+    title: 'Web Design',
+    filter: '.web'
+  },
+  {
+    title: 'Logo Design',
+    filter: '.logo'
+  },
+  {
+    title: 'Material Design',
+    filter: '.material'
+  },
+  {
+    title: 'Mobile App',
+    filter: '.mobile'
+  },
+  {
+    title: 'Poster Design',
+    filter: '.poster'
+  }
+]
+
+const data_item = [
+  {
+    img: 'p1.jpg',
+    filter: 'all web'
+  },
+  {
+    img: 'p2.jpg',
+    filter: 'all logo'
+  },
+  {
+    img: 'p3.jpg',
+    filter: 'all web'
+  }, {
+    img: 'p4.jpg',
+    filter: 'all logo'
+  },
+  {
+    img: 'p5.jpg',
+    filter: 'all material'
+  },
+  {
+    img: 'p6.jpg',
+    filter: 'all poster'
+  },
+  {
+    img: 'p7.jpg',
+    filter: 'all poster material'
+  }, {
+    img: 'p8.jpg',
+    filter: 'all  material'
+  },
+  {
+    img: 'p9.jpg',
+    filter: 'all mobile'
+  },
+]
 
 const GraphicProjectDetail = () => {
+
 
   return (
     <>
       <Helmet>
-        <script src="satner-master/js/jquery-3.2.1.min.js"></script>
         <script src="satner-master/js/popper.js"></script>
-        {/* <script src="satner-master/js/bootstrap.min.js"></script> */}
         <script src="satner-master/js/stellar.js"></script>
-        <script src="satner-master/js/jquery.magnific-popup.min.js"></script>
-        <script src="satner-master/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="satner-master/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="satner-master/vendors/isotope/isotope-min.js"></script>
-        <script src="satner-master/vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="satner-master/js/jquery.ajaxchimp.min.js"></script>
-        <script src="satner-master/js/mail-script.js"></script>
-        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script> */}
-        <script src="satner-master/js/gmaps.min.js"></script>
         <script src="satner-master/js/theme.js"></script>
       </Helmet>
 
@@ -41,7 +89,7 @@ const GraphicProjectDetail = () => {
                   <h5 className="text-uppercase">Graphic Design</h5>
                   <div className="d-flex align-items-center">
                     <a className="primary_btn" href="#"><span>Portfolio</span></a>
-                    <a className="primary_btn tr-bg" href="#"><span>Contact Us</span></a>
+                    <a className="primary_btn tr-bg" href="/contact"><span>Contact Us</span></a>
                   </div>
                 </div>
               </div>
@@ -66,175 +114,45 @@ const GraphicProjectDetail = () => {
           <div className="filters portfolio-filter">
             <ul>
               <li className="active" data-filter="*">all project</li>
-              <li data-filter=".popular">web design</li>
-              <li data-filter=".latest">logo design</li>
-              <li data-filter=".following">material design</li>
-              <li data-filter=".upcoming">mobile app</li>
-              <li data-filter=".latest">poster design</li>
+              {
+                data_title.map((item, index) => (
+                  <li key={`${index}_li`} data-filter={item.filter}>{item.title}</li>
+                ))
+              }
             </ul>
           </div>
-
           <div className="filters-content">
             <div className="row portfolio-grid justify-content-center">
-              <div className="col-lg-4 col-md-6 all latest">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p1.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p1.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
+              {
+                data_item.map((item, index) => (
+                  <div keys={`${index}_item`} className={` filter-item col-lg-4 col-md-6 ${item.filter}`} data-tag="all latest">
+                    <div className="portfolio_box">
+                      <div className="single_portfolio">
+                        <img className="img-fluid w-100" src={`satner-master/img/portfolio/${item.img}`} alt="" />
+                        <div className="overlay"></div>
+                        <a href={`satner-master/img/portfolio/${item.img}`} className="img-gal">
+                          <div className="icon">
+                            <span className="lnr lnr-cross"></span>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">minimal design</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all popular">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p2.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p2.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
+                      <div className="short_info">
+                        <h4><a href="portfolio-details.html">portfolio</a></h4>
+                        <p>{item.filter}</p>
                       </div>
-                    </a>
+                    </div>
                   </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">Paint wall</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all latest">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p3.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p3.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">female light</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all popular">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p4.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p4.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">fourth air</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all following">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p6.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p5.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">together sign</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all upcoming">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p5.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p6.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">multiply fowl</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all upcoming following">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p7.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p7.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">green heaven</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all following">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p8.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p8.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4>fly male</h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all upcoming">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="satner-master/img/portfolio/p9.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="satner-master/img/portfolio/p9.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4><a href="portfolio-details.html">season face</a></h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
+                ))
+              }
             </div>
           </div>
         </div>
 
       </section>
     </>
+
+
+
   )
 }
 export default GraphicProjectDetail;

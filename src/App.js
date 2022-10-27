@@ -9,8 +9,8 @@ import NoPage from './page/NoPage';
 import './App.css';
 
 function App() {
-  return (
 
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout><Landing /></MainLayout>} />

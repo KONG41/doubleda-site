@@ -13,21 +13,11 @@ const GraphicProject = () => {
   return (
     <>
       <Helmet>
-        <script src="satner-master/js/jquery-3.2.1.min.js"></script>
         <script src="satner-master/js/popper.js"></script>
-        {/* <script src="satner-master/js/bootstrap.min.js"></script> */}
         <script src="satner-master/js/stellar.js"></script>
-        <script src="satner-master/js/jquery.magnific-popup.min.js"></script>
-        <script src="satner-master/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="satner-master/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="satner-master/vendors/isotope/isotope-min.js"></script>
-        <script src="satner-master/vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="satner-master/js/jquery.ajaxchimp.min.js"></script>
-        <script src="satner-master/js/mail-script.js"></script>
-        {/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script> */}
-        <script src="satner-master/js/gmaps.min.js"></script>
         <script src="satner-master/js/theme.js"></script>
       </Helmet>
+
       <div className="filters-content">
         <div className="row portfolio-grid justify-content-center">
           <div className="col-lg-4 col-md-6 all latest">
