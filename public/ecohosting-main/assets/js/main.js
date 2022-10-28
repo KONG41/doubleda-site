@@ -10,6 +10,7 @@
       $('body').delay(450).css({
         'overflow': 'visible'
       });
+
     }, 500)
 
   });
@@ -28,9 +29,11 @@
 
   // Scroll Up
   $('#back-top a').on("click", function () {
+    console.log("log from back-top");
     $('body,html').animate({
       scrollTop: 0
     }, 800);
+
     return false;
   });
 

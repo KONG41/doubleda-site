@@ -5,27 +5,30 @@ import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
 import '../assets/satner-master/css/style.css';
+import { useTranslation } from 'react-i18next';
 import useScript from '../appendScript/useScript';
+
+
 const data_title = [
 
   {
-    title: 'Web Design',
+    title: 'web_design',
     filter: '.web'
   },
   {
-    title: 'Logo Design',
+    title: 'logo_design',
     filter: '.logo'
   },
   {
-    title: 'Material Design',
+    title: 'material_design',
     filter: '.material'
   },
   {
-    title: 'Mobile App',
+    title: 'mobile_app',
     filter: '.mobile'
   },
   {
-    title: 'Poster Design',
+    title: 'poster_design',
     filter: '.poster'
   }
 ]
@@ -68,6 +71,7 @@ const data_item = [
 ]
 
 const GraphicProjectDetail = () => {
+  const { t } = useTranslation();
 
 
   return (
@@ -85,11 +89,11 @@ const GraphicProjectDetail = () => {
               <div className="col-lg-7">
                 <div className="banner_content">
 
-                  <h1 className="text-uppercase">Create Initiative</h1>
-                  <h5 className="text-uppercase">Graphic Design</h5>
+                  <h1 className="text-uppercase">{t('graphic.create_initiative')}</h1>
+                  <h5 className="text-uppercase">{t('graphic.graphic_design')}</h5>
                   <div className="d-flex align-items-center">
-                    <a className="primary_btn" href="#"><span>Portfolio</span></a>
-                    <a className="primary_btn tr-bg" href="/contact"><span>Contact Us</span></a>
+                    <a className="primary_btn" href="#"><span>{t('graphic.portfolio')}</span></a>
+                    <a className="primary_btn tr-bg" href="/contact"><span>{t('graphic.contact_us')}</span></a>
                   </div>
                 </div>
               </div>
@@ -107,16 +111,16 @@ const GraphicProjectDetail = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="main_title text-left">
-                <h2>Graphic Design Project</h2>
+                <h2>{t('graphic.graphic_design_project')}</h2>
               </div>
             </div>
           </div>
           <div className="filters portfolio-filter">
             <ul>
-              <li className="active" data-filter="*">all project</li>
+              <li className="active" data-filter="*">{t('graphic.all_project')}</li>
               {
                 data_title.map((item, index) => (
-                  <li key={`${index}_li`} data-filter={item.filter}>{item.title}</li>
+                  <li key={`${index}_li`} data-filter={item.filter}>{t(`graphic.${item.title}`)}</li>
                 ))
               }
             </ul>

@@ -2,7 +2,9 @@ import React from 'react';
 import ITProject from './ITProject';
 import GraphicProject from './GraphicProject';
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { useTranslation } from 'react-i18next';
 const Landing = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="slider-area slider-bg ">
@@ -12,13 +14,11 @@ const Landing = () => {
               <div className="row align-items-center justify-content-between">
                 <div className="col-xl-5 col-lg-5 col-md-9 ">
                   <div className="hero__caption">
-                    <span data-animation="fadeInLeft" data-delay=".3s">Design Evolution</span>
-                    <h1 data-animation="fadeInLeft" data-delay=".6s ">Design Driven Development Your Web Products</h1>
-                    <p data-animation="fadeInLeft" data-delay=".8s">Supercharge your WordPress hosting with detailed
-                      website analytics, marketing tools, security, and data
-                      backups all in one place.</p>
+                    <span data-animation="fadeInLeft" data-delay=".3s">{t("landing.design_evolution")}</span>
+                    <h1 data-animation="fadeInLeft" data-delay=".6s ">{t('landing.design_driven')}</h1>
+                    <p data-animation="fadeInLeft" data-delay=".8s">{t('landing.supercharge')}</p>
                     <div className="slider-btns">
-                      <a data-animation="fadeInLeft" data-delay="1s" href="/#" className="btn radius-btn">get started</a>
+                      <a data-animation="fadeInLeft" data-delay="1s" href="/#" className="btn radius-btn">{t('landing.get_start')}</a>
                     </div>
                   </div>
                 </div>
@@ -50,15 +50,15 @@ const Landing = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-4 col-lg-5">
-              <h2>Search new domain</h2>
-              <p>Supercharge your WordPress hosting with detailed website analytics, marketing tools.</p>
+              <h2>{t('landing.search_new')}</h2>
+              <p>{t('landing.supercharge_your')}</p>
             </div>
             <div className="col-xl-8 col-lg-7">
               <form action="#" className="search-box">
                 <div className="input-form">
-                  <input type="text" placeholder="Search for a domain" />
+                  <input type="text" placeholder={t('landing.search_for')} />
 
-                  <div className="search-form">
+                  <div div className="search-form" >
                     <button><i className="ti-search"></i></button>
                   </div>
 
@@ -87,7 +87,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
       {/* Domain-search end */}
       {/* service start */}
       <section className="team-area section-bg1 section-padding40">
@@ -99,8 +99,8 @@ const Landing = () => {
                   <img src="ecohosting-main/assets/img/icon/services1.svg" alt="" />
                 </div>
                 <div className="cat-cap">
-                  <h5><a href="#">Web & App Development</a></h5>
-                  <p>We design and build digital products with leading technology.</p>
+                  <h5><a href="#">{t('landing.web_app')}</a></h5>
+                  <p>{t('landing.web_app_desc')}</p>
                 </div>
               </div>
             </div>
@@ -110,8 +110,8 @@ const Landing = () => {
                   <img src="ecohosting-main/assets/img/icon/services2.svg" alt="" />
                 </div>
                 <div className="cat-cap">
-                  <h5><a href="#">Blockchain & NFT</a></h5>
-                  <p>We help you apply the latest blockchain technology to your business, such as blockchain platform development, NFT tokenization, payment solution,etc.</p>
+                  <h5><a href="#">{t('landing.blockchain_nft')}</a></h5>
+                  <p>{t('landing.blockchain_nft_desc')}</p>
                 </div>
               </div>
             </div>
@@ -121,8 +121,8 @@ const Landing = () => {
                   <img src="ecohosting-main/assets/img/icon/services3.svg" alt="" />
                 </div>
                 <div className="cat-cap">
-                  <h5><a href="#">Design & Marketing</a></h5>
-                  <p>We created magnificent designs that transform the standard of your business across various online and offline platforms.</p>
+                  <h5><a href="#">{t('landing.design_marketing')}</a></h5>
+                  <p>{t('landing.design_marketing_desc')}</p>
                 </div>
               </div>
             </div>
@@ -136,8 +136,8 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
               <div className="section-tittle text-center mb-90">
-                <h2>Service for you.</h2>
-                <p>We want to be part or your success. From branding to product development, we provide all-in-one service for your success.</p>
+                <h2>{t('landing.service_for_you')}</h2>
+                <p>{t('landing.service_for_you_desc')}</p>
               </div>
             </div>
           </div>
@@ -146,31 +146,31 @@ const Landing = () => {
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
-                  <h4>System Development</h4>
-                  <p>Architect robust and scalable backed solutions to offer the best experience, integrating and evolving existing systems, or building a custom solution from-scratch</p>
+                  <h4>{t('landing.system_development')}</h4>
+                  <p>{t('landing.system_development_desc')}</p>
                 </div>
-                <div className="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/it" className="borders-btn ">{t('landing.get_start')}</a></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
-                  <h4>Web & Mobile Development</h4>
-                  <p>A cross-platform solution is important. We provide an amazing visual experience for your products across all platforms.</p>
+                  <h4>{t('landing.web_mobile_development')}</h4>
+                  <p>{t('landing.web_mobile_development_desc')}</p>
 
                 </div>
-                <div className="card-bottom"> <a href="/it" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/it" className="borders-btn ">{t('landing.get_start')}</a></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
               <div className="single-card text-center h-100 d-flex flex-column justify-content-between">
                 <div className="card-top pb-5">
                   <img src="ecohosting-main/assets/img/icon/price1.svg" alt="" />
-                  <h4>BlockChain & NFT Solution</h4>
-                  <p>We provide blockchain development services to deliver reliable blockchain systems which allow for enhanced traceability, security and faster processing of data and transactions.</p>
+                  <h4>{t('landing.blockchain_nft_solution')}</h4>
+                  <p>{t('landing.blockchain_nft_solution_desc')}</p>
                 </div>
-                <div className="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">Get Started</a></div>
+                <div className="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">{t('landing.get_start')}</a></div>
               </div>
             </div>
 
@@ -202,12 +202,11 @@ const Landing = () => {
               <div className="about-caption ">
 
                 <div className="section-tittle section-tittle2 mb-30">
-                  <h2>Doubleda means "Together"</h2>
+                  <h2>{t('landing.doubleda_means')} "{t('landing.together')}"</h2>
                 </div>
-                <p className="mb-40">Doubleda is specialist in software design and engineering, offering complete services to deliver delightful software solutions.
-                  We can help you transform an idea into a fully viable product, starting by defining the goals and building a roadmap to the best possible solution.</p>
+                <p className="mb-40">{t('landing.doubleda_means_desc')}</p>
                 <div className="slider-btns">
-                  <a data-animation="fadeInLeft" data-delay="1s" href="/gd" className="btn radius-btn">DoubleDa Together</a>
+                  <a data-animation="fadeInLeft" data-delay="1s" href="/gd" className="btn radius-btn">{t('landing.doubleda_together')}</a>
                 </div>
               </div>
             </div>
@@ -219,8 +218,8 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
               <div className="section-tittle text-center mb-90">
-                <h2 style={{ color: '#4C1E51' }}>Development Project</h2>
-                <p>We want to be part or your success. From branding to product development, we provide all-in-one service for your success.</p>
+                <h2 style={{ color: '#4C1E51' }}>{t('landing.development_project')}</h2>
+                <p>{t('landing.development_project_desc')}</p>
               </div>
             </div>
           </div>
@@ -235,8 +234,8 @@ const Landing = () => {
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
               <div className="section-tittle text-center mb-90">
-                <h2 style={{ color: '#4C1E51' }}>Graphic Design Project</h2>
-                <p>We want to be part or your success. From branding to product development, we provide all-in-one service for your success.</p>
+                <h2 style={{ color: '#4C1E51' }}>{t('landing.graphic_design_project')}</h2>
+                <p>{t('landing.graphic_design_project_desc')}</p>
               </div>
             </div>
           </div>

@@ -11,7 +11,12 @@ const MainLayout = ({ children }) => {
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
-
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
 
     <div>
@@ -58,26 +63,25 @@ const MainLayout = ({ children }) => {
                       <div className="main-menu d-none d-lg-block">
                         <nav>
                           <ul id="navigation">
-                            <li><a href="/it">{t('development.dev')}</a>
+                            <li><a href="/it">{t('menus.dev')}</a>
                               <ul className="submenu">
-                                <li><a href="/it">{t('development.portfolio')}</a></li>
+                                <li><a href="/it">{t('menus.portfolio')}</a></li>
                               </ul>
                             </li>
-                            <li><a href="/gd">{t('graphic_design')}</a></li>
-                            <li><a href="/blockchain_&_nft">{t('blockchain')}</a></li>
-                            <li><a href="/contact">{t('contact')}</a>
+                            <li><a href="/gd">{t('menus.graphic_design')}</a></li>
+                            <li><a href="/blockchain_&_nft">{t('menus.blockchain')}</a></li>
+                            <li><a href="/contact">{t('menus.contact')}</a>
                             </li>
-                            <li><a href="#">{t("lang.lng")}</a>
+                            <li><a href="#">{t("menus.lang.lng")}</a>
                               <ul className="submenu">
-                                <li><a href="#" onClick={() => changeLanguage('kh')}>{t("lang.kh")}</a></li>
-                                <li><a href="#" onClick={() => changeLanguage('eng')}>{t("lang.eng")}</a></li>
-                                <li><a href="#" onClick={() => changeLanguage('kr')}>{t("lang.kr")}</a></li>
-                                <li><a href="#" onClick={() => changeLanguage('ind')}>{t("lang.ind")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
+                                <li><a href="#" onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                               </ul>
                             </li>
                             <li className="button-header margin-left "><a href="/register"
-                              className="btn">Sign Up</a></li>
-                            <li className="button-header"><a href="/login" className="btn3">Sign In</a>
+                              className="btn">{t('menus.sign_up')}</a></li>
+                            <li className="button-header"><a href="/login" className="btn3">{t('menus.sign_in')}</a>
                             </li>
                           </ul>
                         </nav>
@@ -111,7 +115,7 @@ const MainLayout = ({ children }) => {
                       <a href="/#"><img src="ecohosting-main/assets/img/logo/logo2_footer.png" alt="" /></a>
                     </div>
                     <div className="footer-tittle mb-50">
-                      <p>Enough Talk, Let's Build Something Together.</p>
+                      <p>{t('footer.enough_talk')}</p>
                     </div>
                     <div className="footer-form">
                       <div id="mc_embed_signup">
@@ -119,13 +123,13 @@ const MainLayout = ({ children }) => {
                           action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                           method="get" className="subscribe_form relative mail_part" noValidate={true}>
                           <input type="email" name="EMAIL" id="newsletter-form-email"
-                            placeholder=" Email Address " className="placeholder hide-on-focus"
+                            placeholder={t('footer.email_address')} className="placeholder hide-on-focus"
                             onFocus={() => this.placeholder = ''}
                             onBlur={() => this.placeholder = 'Your email address'} />
                           <div className="form-icon">
                             <button type="submit" name="submit" id="newsletter-submit"
                               className="email_icon newsletter-submit button-contactForm">
-                              Subscribe
+                              {t('footer.subscribe')}
                             </button>
                           </div>
                           <div className="mt-10 info"></div>
@@ -143,7 +147,7 @@ const MainLayout = ({ children }) => {
                 <div className="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>Contact Us</h4>
+                      <h4>{t('footer.contact_us')}</h4>
                       <ul>
                         <li><a href="mailto:admin@doubleda.net">admin@doubleda.net</a></li>
                         <li><a href="#">+44)07487540640</a></li>
@@ -156,7 +160,7 @@ const MainLayout = ({ children }) => {
                 <div className="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>Products</h4>
+                      <h4>{t('footer.products')}</h4>
                       <ul>
                         <li><a href="#">Why choose us</a></li>
                         <li><a href="#"> Review</a></li>
@@ -170,7 +174,7 @@ const MainLayout = ({ children }) => {
                 <div className="col-xl-2 col-lg-2 col-md-4 col-sm-5">
                   <div className="single-footer-caption mb-50">
                     <div className="footer-tittle">
-                      <h4>Support</h4>
+                      <h4>{t('footer.support')}</h4>
                       <ul>
                         <li><a href="#">Technology</a></li>
                         <li><a href="#"> Products</a></li>
@@ -192,7 +196,7 @@ const MainLayout = ({ children }) => {
                   <div className="col-xl-12">
                     <div className="footer-copy-right text-center">
                       <p>
-                        Copyright © 2022 All rights reserved by Doubleda.
+                        {t('footer.copyright')}
                       </p>
                     </div>
                   </div>
@@ -204,7 +208,7 @@ const MainLayout = ({ children }) => {
       </footer>
       {/* <!-- Scroll Up --> */}
       <div id="back-top">
-        <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt"></i></a>
+        <span title="Go to Top" href="#" onClick={goToTop}> <i className="fas fa-level-up-alt"></i></span>
       </div>
     </div>
   )

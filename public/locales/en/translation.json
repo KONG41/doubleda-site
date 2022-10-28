@@ -1,18 +1,81 @@
 {
-  "title": "Menu",
-  "development": {
+  "menus": {
     "dev": "Development",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "graphic_design": "Graphic Design",
+    "blockchain": "Blockchain & NFT",
+    "contact": "Contact",
+    "lang":{
+      "lng":"Language",
+      "kh": "Khmer",
+      "eng": "English",
+      "kr": "Korea",
+      "ind": "India"
+    },
+    "sign_up": "sign up",
+    "sign_in": "sign in"
   },
-  "graphic_design": "Graphic Design",
-  "blockchain": "Blockchain & NFT",
-  "contact": "Contact",
-  "lang":{
-    "lng":"Language",
-    "kh": "Khmer",
-    "eng": "English",
-    "kr": "Korea",
-    "ind": "India"
+  "landing": {
+   "design_evolution": "Design Evolution",
+   "design_driven": "Design Driven Development Your Web Products",
+   "supercharge" : "Supercharge your WordPress hosting with detailed website analytics, marketing tools, security, and data backups all in one place.",
+   "get_start": "Get Start",
+   "search_new": "Search New Domain",
+   "supercharge_your": "Supercharge your WordPress hosting with detailed website analytics, marketing tools.",
+   "search_for": "Search for a domain",
+   "web_app": "Web & App Development",
+   "web_app_desc": "We design and build digital products with leading technology.",
+   "blockchain_nft": "Blockchain & NFT",
+   "blockchain_nft_desc": "We help you apply the latest blockchain technology to your business, such as blockchain platform development, NFT tokenization, payment solution,etc.",
+   "design_marketing": "Design & Marketing",
+   "design_marketing_desc":"We created magnificent designs that transform the standard of your business across various online and offline platforms.",
+   "service_for_you": "Service For You.",
+   "service_for_you_desc": "We want to be part or your success. From branding to product development, we provide all-in-one service for your success.",
+   "system_development":"System Development",
+   "system_development_desc":"Architect robust and scalable backed solutions to offer the best experience, integrating and evolving existing systems, or building a custom solution from-scratch.",
+   "web_mobile_development":"Web & Mobile Development",
+   "web_mobile_development_desc":"A cross-platform solution is important. We provide an amazing visual experience for your products across all platforms.",
+   "blockchain_nft_solution" : "BlockChain & NFT Solution",
+   "blockchain_nft_solution_desc": "We provide blockchain development services to deliver reliable blockchain systems which allow for enhanced traceability, security and faster processing of data and transactions.",
+   "doubleda_means": "Doubleda means",
+   "together": "Together",
+   "doubleda_means_desc": "Doubleda is specialist in software design and engineering, offering complete services to deliver delightful software solutions. We can help you transform an idea into a fully viable product, starting by defining the goals and building a roadmap to the best possible solution.",
+   "doubleda_together":"DoubleDa Together",
+   "development_project": "Development Project",
+   "development_project_desc": "We want to be part or your success. From branding to product development, we provide all-in-one service for your success.",
+   "graphic_design_project": "Graphic Design Project",
+   "graphic_design_project_desc": "We want to be part or your success. From branding to product development, we provide all-in-one service for your success."
+  },
+  "development": {
+    "our_portfolio": "Our Portfolio",
+    "day": "Days",
+    "hour": "Hour",
+    "minute": "Minute",
+    "second": "Second",
+    "join_now": "Join Now",
+    "portfolio_desc": "Check out what we can do"
+  },
+  "footer":{
+    "enough_talk": "Enough Talk, Let's Build Something Together.",
+    "email_address": "Email Address",
+    "subscribe": "Subscribe",
+    "contact_us": "Contact Us",
+    "products": "Products",
+    "support": "Support",
+    "copyright": "Copyright © 2022 All rights reserved by Doubleda."
+  },
+  "graphic":{
+    "create_initiative": "Create Initiative",
+    "graphic_design": "graphic design",
+    "portfolio": "Portfolio",
+    "contact_us": "Contact Us",
+    "graphic_design_project": "Graphic Design Project",
+    "all_project": "All Project",
+    "web_design": "Web Design",
+    "logo_design": "Logo Design",
+    "material_design": "Material Design",
+    "mobile_app": "Mobile App",
+    "poster_design": "Poster Design"
   },
   "error_404":"Error 404"
 }

@@ -3,8 +3,9 @@ import useScript from '../appendScript/useScript';
 import '../assets/tournest-master/assets/css/style.css';
 import '../assets/tournest-master/assets/css/animate.css';
 import '../assets/tournest-master/assets/css/responsive.css';
+import { useTranslation } from 'react-i18next';
 export default function ITProjectDetail() {
-
+  const { t } = useTranslation();
 
   return (
     <>
@@ -13,18 +14,18 @@ export default function ITProjectDetail() {
           <div className="row">
             <div className="col-sm-12">
               <div className="dicount-offer-content text-center pt-5">
-                <h2>Our Portfolio</h2>
+                <h2> {t('development.our_portfolio')}</h2>
                 <div className="campaign-timer">
                   <div id="timer">
-                    <div className="time time-after" id="days">-1323<span className="camp">Days</span></div>
-                    <div className="time time-after" id="hours">12<span className="camp">Hour</span></div>
-                    <div className="time time-after" id="minutes">33<span className="camp">Minute</span></div>
-                    <div className="time" id="seconds">35<span className="camp">Second</span></div>
+                    <div className="time time-after" id="days">-1323<span className="camp">{t('development.day')}</span></div>
+                    <div className="time time-after" id="hours">12<span className="camp">{t('development.hour')}</span></div>
+                    <div className="time time-after" id="minutes">33<span className="camp">{t('development.minute')}</span></div>
+                    <div className="time" id="seconds">35<span className="camp">{t('development.second')}</span></div>
                   </div>
                 </div>
                 <div className="about-btn">
                   <button className="about-view discount-offer-btn">
-                    join now
+                    {t('development.join_now')}
                   </button>
                 </div>
               </div>
@@ -36,10 +37,10 @@ export default function ITProjectDetail() {
         <div className="container">
           <div className="gallary-header text-center">
             <h2>
-              Our Portfolio
+              {t('development.our_portfolio')}
             </h2>
             <p>
-              Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.
+              {t('development.portfolio_desc')}
             </p>
           </div>
           <div className="packages-content">

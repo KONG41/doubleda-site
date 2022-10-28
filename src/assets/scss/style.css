@@ -42,4 +42,12 @@ a, a:hover, a:active, a:focus {
   background: #a077ff !important;
   background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a077ff", endColorstr="#ef67ff",GradientType=0 ) !important;
+}
+
+.about-view.discount-offer-btn, .about-view.packages-btn {
+  cursor: pointer;
+}
+
+#back-top span i {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

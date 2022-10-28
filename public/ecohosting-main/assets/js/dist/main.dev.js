@@ -28,6 +28,7 @@
   }); // Scroll Up
 
   $('#back-top a').on("click", function () {
+    console.log("log from back-top");
     $('body,html').animate({
       scrollTop: 0
     }, 800);
@@ -199,8 +200,8 @@
         slidesToScroll: 1
       }
     } // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+      // settings: "unslick"
+      // instead of a settings object
     ]
   });
   /* 7. data-background */
@@ -219,7 +220,7 @@
 
   var popUp = $('.single_gallery_part, .img-pop-up');
 
-  if (popUp.length) {} // popUp.magnificPopup({
+  if (popUp.length) { } // popUp.magnificPopup({
   //   type: 'image',
   //   gallery: {
   //     enabled: true
@@ -230,7 +231,7 @@
 
   var popUp = $('.popup-video');
 
-  if (popUp.length) {} // popUp.magnificPopup({
+  if (popUp.length) { } // popUp.magnificPopup({
   //   type: 'iframe'
   // });
 
