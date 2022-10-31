@@ -1,11 +1,13 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet";
+import { NavLink } from "react-router-dom";
 import useScript from '../appendScript/useScript';
-
-
+import { AiOutlineMenu } from "react-icons/ai";
+import useCollapse from "react-collapsed";
 
 const MainLayout = ({ children }) => {
+
 
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
@@ -17,26 +19,13 @@ const MainLayout = ({ children }) => {
       behavior: 'smooth',
     });
   };
+
+  const { getCollapseProps, getToggleProps } = useCollapse({ defaultExpanded: false });
+
   return (
 
     <div>
-      <Helmet>
-        {/* link from landing page */}
-        {/* <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" /> */}
-        {/* <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/flaticon.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/progressbar_barfiller.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/gijgo.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/animate.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/animated-headline.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/magnific-popup.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/fontawesome-all.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/themify-icons.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/slick.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/nice-select.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/scss/style.css" /> */}
-      </Helmet>
+
       <div id="preloader-active">
         <div className="preloader d-flex align-items-center justify-content-center">
           <div className="preloader-inner position-relative">
@@ -89,7 +78,44 @@ const MainLayout = ({ children }) => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <div className="mobile_menu d-block d-lg-none"></div>
+                    <div className="mobile_menu d-block d-lg-none">
+
+                      <div className="mobile_menu_icon" {...getToggleProps()}>
+                        <AiOutlineMenu />
+                      </div>
+
+                      <div className="slicknav_menu mobile_menu_card" {...getCollapseProps()}>
+
+                        <ul className="slicknav_nav">
+                          <li>
+                            <a href="/it" >{t('menus.dev')}</a>
+                            <ul className="submenu">
+                              <li><a href="/it">{t('menus.portfolio')}</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="/gd">{t('menus.graphic_design')}</a></li>
+                          <li><a href="/blockchain_&_nft">{t('menus.blockchain')}</a></li>
+                          <li><a href="/contact">{t('menus.contact')}</a>
+                          </li>
+                          <li>
+                            <a href="#" >{t("menus.lang.lng")}</a>
+                            <ul className="submenu" >
+                              <li><a href="#" onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
+                              <li><a href="#" onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
+                              <li><a href="#" onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
+                            </ul>
+                          </li>
+                          <li className="button-header margin-left ">
+                            <a href="/register" className="btn">{t('menus.sign_up')}</a>
+                          </li>
+                          <li className="button-header">
+                            <a href="/login" className="btn3">{t('menus.sign_in')}</a>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@
   /* 3. slick Nav */
   // mobile_menu
 
-  var menu = $('ul#navigation');
+  var menu = $('ul#navigation').end();
 
   if (menu.length) {
     menu.slicknav({
@@ -200,8 +200,8 @@
         slidesToScroll: 1
       }
     } // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+    // settings: "unslick"
+    // instead of a settings object
     ]
   });
   /* 7. data-background */
@@ -220,7 +220,7 @@
 
   var popUp = $('.single_gallery_part, .img-pop-up');
 
-  if (popUp.length) { } // popUp.magnificPopup({
+  if (popUp.length) {} // popUp.magnificPopup({
   //   type: 'image',
   //   gallery: {
   //     enabled: true
@@ -231,7 +231,7 @@
 
   var popUp = $('.popup-video');
 
-  if (popUp.length) { } // popUp.magnificPopup({
+  if (popUp.length) {} // popUp.magnificPopup({
   //   type: 'iframe'
   // });
 

@@ -37,7 +37,7 @@
 				 --------------------------------------------- */
 	$(window).on('load', function () {
 		$('.portfolio-filter ul li').on('click', function () {
-			console.log("clicked done")
+			// console.log("clicked done")
 			$('.portfolio-filter ul li').removeClass('active');
 			$(this).addClass('active');
 

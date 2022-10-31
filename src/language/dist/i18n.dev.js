@@ -23,7 +23,7 @@ var _default = _i18next["default"] // load translation using xhr -> see /public/
 .use(_reactI18next.initReactI18next) // init i18next
 // for all options read: https://www.i18next.com/overview/configuration-options
 .init({
-  fallbackLng: ['en', 'ind', 'kh', 'kr'],
+  fallbackLng: ['en'],
   debug: false,
   backend: {
     loadPath: '/locales/{{lng}}/{{ns}}.json'

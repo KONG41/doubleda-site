@@ -239,14 +239,9 @@ const Landing = () => {
               </div>
             </div>
           </div>
-
           <GraphicProject />
-
-
         </div>
       </section>
-
-
     </>
   )
 }

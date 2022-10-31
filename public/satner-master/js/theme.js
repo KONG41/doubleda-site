@@ -1,5 +1,5 @@
 (function ($) {
-	console.log("theme is runing success")
+	// console.log("theme is runing success")
 	'use strict';
 
 	var nav_offset_top = $('header').height() + 50;
