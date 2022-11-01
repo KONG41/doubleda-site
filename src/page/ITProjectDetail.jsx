@@ -85,7 +85,6 @@ export default function ITProjectDetail() {
                     </div>
                   </div>
                 </div>
-
               </div>
               <div className="col-md-4 col-sm-6">
                 <div className="single-package-item">
@@ -163,9 +162,6 @@ export default function ITProjectDetail() {
                 </div>
 
               </div>
-
-              {/* ========= */}
-
               <div className="col-md-4 col-sm-6">
                 <div className="single-package-item">
                   <img src="tournest-master/assets/images/packages/p1.jpg" alt="package-place" />
@@ -282,11 +278,8 @@ export default function ITProjectDetail() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
-
-
     </>
   )
 }

@@ -91,4 +91,19 @@ a, a:hover, a:active, a:focus {
   display: block;
   visibility: visible;
   opacity: 1;
+}
+
+.discount-offer {
+  background: url(../tournest-master/assets/images/home/banner.jpg) no-repeat center fixed !important;
+  background-size: cover !important;
+  background-position-y: -100px !important;
+  padding: 210px 0px 120px 0px !important;
+}
+
+.discount-offer:after, .subscribe:after {
+  background: linear-gradient(rgb(76, 30, 81) 0%, rgba(108, 117, 125, 0.3294117647) 54%) !important;
+}
+
+.dicount-offer-content h2 {
+  font-size: 70px !important;
 }/*# sourceMappingURL=style.css.map */
