@@ -9,6 +9,7 @@ const Login = () => {
     <>
 
       <Helmet>
+        <title>SignIn – DoubleDa.</title>
         {/* <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" /> */}
         <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />

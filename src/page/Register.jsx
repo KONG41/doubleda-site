@@ -10,6 +10,7 @@ const Register = () => {
       <Helmet>
         {/* link from register page */}
         {/* <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" /> */}
+        <title>Registration – DoubleDa. The Place.</title>
         <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />
         <link rel="stylesheet" href="ecohosting-main/assets/css/flaticon.css" />

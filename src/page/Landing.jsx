@@ -3,10 +3,14 @@ import ITProject from './ITProject';
 import GraphicProject from './GraphicProject';
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 const Landing = () => {
   const { t } = useTranslation();
   return (
     <>
+      <Helmet>
+        <title>DoubleDa – DoubleDa. The Place.</title>
+      </Helmet>
       <div className="slider-area slider-bg ">
         <div className="slider-active">
           <div className="single-slider d-flex align-items-center slider-height ">

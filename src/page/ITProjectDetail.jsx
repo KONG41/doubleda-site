@@ -4,11 +4,15 @@ import '../assets/tournest-master/assets/css/style.css';
 import '../assets/tournest-master/assets/css/animate.css';
 import '../assets/tournest-master/assets/css/responsive.css';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 export default function ITProjectDetail() {
   const { t } = useTranslation();
 
   return (
     <>
+      <Helmet>
+        <title>Development – DoubleDa. The Place.</title>
+      </Helmet>
       <section className="discount-offer">
         <div className="container">
           <div className="row">

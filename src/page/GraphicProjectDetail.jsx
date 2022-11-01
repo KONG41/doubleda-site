@@ -77,6 +77,7 @@ const GraphicProjectDetail = () => {
   return (
     <>
       <Helmet>
+        <title>Graphic Design – DoubleDa. The Place.</title>
         <script src="satner-master/js/popper.js"></script>
         <script src="satner-master/js/stellar.js"></script>
         <script src="satner-master/js/theme.js"></script>
