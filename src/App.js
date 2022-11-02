@@ -6,6 +6,7 @@ import GraphicProjectDetail from './page/GraphicProjectDetail';
 import Register from './page/Register';
 import Login from './page/Login';
 import NoPage from './page/NoPage';
+import PortfolioDetail from './page/PortfolioDetail';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout><Landing /></MainLayout>} />
         <Route path="/it" element={<MainLayout><ITProjectDetail /></MainLayout>} />
+        <Route path="/detail" element={<MainLayout><PortfolioDetail /></MainLayout>} />
         <Route path="/gd" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
