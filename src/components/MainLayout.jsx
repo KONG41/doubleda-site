@@ -189,7 +189,7 @@ const MainLayout = ({ children }) => {
                       <h4>{t('footer.products')}</h4>
                       <ul>
                         <li><a href="#">Why choose us</a></li>
-                        <li><a href="#"> Review</a></li>
+                        <li><a href="#">Review</a></li>
                         <li><a href="#">Customers</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Carrier</a></li>
