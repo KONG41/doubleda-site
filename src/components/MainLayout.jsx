@@ -8,7 +8,6 @@ import useCollapse from "react-collapsed";
 
 const MainLayout = ({ children }) => {
 
-
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -36,6 +35,7 @@ const MainLayout = ({ children }) => {
           </div>
         </div>
       </div>
+
       <header>
         <div className="header-transparent header-area " >
           <div className="main-header ">
@@ -127,7 +127,6 @@ const MainLayout = ({ children }) => {
       <main>
         {children}
       </main>
-
 
       <footer>
         <div className="footer-wrappr" style={{ backgroundImage: "url(" + "ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
@@ -232,10 +231,11 @@ const MainLayout = ({ children }) => {
           </div>
         </div>
       </footer>
-      {/* <!-- Scroll Up --> */}
+
       <div id="back-top">
         <span title="Go to Top" href="#" onClick={goToTop}> <i className="fas fa-level-up-alt"></i></span>
       </div>
+
     </div>
   )
 }
