@@ -4,6 +4,7 @@ import GraphicProject from './GraphicProject';
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
+import { branding } from '../assets/data/portfolio';
 const Landing = () => {
   const { t } = useTranslation();
   return (
@@ -227,10 +228,7 @@ const Landing = () => {
               </div>
             </div>
           </div>
-
           <ITProject />
-
-
         </div>
       </section>
       <section className="section-padding40">
@@ -244,6 +242,35 @@ const Landing = () => {
             </div>
           </div>
           <GraphicProject />
+        </div>
+      </section>
+      <section class="brand_area section_gap_bottom">
+        <div class="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-8">
+              <div className="section-tittle text-center mb-90">
+                <h2 style={{ color: '#4C1E51' }}>{t('landing.top_client')}</h2>
+                <p>{t('landing.top_client_desc')}</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="row">
+                {
+                  branding.map((item, index) => (
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                      <div class="single-brand-item d-table">
+                        <div class="d-table-cell text-center">
+                          <img src={item.logo} alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

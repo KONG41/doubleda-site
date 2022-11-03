@@ -96,24 +96,54 @@ a, a:hover, a:active, a:focus {
 }
 
 .discount-offer {
-  background: url(../tournest-master/assets/images/home/banner.jpg) no-repeat center fixed !important;
-  background-size: cover !important;
-  background-position-y: -100px !important;
-  padding: 210px 0px 120px 0px !important;
+  background-image: url(../image/dp-big-portfolio-04.jpg) !important;
 }
 
 .discount-offer:after, .subscribe:after {
   background: linear-gradient(#4c1e51 0%, #6c757d54 54%) !important;
 }
 
-.dicount-offer-content h2 {
-  font-size: 70px !important;
-}
-
 .under_line {
   width: 100%;
-  border-top: 1px solid gray;
-  margin: 15px 0px;
+  border-top: 1px solid #E1E1E1;
+  margin: 20px 0px;
+}
+
+.theme-gradient {
+  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.portfolio-cover {
+  background-size: contain !important;
+  padding: 270px 0px 180px 0px !important;
+  z-index: 1;
+  position: relative;
+}
+
+.portfolio-cover:after {
+  content: "";
+  background-color: rgba(1, 0, 1, 0.52) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.detail-cover-title h2 {
+  font-size: 72px !important;
+  margin-bottom: 30px;
+  font-weight: 700 !important;
+}
+.detail-cover-title p {
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
 }
 
 .detail_container {
@@ -124,19 +154,30 @@ a, a:hover, a:active, a:focus {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 12px;
+  padding: 12px 35px 12px 12px;
 }
 .detail_container .detail_left .client_tb {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.detail_container .detail_left .client_tb .client_col p {
+.detail_container .detail_left .client_tb .client-col {
+  margin-bottom: 15px;
+}
+.detail_container .detail_left .client_tb p {
   font-size: 20px !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  color: #1f1f25;
 }
 .detail_container .detail_left h1 {
   font-size: 30px;
+  margin-bottom: 10px;
+}
+.detail_container .detail_left p {
+  margin: 20px 0px;
+  font-size: 18px;
 }
 .detail_container .detail_left span {
   font-weight: 400;
@@ -147,4 +188,69 @@ a, a:hover, a:active, a:focus {
 }
 .detail_container .detail_right {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px 12px 35px;
+}
+.detail_container .item-list {
+  margin-bottom: 20px;
+}
+.detail_container .item-list h4 {
+  font-size: 24px;
+  color: #1f1f25;
+  margin-bottom: 15px;
+}
+.detail_container .item-list ul {
+  margin-top: 30px;
+}
+.detail_container .item-list ul li {
+  margin: 10px 0px;
+  font-size: 18px;
+  color: rgba(29, 29, 36, 0.75);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.detail_container .item-list ul li .check-icon {
+  color: #FD4766;
+  font-weight: 400;
+}
+.detail_container .item-list ul li .check-icon svg {
+  stroke-width: 1;
+  width: 24px;
+  height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .detail_container {
+    flex-direction: column;
+  }
+  .detail_container .detail_left, .detail_container .detail_right {
+    padding: 12px;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.image-container .image-box {
+  width: 33.33%;
+  height: auto;
+  padding: 12px;
+}
+.image-container .image-box img {
+  width: 100%;
+  height: 100%;
+  background-color: #a077ff;
+}
+@media only screen and (max-width: 768px) {
+  .image-container .image-box {
+    width: 100%;
+  }
+}
+
+.single-package-item img {
+  object-fit: cover;
+  height: 300px;
 }

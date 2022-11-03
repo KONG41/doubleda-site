@@ -95,22 +95,58 @@ a,a:hover,a:active,a:focus {
         }
       }   
   }
-  .discount-offer {
-    background: url(../tournest-master/assets/images/home/banner.jpg)no-repeat center fixed !important; 
-    background-size: cover !important;
-    background-position-y: -100px !important;
-    padding: 210px 0px 120px 0px !important;
-}
+  .discount-offer{
+    background-image: url(../image/dp-big-portfolio-04.jpg) !important;
+  }
 .discount-offer:after, .subscribe:after{
   background: linear-gradient(rgb(76, 30, 81) 0%, #6c757d54 54%) !important;
+ 
 }
-.dicount-offer-content h2 {
-  font-size: 70px !important;
-}
+
+
 .under_line{
   width:100%;
-  border-top: 1px solid gray;
-  margin: 15px 0px;
+  border-top: 1px solid #E1E1E1;
+  margin: 20px 0px;
+}
+
+
+.theme-gradient{
+    background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #FD4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.portfolio-cover{
+    background-size: contain  !important;
+    // background-position-y: -951px !important;
+    padding: 270px 0px 180px 0px !important;
+    z-index: 1;
+    position: relative;
+    
+}
+.portfolio-cover:after{
+  content: "";
+  background-color: rgb(1 0 1 / 52%) !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.detail-cover-title{
+  h2{
+    font-size: 72px !important;
+    margin-bottom: 30px;
+    font-weight: 700 !important;
+  }
+  p{
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+  }
 }
 .detail_container{
   display: flex;
@@ -120,22 +156,30 @@ a,a:hover,a:active,a:focus {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 12px;
+    padding:12px 35px 12px 12px;
 
     .client_tb{
+      margin-top: 10px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
-      .client_col{
-        p{
-          font-size: 20px !important;
-          font-weight: 500 !important;
-        }
+      flex-wrap: wrap;
+      .client-col{
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+        color: #1f1f25;
       }
     }
     h1{
       font-size:30px;
+      margin-bottom: 10px;
+    }
+    p{
+      margin: 20px 0px;
+      font-size:  18px;
     }
     span{
       font-weight: 400;
@@ -147,5 +191,69 @@ a,a:hover,a:active,a:focus {
   }
   .detail_right{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px 12px 35px;
+    
   }
+  .item-list{
+    margin-bottom: 20px;
+    h4{
+      font-size: 24px;
+      color: #1f1f25;
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-top: 30px;
+      li{
+        margin: 10px 0px;
+        font-size: 18px;
+        color: rgba(29,29,36,.75);
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        .check-icon{
+          color: #FD4766;
+          font-weight:400;
+          svg{
+            stroke-width:1;
+            width:24px;
+            height:24px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px){
+    flex-direction: column;
+    .detail_left, .detail_right{
+      padding: 12px;
+    }
+  }
+}
+.image-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  .image-box{
+    width: 33.33%;
+    height:auto;
+    padding: 12px;
+    img{
+      width: 100%;
+      height: 100%;
+      background-color: #a077ff;
+    }
+  }
+  @media only screen and (max-width: 768px){
+   .image-box{
+    width: 100%;
+   }
+  }
+}
+.single-package-item img {
+  object-fit: cover;
+  height: 300px;
 }
