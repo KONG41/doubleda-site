@@ -1,13 +1,4 @@
 import React from 'react';
-import diginft from '../image/Screenshot-2022-03-10-at-12.01.22-390x532.png';
-import hansmile from '../image/Screenshot-2022-02-15-at-12.51.23-390x532.png';
-import alternative from '../image/9-390x532.jpg';
-import yuanta from '../image/6-1-768x650.jpg';
-import toptravel from '../image/Screenshot-2022-02-12-at-19.45.05-1-650x433.png';
-import aitbox from '../image/444-768x576.jpg';
-import dashi from '../image/333-650x433.jpg';
-import melo from '../image/Screenshot-2022-02-12-at-16.24.09-650x433.png';
-import skyangkor from '../image/Screenshot-2022-02-12-at-14.48.42-768x496.png';
 import logo1 from '../image/brand/34818918_1725395274162293_5981562255483863040_n.jpg';
 import logo2 from '../image/brand/59640453_432668930860501_3495001496494276608_n.jpg';
 import logo3 from '../image/brand/aeon.png';
@@ -61,7 +52,7 @@ export const allPortfolio = [
     title_2: "Technologies And Tools",
     desc_1: ["App Design", "Trading Features", "NFT wallet", "Profile and Community", "Marketing Email System"],
     desc_2: ["React JS", "Rect Native", "Java Script", "HTML,CSS, Figma", "Express.js"],
-    img: [diginft]
+    img: ["digi (1).png", "digi (2).png", "digi (3).png", "digi (4).png", "digi (5).png", "digi (5).png"]
   },
   {
     id: 2,
@@ -76,7 +67,7 @@ export const allPortfolio = [
     title_2: "Technologies And Tools",
     desc_1: ["Website Design", "Back Office System", "CRM", "Marketing Email System", "Product Posting System"],
     desc_2: ["HTML, CSS", " mySQL", "JavaScript", "cPanel", "FTP",],
-    img: [hansmile]
+    img: ["hansmile (1).png", "hansmile (2).png", "hansmile (3).png", "hansmile (4).png", "hansmile (5).png", "hansmile (6).png"]
   },
   {
     id: 3,
@@ -99,7 +90,7 @@ export const allPortfolio = [
       "mySQL",
       "cPanel",
       " Elementator",],
-    img: [alternative]
+    img: ["alernative(2).jpg", "alernative_1.jpg"]
   },
   {
     id: 4,
@@ -122,7 +113,7 @@ export const allPortfolio = [
       "mySQL",
       " cPanel",
       "PHP",],
-    img: [yuanta]
+    img: ["yuanta (1).jpg", "yuanta (1).png", "yuanta (2).jpg", "yuanta (2).png"]
   },
   {
     id: 5,
@@ -141,7 +132,7 @@ export const allPortfolio = [
       "Travel Planner & Alert function",
       "Admin & Local Agency System",],
     desc_2: [],
-    img: [toptravel]
+    img: ["toptravel (1).png", "toptravel (2).png", "toptravel (3).png", "toptravel (4).png"]
   },
   {
     id: 6,
@@ -163,7 +154,7 @@ export const allPortfolio = [
       "Sound System Installation"
     ],
     desc_2: [],
-    img: [aitbox]
+    img: ["artbox (1).jpg", "artbox (1).png", "artbox (2).jpg", "artbox (2).png", "artbox (3).jpg", "artbox (4).jpg", "artbox (5).jpg", "artbox (6).jpg"]
   },
   {
     id: 7,
@@ -174,7 +165,7 @@ export const allPortfolio = [
     client_name: "Dashi Restaurant",
     release_date: "August 1, 2017",
     project_type: "Interior Design",
-    img: [dashi],
+    img: ["dashi (1).jpg", "dashi (1).png", "dashi (2).jpg", "dashi (2).png", "dashi (3).jpg", "dashi (3).png"],
     title_1: "Service Package",
     title_2: "",
     desc_1: [
@@ -192,7 +183,7 @@ export const allPortfolio = [
     client_name: "Melo Restaurant",
     release_date: "December 1, 2019",
     project_type: "Branding, Interior Design, Content Design",
-    img: [melo],
+    img: ["melo (1).jpg", "melo (1).png", "melo (2).jpg", "melo (2).png", "melo (3).jpg", "melo (3).png", "melo (4).png", "melo (5).jpg", "melo (6).png"],
     title_1: "Service Package",
     title_2: "",
     desc_1: [
@@ -230,7 +221,6 @@ export const allPortfolio = [
       "NodeJS",
       "API, Quick Service",
     ],
-    img: [skyangkor]
-  }
-
+    img: ["skyangkor (1).png", "skyangkor (2).png", "skyangkor (3).png", "skyangkor (4).png"]
+  },
 ]

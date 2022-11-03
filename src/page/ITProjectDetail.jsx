@@ -31,7 +31,7 @@ export default function ITProjectDetail(props) {
                 </div>
                 <div className="about-btn">
                   <button className="about-view discount-offer-btn">
-                    {t('development.join_now')}
+                    <a href="http://doubleda.net/?page_id=1239">{t('development.join_now')}</a>
                   </button>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export default function ITProjectDetail(props) {
                 allPortfolio.map((item, index) => (
                   <div key={item.id} className="col-md-4 col-sm-6">
                     <div className="single-package-item">
-                      <img src={item.img} alt="package-place" />
+                      <img src={`portfolio/${item.img[0]}`} alt="package-place" />
                       <div className="single-package-item-txt">
                         <h3>{item.title} </h3>
                         {/* <span className="pull-right">$499</span> */}

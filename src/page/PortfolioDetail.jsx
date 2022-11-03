@@ -8,7 +8,7 @@ const PortfolioDetail = () => {
   console.log(state);
   return (
     <>
-      <section className="portfolio-cover" style={{ backgroundImage: `url(${state.items.img})` }} >
+      <section className="portfolio-cover" style={{ backgroundImage: `url(portfolio/${state.items.img[0]})` }} >
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -68,7 +68,7 @@ const PortfolioDetail = () => {
           {
             state.items.img.map(item => (
               <div className="image-box" key={item}>
-                <img src={item} alt="" />
+                <img src="../assets/image/Screenshot-2022-02-12-at-14.48.42-768x496.png" alt="" />
               </div>
             ))
           }
