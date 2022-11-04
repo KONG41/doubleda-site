@@ -1,11 +1,18 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiCheck, FiCheckCircle } from 'react-icons/fi';
 import { useLocation, Link } from 'react-router-dom';
 const PortfolioDetail = () => {
   const { t } = useTranslation();
   const { state } = useLocation();
-  console.log(state);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+    });
+  }, [])
+
   return (
     <>
       <section className="portfolio-cover" style={{ backgroundImage: 'url(' + require(`../assets/image/portfolio/${state.items.img[0]}`) + ')' }} >

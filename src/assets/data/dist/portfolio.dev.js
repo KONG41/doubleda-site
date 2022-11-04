@@ -113,18 +113,18 @@ var allPortfolio = [{
   img: ["hansmile_1.png", "hansmile_2.png", "hansmile_3.png", "hansmile_4.png", "hansmile_5.png", "hansmile_6.png"]
 }, {
   id: 3,
-  title: 'Alternative Intelligent Solution Ltd',
-  sub_title: "Wholesaler of electronic and telecommunications equipment and parts.",
-  detail_title: "WordPress & Web Development",
-  detail_desc: "The Alternative Intelligent Solution Ltd is a private limited company located in UK and it’s main business activity is Wholesale of electronic and telecommunications equipment and parts.",
-  client_name: "Alternative Intelligent Solution Ltd",
-  release_date: "November 1, 2021",
-  project_type: "System, Website",
-  title_1: "Solution",
-  title_2: "Technologies And Tools",
-  desc_1: ["WordPress installation", " Website Design", " WooCommerce Integration", "  Marketing Email System", "SEO friendly"],
-  desc_2: ["WordPress", " HTML, CSS", "mySQL", "cPanel", " Elementator"],
-  img: ["alernative_2.jpg", "alernative_1.jpg"]
+  title: 'TopTravel Online Travel',
+  sub_title: "Online Travel information Booking and Planner",
+  detail_title: "Online Travel Agency",
+  detail_desc: "Creating beautiful travel & tourism website design and portal development that really captures the spirit of travel, adventure and holiday. Main focus of this project is to build high-quality custom travel websites that have the latest technologies such as live booking confirmation, Travel Planner, App notification.",
+  client_name: "TopTravel",
+  release_date: "September 1, 2018",
+  project_type: "Web & System Development",
+  title_1: "Service Package",
+  title_2: "",
+  desc_1: ["Front-end & Back-end", "Booking System", "Automatic Ticketing", "Travel Planner & Alert function", "Admin & Local Agency System"],
+  desc_2: [],
+  img: ["toptravel_1.png", "toptravel_2.png", "toptravel_3.png", "toptravel_4.png"]
 }, {
   id: 4,
   title: 'Yuanta Securities (Cambodia) Plc.',
@@ -141,18 +141,18 @@ var allPortfolio = [{
   img: ["yuanta_1.jpg", "yuanta_1.png", "yuanta_2.jpg", "yuanta_2.png"]
 }, {
   id: 5,
-  title: 'TopTravel Online Travel',
-  sub_title: "Online Travel information Booking and Planner",
-  detail_title: "Online Travel Agency",
-  detail_desc: "Creating beautiful travel & tourism website design and portal development that really captures the spirit of travel, adventure and holiday. Main focus of this project is to build high-quality custom travel websites that have the latest technologies such as live booking confirmation, Travel Planner, App notification.",
-  client_name: "TopTravel",
-  release_date: "September 1, 2018",
-  project_type: "Web & System Development",
-  title_1: "Service Package",
-  title_2: "",
-  desc_1: ["Front-end & Back-end", "Booking System", "Automatic Ticketing", "Travel Planner & Alert function", "Admin & Local Agency System"],
-  desc_2: [],
-  img: ["toptravel_1.png", "toptravel_2.png", "toptravel_3.png", "toptravel_4.png"]
+  title: 'Alternative Intelligent Solution Ltd',
+  sub_title: "Wholesaler of electronic and telecommunications equipment and parts.",
+  detail_title: "WordPress & Web Development",
+  detail_desc: "The Alternative Intelligent Solution Ltd is a private limited company located in UK and it’s main business activity is Wholesale of electronic and telecommunications equipment and parts.",
+  client_name: "Alternative Intelligent Solution Ltd",
+  release_date: "November 1, 2021",
+  project_type: "System, Website",
+  title_1: "Solution",
+  title_2: "Technologies And Tools",
+  desc_1: ["WordPress installation", " Website Design", " WooCommerce Integration", "  Marketing Email System", "SEO friendly"],
+  desc_2: ["WordPress", " HTML, CSS", "mySQL", "cPanel", " Elementator"],
+  img: ["alernative_2.jpg", "alernative_1.jpg"]
 }, {
   id: 6,
   title: 'Artbox 3d Museum',
@@ -166,7 +166,7 @@ var allPortfolio = [{
   title_2: "",
   desc_1: ["Story and Concept design", "Resolume Arena 6 software", "After Effect, Illustrator Editing", "3d Modeling, Blender", "5 X 4k+ Panasonic Projectors", "Sound System Installation"],
   desc_2: [],
-  img: ["artbox_1.jpg", "artbox_1.png", "artbox_2.jpg", "artbox_2.png", "artbox_3.jpg", "artbox_4.jpg", "artbox_5.jpg", "artbox_6.jpg"]
+  img: ["artbox_1.jpg", "artbox_2.jpg", "artbox_2.png", "artbox_3.jpg", "artbox_4.jpg", "artbox_5.jpg", "artbox_6.jpg", "artbox_1.png"]
 }, {
   id: 7,
   title: 'Dashi Restaurant',
@@ -190,7 +190,7 @@ var allPortfolio = [{
   client_name: "Melo Restaurant",
   release_date: "December 1, 2019",
   project_type: "Branding, Interior Design, Content Design",
-  img: ["melo_1.jpg", "melo_1.png", "melo_2.jpg", "melo_2.png", "melo_3.jpg", "melo_3.png", "melo_4.png", "melo_5.jpg", "melo_6.png"],
+  img: ["melo_1.jpg", "melo_3.jpg", "melo_1.png", "melo_2.jpg", "melo_2.png", "melo_3.png", "melo_6.png", "melo_5.jpg", "melo_4.png"],
   title_1: "Service Package",
   title_2: "",
   desc_1: ["Branding & Concept", "Interior Design & Construction", "Menu & Content Design", "SEO & SNS Marketing", "Brochure & Leaflet Design"],

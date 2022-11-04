@@ -259,8 +259,8 @@ const Landing = () => {
               <div class="row">
                 {
                   branding.map((item, index) => (
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                      <div class="single-brand-item d-table">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                      <div class="single-brand-items d-table">
                         <div class="d-table-cell text-center">
                           <img src={item.logo} alt="" />
                         </div>
