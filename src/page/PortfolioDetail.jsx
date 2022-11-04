@@ -1,10 +1,15 @@
 import { React, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiCheck, FiCheckCircle } from 'react-icons/fi';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation, Link, useParams } from 'react-router-dom';
+import { allPortfolio } from '../assets/data/portfolio';
 const PortfolioDetail = () => {
   const { t } = useTranslation();
   const { state } = useLocation();
+  // const param = useParams();
+  // const index = param.id;
+  // console.log(index);
+  console.log(state);
 
   useEffect(() => {
     window.scrollTo({
@@ -70,13 +75,13 @@ const PortfolioDetail = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="section_gap_bottom">
         <div className="container image-container">
           {
             state.items.img.map(item => (
               <div className="image-box" key={item}>
                 <img src={require(`../assets/image/portfolio/${item}`)} alt="" />
-                {/* <div className="img" style={{ backgroundImage: `url(portfolio/${state.items.img})` }}></div> */}
+
               </div>
             ))
           }
@@ -86,6 +91,7 @@ const PortfolioDetail = () => {
 
 
     </>
+
   )
 }
 

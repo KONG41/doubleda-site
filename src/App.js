@@ -14,22 +14,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/" element={<MainLayout><Landing /></MainLayout>} />
-        <Route
-          path="/it" element={<MainLayout><ITProjectDetail /></MainLayout>} />
-        <Route
-          path="/detail/:id" element={<MainLayout><PortfolioDetail /></MainLayout>} />
-        <Route
-          path="/gd" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
-        <Route
-          path="/login" element={<Login />} />
-        <Route
-          path="/register" element={<Register />} />
-        <Route
-          path="/blockchain_&_nft" element={<MainLayout><NoPage /></MainLayout>} />
-        <Route
-          path="/contact" element={<MainLayout><NoPage /></MainLayout>} />
+        <Route path="/" element={<MainLayout><Landing /></MainLayout>} />
+        <Route path="/it" element={<MainLayout><ITProjectDetail /></MainLayout>} />
+        <Route path="/detail/:id" element={<MainLayout><PortfolioDetail /></MainLayout>} />
+        <Route path="/gd" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/blockchain_&_nft" element={<MainLayout><NoPage /></MainLayout>} />
+        <Route path="/contact" element={<MainLayout><NoPage /></MainLayout>} />
       </Routes>
     </BrowserRouter>
   );

@@ -35,7 +35,7 @@ const ITProject = () => {
                       </p>
                     </div>
                     <div className="about-btn p-0">
-                      <Link to={{ pathname: `/detail/${item.id}` }} state={{ items: item }}>
+                      <Link to={{ pathname: `/detail/${index}` }} state={{ items: item }}>
                         <button className="about-view packages-btn" >
                           Case Study
                         </button>
