@@ -52,7 +52,7 @@ export const allPortfolio = [
     title_2: "Technologies And Tools",
     desc_1: ["App Design", "Trading Features", "NFT wallet", "Profile and Community", "Marketing Email System"],
     desc_2: ["React JS", "Rect Native", "Java Script", "HTML,CSS, Figma", "Express.js"],
-    img: ["digi (1).png", "digi (2).png", "digi (3).png", "digi (4).png", "digi (5).png", "digi (5).png"]
+    img: ["digi_1.png", "digi_2.png", "digi_3.png", "digi_4.png", "digi_5.png", "digi_5.png"]
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ export const allPortfolio = [
     title_2: "Technologies And Tools",
     desc_1: ["Website Design", "Back Office System", "CRM", "Marketing Email System", "Product Posting System"],
     desc_2: ["HTML, CSS", " mySQL", "JavaScript", "cPanel", "FTP",],
-    img: ["hansmile (1).png", "hansmile (2).png", "hansmile (3).png", "hansmile (4).png", "hansmile (5).png", "hansmile (6).png"]
+    img: ["hansmile_1.png", "hansmile_2.png", "hansmile_3.png", "hansmile_4.png", "hansmile_5.png", "hansmile_6.png"]
   },
   {
     id: 3,
@@ -90,7 +90,7 @@ export const allPortfolio = [
       "mySQL",
       "cPanel",
       " Elementator",],
-    img: ["alernative(2).jpg", "alernative_1.jpg"]
+    img: ["alernative_2.jpg", "alernative_1.jpg"]
   },
   {
     id: 4,
@@ -113,7 +113,7 @@ export const allPortfolio = [
       "mySQL",
       " cPanel",
       "PHP",],
-    img: ["yuanta (1).jpg", "yuanta (1).png", "yuanta (2).jpg", "yuanta (2).png"]
+    img: ["yuanta_1.jpg", "yuanta_1.png", "yuanta_2.jpg", "yuanta_2.png"]
   },
   {
     id: 5,
@@ -132,7 +132,7 @@ export const allPortfolio = [
       "Travel Planner & Alert function",
       "Admin & Local Agency System",],
     desc_2: [],
-    img: ["toptravel (1).png", "toptravel (2).png", "toptravel (3).png", "toptravel (4).png"]
+    img: ["toptravel_1.png", "toptravel_2.png", "toptravel_3.png", "toptravel_4.png"]
   },
   {
     id: 6,
@@ -154,7 +154,7 @@ export const allPortfolio = [
       "Sound System Installation"
     ],
     desc_2: [],
-    img: ["artbox (1).jpg", "artbox (1).png", "artbox (2).jpg", "artbox (2).png", "artbox (3).jpg", "artbox (4).jpg", "artbox (5).jpg", "artbox (6).jpg"]
+    img: ["artbox_1.jpg", "artbox_1.png", "artbox_2.jpg", "artbox_2.png", "artbox_3.jpg", "artbox_4.jpg", "artbox_5.jpg", "artbox_6.jpg"]
   },
   {
     id: 7,
@@ -165,7 +165,7 @@ export const allPortfolio = [
     client_name: "Dashi Restaurant",
     release_date: "August 1, 2017",
     project_type: "Interior Design",
-    img: ["dashi (1).jpg", "dashi (1).png", "dashi (2).jpg", "dashi (2).png", "dashi (3).jpg", "dashi (3).png"],
+    img: ["dashi_1.jpg", "dashi_1.png", "dashi_2.jpg", "dashi_2.png", "dashi_3.jpg", "dashi_3.png"],
     title_1: "Service Package",
     title_2: "",
     desc_1: [
@@ -183,7 +183,7 @@ export const allPortfolio = [
     client_name: "Melo Restaurant",
     release_date: "December 1, 2019",
     project_type: "Branding, Interior Design, Content Design",
-    img: ["melo (1).jpg", "melo (1).png", "melo (2).jpg", "melo (2).png", "melo (3).jpg", "melo (3).png", "melo (4).png", "melo (5).jpg", "melo (6).png"],
+    img: ["melo_1.jpg", "melo_1.png", "melo_2.jpg", "melo_2.png", "melo_3.jpg", "melo_3.png", "melo_4.png", "melo_5.jpg", "melo_6.png"],
     title_1: "Service Package",
     title_2: "",
     desc_1: [
@@ -221,6 +221,6 @@ export const allPortfolio = [
       "NodeJS",
       "API, Quick Service",
     ],
-    img: ["skyangkor (1).png", "skyangkor (2).png", "skyangkor (3).png", "skyangkor (4).png"]
+    img: ["skyangkor_1.png", "skyangkor_2.png", "skyangkor_3.png", "skyangkor_4.png"]
   },
 ]
