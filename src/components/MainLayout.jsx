@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import useScript from '../appendScript/useScript';
+import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
 import useCollapse from "react-collapsed";
 
@@ -29,7 +30,7 @@ const MainLayout = ({ children }) => {
           <div className="preloader-inner position-relative">
             <div className="preloader-circle"></div>
             <div className="preloader-img pere-text">
-              <img src="ecohosting-main/assets/img/logo/loder.png" alt="" />
+              <img src="/ecohosting-main/assets/img/logo/loder.png" alt="" />
             </div>
           </div>
         </div>
@@ -43,7 +44,7 @@ const MainLayout = ({ children }) => {
                 <div className="row align-items-center">
                   <div className="col-xl-2 col-lg-2">
                     <div className="logo">
-                      <a href="/"><img src="ecohosting-main/assets/img/logo/logo.png" alt="" /></a>
+                      <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" /></Link>
                     </div>
                   </div>
                   <div className="col-xl-10 col-lg-10">
@@ -51,24 +52,23 @@ const MainLayout = ({ children }) => {
                       <div className="main-menu d-none d-lg-block">
                         <nav>
                           <ul id="navigation">
-                            <li><a href="/it">{t('menus.dev')}</a>
+                            <li>
+                              <Link to="/it">{t('menus.dev')}</Link>
                               <ul className="submenu">
-                                <li><a href="/it">{t('menus.portfolio')}</a></li>
+                                <li><Link to="/it">{t('menus.portfolio')}</Link></li>
                               </ul>
                             </li>
-                            <li><a href="/gd">{t('menus.graphic_design')}</a></li>
-                            <li><a href="/blockchain_&_nft">{t('menus.blockchain')}</a></li>
-                            <li><a href="/contact">{t('menus.contact')}</a>
-                            </li>
-                            <li><a href="#">{t("menus.lang.lng")}</a>
+                            <li><Link to="/gd">{t('menus.graphic_design')}</Link></li>
+                            <li><Link to="/blockchain_&_nft">{t('menus.blockchain')}</Link></li>
+                            <li><Link to="/contact">{t('menus.contact')}</Link></li>
+                            <li><a >{t("menus.lang.lng")}</a>
                               <ul className="submenu">
-                                <li><a href="#" onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
-                                <li><a href="#" onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
-                                <li><a href="#" onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
+                                <li><a onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
+                                <li><a onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
+                                <li><a onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                               </ul>
                             </li>
-                            <li className="button-header margin-left "><a href="/register"
-                              className="btn">{t('menus.sign_up')}</a></li>
+                            <li className="button-header margin-left "> <a href="/register" className="btn"> {t('menus.sign_up')}</a></li>
                             <li className="button-header"><a href="/login" className="btn3">{t('menus.sign_in')}</a>
                             </li>
                           </ul>
@@ -87,21 +87,20 @@ const MainLayout = ({ children }) => {
 
                         <ul className="slicknav_nav">
                           <li>
-                            <a href="/it" >{t('menus.dev')}</a>
+                            <Link to="/it">{t('menus.dev')}</Link>
                             <ul className="submenu">
-                              <li><a href="/it">{t('menus.portfolio')}</a></li>
+                              <li><Link to="/it">{t('menus.portfolio')}</Link></li>
                             </ul>
                           </li>
-                          <li><a href="/gd">{t('menus.graphic_design')}</a></li>
-                          <li><a href="/blockchain_&_nft">{t('menus.blockchain')}</a></li>
-                          <li><a href="/contact">{t('menus.contact')}</a>
-                          </li>
+                          <li><Link to="/gd">{t('menus.graphic_design')}</Link></li>
+                          <li><Link to="/blockchain_&_nft">{t('menus.blockchain')}</Link></li>
+                          <li><Link to="/contact">{t('menus.contact')}</Link></li>
                           <li>
-                            <a href="#" >{t("menus.lang.lng")}</a>
+                            <a  >{t("menus.lang.lng")}</a>
                             <ul className="submenu" >
-                              <li><a href="#" onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
-                              <li><a href="#" onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
-                              <li><a href="#" onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
+                              <li><a onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>
+                              <li><a onClick={() => changeLanguage('kr')}>{t("menus.lang.kr")}</a></li>
+                              <li><a onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                             </ul>
                           </li>
                           <li className="button-header margin-left ">
@@ -128,7 +127,7 @@ const MainLayout = ({ children }) => {
       </main>
 
       <footer>
-        <div className="footer-wrappr" style={{ backgroundImage: "url(" + "ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
+        <div className="footer-wrappr" style={{ backgroundImage: "url(" + "/ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
           <div className="footer-area footer-padding ">
             <div className="container">
               <div className="row d-flex justify-content-between">

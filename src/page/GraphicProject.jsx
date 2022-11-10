@@ -1,15 +1,14 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-// import '../assets/satner-master/css/bootstrap.css';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
-// import '../assets/satner-master/vendors/owl-carousel/owl.carousel.min.css';
 import '../assets/satner-master/css/style.css';
-import useScript from '../appendScript/useScript';
+import { allGraphicDesign } from '../assets/data/portfolio';
+import { useTranslation } from 'react-i18next';
 const GraphicProject = () => {
-
+  const { t } = useTranslation();
   return (
     <>
       <Helmet>
@@ -20,57 +19,28 @@ const GraphicProject = () => {
 
       <div className="filters-content">
         <div className="row portfolio-grid justify-content-center">
-          <div className="col-lg-4 col-md-6 all latest">
-            <div className="portfolio_box">
-              <div className="single_portfolio">
-                <img className="img-fluid w-100" src="satner-master/img/portfolio/p1.jpg" alt="" />
-                <div className="overlay"></div>
-                <a href="satner-master/img/portfolio/p1.jpg" className="img-gal">
-                  <div className="icon">
-                    <span className="lnr lnr-cross"></span>
+          {
+            allGraphicDesign.slice(0, 3).map((item, index) => (
+              <div key={`id_${index}`} className="col-lg-4 col-md-6 all latest">
+                <div className="portfolio_box">
+                  <div className="single_portfolio">
+                    <img className="img-fluid w-100" src={require(`../assets/image/portfolio/${item.img}`)} alt="" />
+                    <div className="overlay"></div>
+                    <a href={require(`../assets/image/portfolio/${item.img}`)} className="img-gal">
+                      <div className="icon">
+                        <span className="lnr lnr-cross"></span>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div className="short_info">
-                <h4><a href="portfolio-details.html">minimal design</a></h4>
-                <p>Animated, portfolio</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 all popular">
-            <div className="portfolio_box">
-              <div className="single_portfolio">
-                <img className="img-fluid w-100" src="satner-master/img/portfolio/p2.jpg" alt="" />
-                <div className="overlay"></div>
-                <a href="satner-master/img/portfolio/p2.jpg" className="img-gal">
-                  <div className="icon">
-                    <span className="lnr lnr-cross"></span>
+                  <div className="short_info">
+                    <h4><a>{t(`graphic.${item.title}`)}</a></h4>
+                    <p>{t(`graphic.${item.type}`)}</p>
                   </div>
-                </a>
+                </div>
               </div>
-              <div className="short_info">
-                <h4><a href="portfolio-details.html">Paint wall</a></h4>
-                <p>Animated, portfolio</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 all latest">
-            <div className="portfolio_box">
-              <div className="single_portfolio">
-                <img className="img-fluid w-100" src="satner-master/img/portfolio/p3.jpg" alt="" />
-                <div className="overlay"></div>
-                <a href="satner-master/img/portfolio/p3.jpg" className="img-gal">
-                  <div className="icon">
-                    <span className="lnr lnr-cross"></span>
-                  </div>
-                </a>
-              </div>
-              <div className="short_info">
-                <h4><a href="portfolio-details.html">female light</a></h4>
-                <p>Animated, portfolio</p>
-              </div>
-            </div>
-          </div>
+            ))
+          }
+
         </div>
       </div>
 

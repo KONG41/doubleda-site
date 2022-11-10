@@ -95,6 +95,7 @@ a, a:hover, a:active, a:focus {
 
 .discount-offer {
   background-image: url(../image/dp-big-portfolio-04.jpg) !important;
+  background-attachment: unset !important;
 }
 
 .discount-offer:after, .subscribe:after {
@@ -124,6 +125,7 @@ a, a:hover, a:active, a:focus {
 .portfolio-cover:after {
   content: "";
   background-color: rgba(1, 0, 1, 0.52) !important;
+  background: linear-gradient(rgb(76, 30, 81) 0%, rgba(1, 0, 1, 0.52) 50%) !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -249,6 +251,10 @@ a, a:hover, a:active, a:focus {
   }
 }
 
+.single-package-item {
+  max-width: unset !important;
+}
+
 .single-package-item img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -261,7 +267,6 @@ a, a:hover, a:active, a:focus {
   cursor: pointer;
   margin-bottom: 60px;
   opacity: 0.8;
-  transition: 0.3s;
   max-height: 100px;
   max-width: 170px;
   cursor: pointer;
@@ -287,6 +292,7 @@ a, a:hover, a:active, a:focus {
 .single-brand-items img {
   max-width: 111px;
   margin: 0 auto;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 767px) {
@@ -299,6 +305,10 @@ a, a:hover, a:active, a:focus {
 }
 
 .single-brand-items:hover img {
-  transform: scale(1.5);
+  transform: scale(1.3);
   opacity: 1;
+}
+
+.main-header .main-menu ul li a {
+  cursor: pointer !important;
 }/*# sourceMappingURL=style.css.map */

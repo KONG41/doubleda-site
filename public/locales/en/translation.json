@@ -77,7 +77,18 @@
     "logo_design": "Logo Design",
     "material_design": "Material Design",
     "mobile_app": "Mobile App",
-    "poster_design": "Poster Design"
+    "poster_design": "Poster Design",
+    "paais_aviation_consulting": "Paais Aviation Consulting",
+    "kim_chung":"Kim & CHung",
+    "car_wrapping":"Car Wrapping",
+    "mobile_app_landing_design":"Mobile App Landing Design",
+    "ap_accountancy":"A&P Accountancy",
+    "yuanta_securities":"Yuanta Securities",
+    "roji_monster":"Roji Monster",
+    "chicken_up":"Chicken Up",
+    "dans_uild":"Dan's Build",
+    "airtimes_agazine":"Airtimes Magazine",
+    "inflight_magazine":"Inflight Magazine"
   },
   "auth":{
     "registration_title" : "Registration Here",
@@ -91,5 +102,181 @@
     "email_add": "Email Address",
     "full_name": "Full Name"
   },
+  "portfolio":{
+   "client_name": "client name",
+   "release_date": "release date",
+   "project_type": "project type"
+  },
+  "id_1":{
+    "title": "DigiNFT",
+    "sub_title": "NFT Marketplace",
+    "detail_title": "App & System Development",
+    "detail_desc": "DigiNFT is the NFT marketplace app trading various NFT assets and providing NFT wallet, coin information",
+    "client_name": "DigiNFT",
+    "release_date": "March 7, 2022",
+    "project_type": "System, App",
+    "title_1": "Solution",
+    "title_2": "Technologies And Tools",
+    "desc_1": {"sub_1":"App Design","sub_2": "Trading Features","sub_3": "NFT wallet","sub_4": "Profile and Community", "sub_5":"Marketing Email System"},
+    "desc_2": {"sub_1":"React JS", "sub_2":"Rect Native", "sub_3":"Java Script", "sub_4":"HTML,CSS, Figma", "sub_5":"Express.js"}
+   
+  },
+  "id_2":{
+    "title": "Hansmile Trading",
+    "sub_title": "Product Sourcing Agency and Trader",
+    "detail_title": "Web & System Development",
+    "detail_desc": "Hansmile is Trading Agency and the system development focused on CRM and Notice Board. Marketing email system was integrated and individual customer supporting system was developed.",
+    "client_name": "Hansmile Trading",
+    "release_date": "October 5, 2016",
+    "project_type": "System, Website",
+    "title_1": "Solution",
+    "title_2": "Technologies And Tools",
+    "desc_1": {"sub_1":"Website Design", "sub_2":"Back Office System", "sub_3":"CRM", "sub_4":"Marketing Email System", "sub_5":"Product Posting System"},
+    "desc_2": {"sub_1": "HTML, CSS", "sub_2":" mySQL", "sub_3":"JavaScript", "sub_4":"cPanel", "sub_5":"FTP"}
+  },
+  "id_3":{
+    "title": "TopTravel Online Travel",
+    "sub_title": "Online Travel information Booking and Planner",
+    "detail_title": "Online Travel Agency",
+    "detail_desc": "Creating beautiful travel & tourism website design and portal development that really captures the spirit of travel, adventure and holiday. Main focus of this project is to build high-quality custom travel websites that have the latest technologies such as live booking confirmation, Travel Planner, App notification.",
+    "client_name": "TopTravel",
+    "release_date": "September 1, 2018",
+    "project_type": "Web & System Development",
+    "title_1": "Service Package",
+    "title_2": "",
+    "desc_1": {
+      "sub_1": "Front-end & Back-end",
+      "sub_2":"Booking System",
+      "sub_3":"Automatic Ticketing",
+      "sub_4":"Travel Planner & Alert function",
+      "sub_5":"Admin & Local Agency System"}
+  },
+  "id_4":{
+    "title": "Yuanta Securities (Cambodia) Plc.",
+    "sub_title": "The 1st fully-licensed securities firm in Cambodia and 1st Sole underwrite and lead manager.",
+    "detail_title": "System & Web Development",
+    "detail_desc": "The Yuanta Securities provides brokerage, research and various advisory services such as IPO, Public bonds, M&A, Private dept financing. The service requires full-stack development starting from Website (frontend) to Operation System (backend) and also requires to develop a blog posting, marketing email system.",
+    "client_name": "Yuanta Securities (Cambodia)",
+    "release_date": "June 1, 2018",
+    "title_1": "Solution",
+    "title_2": "Technologies And Tools",
+    "project_type": "System, Website",
+    "desc_1": {
+      "sub_1":"Back-end (Operation System)",
+      "sub_2":" Website Design",
+      "sub_3":"Report posting system",
+      "sub_4":"Bond Calculator Integration",
+      "sub_5":"SEO friendly"},
+    "desc_2": {
+      "sub_1":"JavaScript",
+      "sub_2":"HTML, CSS",
+      "sub_3":"mySQL",
+      "sub_4":" cPanel",
+      "sub_5":"PHP"}
+  },
+  "id_5":{
+    "title": "Alternative Intelligent Solution Ltd",
+    "sub_title": "Wholesaler of electronic and telecommunications equipment and parts.",
+    "detail_title": "WordPress & Web Development",
+    "detail_desc": "The Alternative Intelligent Solution Ltd is a private limited company located in UK and it’s main business activity is Wholesale of electronic and telecommunications equipment and parts.",
+    "client_name": "Alternative Intelligent Solution Ltd",
+    "release_date": "November 1, 2021",
+    "project_type": "System, Website",
+   " title_1": "Solution",
+    "title_2": "Technologies And Tools",
+    "desc_1": {
+      "sub_1":"WordPress installation",
+      "sub_2":"Website Design",
+      "sub_3":"WooCommerce Integration",
+      "sub_4":"Marketing Email System",
+      "sub_5":"SEO friendly"},
+    "desc_2": {
+      "sub_1":"WordPress",
+      "sub_2":" HTML, CSS",
+      "sub_3":"mySQL",
+      "sub_4":"cPanel",
+      "sub_5":" Elementator"}
+  },
+  "id_6":{
+    "title": "Artbox 3d Museum",
+    "sub_title": "Welcome to The World Best Trick Art Museum Art Box!",
+    "detail_title": "3d Projection Mapping",
+    "detail_desc": "3d Mapping project, designing 3d mapping for their main hole with size of 20m x 30m x 15m(h) and 4 displaying screen walls. For projection mapping, a technique is used that can convert any surface into a dynamic visual display. Though many ways can create the same effect but combining the 2D or 3D data with some computer animations can highlight the required features and diminish not such relevant things.",
+    "client_name": "Artbox 3d Museum",
+    "release_date": "September 1, 2018",
+    "project_type": "3d Mapping & Modeling",
+    "title_1": "Service Package",
+    "title_2": "",
+    "desc_1": {
+      "sub_1":"Story and Concept design",
+      "sub_2":"Resolume Arena 6 software",
+      "sub_3":"After Effect, Illustrator Editing",
+      "sub_4":"3d Modeling, Blender",
+      "sub_5":"5 X 4k+ Panasonic Projectors",
+      "sub_6":"Sound System Installation"
+  }
+  },
+  "id_7":{
+   "title": "Dashi Restaurant",
+   " sub_title": "Japanese Restaurant",
+    "detail_title": "Interior Design",
+    "detail_desc": "Dashi restaurant is a very first modern Japanese restaurant. Interior design and construction were of major design importance.",
+    "client_name": "Dashi Restaurant",
+    "release_date": "August 1, 2017",
+    "project_type": "Interior Design",
+    "img": ["dashi_1.jpg", "dashi_1.png", "dashi_2.jpg", "dashi_2.png", "dashi_3.jpg", "dashi_3.png"],
+    "title_1": "Service Package",
+    "title_2": "",
+    "desc_1": {
+      "sub_1":"Branding & Concept",
+      "sub_2":"Interior Design & Construction"
+    }
+  },
+  "id_8":{
+    "title": "Melo Restaurant",
+    "sub_title": "Modern French Restaurant",
+    "detail_title": "Branding & Interior Design",
+    "detail_desc": "MELO restaurant is a modern french restaurant located in heart of Phnom Penh City. Full packaged-branding service (from Interior design to Menu & Content Design).",
+    "client_name": "Melo Restaurant",
+    "release_date": "December 1, 2019",
+    "project_type": "Branding, Interior Design, Content Design",
+    "img": ["melo_1.jpg", "melo_3.jpg", "melo_1.png", "melo_2.jpg", "melo_2.png", "melo_3.png", "melo_6.png", "melo_5.jpg", "melo_4.png"],
+    "title_1": "Service Package",
+    "title_2": "",
+    "desc_1": {
+      "sub_1":"Branding & Concept",
+      "sub_2":"Interior Design & Construction",
+      "sub_3":"Menu & Content Design",
+      "sub_4":"SEO & SNS Marketing",
+      "sub_5":"Brochure & Leaflet Design"
+    }
+  },
+  "id_9":{
+    "title": "Skyangkor Airlines",
+    "sub_title": "The best and biggest Airlines operating in Cambodia",
+    "detail_title": "System & Web Development",
+    "detail_desc": "The Skyangkor Airline is a leading market Airline company. The service requires full-stack development starting from Website (frontend) to Operation System (backend) and also requires to develop a Ticket Booking system, integrate with Payment gateway.",
+    "client_name": "Skayngkor Airlines",
+    "release_date": "December 1, 2016",
+    "project_type": "System, Website",
+    "title_1": "Solution",
+    "title_2": "Technologies And Tools",
+    "desc_1": {
+      "sub_1":"Back-end (Operation System)",
+      "sub_2":"Website Design",
+      "sub_3":"Booking System Integration",
+      "sub_4":"Finance System",
+      "sub_5":"SEO friendly",
+      "sub_6":"Graphic Design (Logo, Photo, Video, etc)"
+    },
+    "desc_2": {
+      "sub_1":"JavaScript",
+      "sub_2":"HTML, CSS",
+      "sub_3":"MongoDB",
+      "sub_4":"NodeJS",
+      "sub_5":"API, Quick Service"
+    }
+  },
+  
   "error_404":"Error 404"
 }

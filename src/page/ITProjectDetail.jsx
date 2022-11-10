@@ -57,11 +57,11 @@ export default function ITProjectDetail(props) {
                     <div className="single-package-item">
                       <img src={require(`../assets/image/portfolio/${item.img[0]}`)} alt="package-place" />
                       <div className="single-package-item-txt">
-                        <h3>{item.title} </h3>
+                        <h3>{t(`${item.title_id}.title`)} </h3>
                         {/* <span className="pull-right">$499</span> */}
                         <div className="packages-para">
-                          <p><i className="fa fa-angle-right"></i> {item.detail_title}</p>
-                          <p><i className="fa fa-angle-right"></i>  {item.release_date}</p>
+                          <p><i className="fa fa-angle-right"></i> {t(`${item.title_id}.detail_title`)}</p>
+                          <p><i className="fa fa-angle-right"></i>  {t(`${item.title_id}.release_date`)}</p>
                         </div>
                         <div className="packages-review">
                           <p>
