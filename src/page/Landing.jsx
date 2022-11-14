@@ -3,16 +3,14 @@ import ITProject from './ITProject';
 import GraphicProject from './GraphicProject';
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet';
 import { branding } from '../assets/data/portfolio';
 import { Link } from 'react-router-dom';
+import { Titled } from 'react-titled';
 const Landing = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Helmet>
-        <title>DoubleDa – DoubleDa. The Place.</title>
-      </Helmet>
+      <Titled title={title => `Double.da | ${title}`} />
       <div className="slider-area slider-bg ">
         <div className="slider-active">
           <div className="single-slider d-flex align-items-center slider-height ">
@@ -274,6 +272,9 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
+
+
     </>
   )
 }

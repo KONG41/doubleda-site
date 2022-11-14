@@ -5,9 +5,9 @@ import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
 import '../assets/satner-master/css/style.css';
 import useScript from '../appendScript/useScript';
-import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { allGraphicDesign } from '../assets/data/portfolio';
+import { Titled } from 'react-titled';
 
 const data_title = [
 
@@ -49,10 +49,7 @@ const GraphicProjectDetail = () => {
   }, [])
   return (
     <>
-      <Helmet>
-        <title>Graphic Design – DoubleDa. The Place.</title>
-      </Helmet>
-
+      <Titled title={title => `GraphicDesign | ${title}`} />
       <section className="home_banner_area">
         <div className="banner_inner" style={{ background: "linear-gradient(180deg, rgba(76,30,81,1) 0%, rgba(255,255,255,1) 75%)" }}>
           <div className="container">

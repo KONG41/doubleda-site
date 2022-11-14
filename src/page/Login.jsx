@@ -1,31 +1,14 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
+
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
+import { Titled } from 'react-titled';
 const Login = () => {
 
   const { t } = useTranslation();
   return (
     <>
-
-      <Helmet>
-        <title>SignIn – DoubleDa.</title>
-        {/* <link rel="stylesheet" href="ecohosting-main/assets/css/bootstrap.min.css" /> */}
-        <link rel="stylesheet" href="ecohosting-main/assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/slicknav.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/flaticon.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/progressbar_barfiller.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/gijgo.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/animate.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/animated-headline.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/magnific-popup.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/fontawesome-all.min.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/themify-icons.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/slick.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/nice-select.css" />
-        <link rel="stylesheet" href="ecohosting-main/assets/css/style.css" />
-      </Helmet>
-
+      <Titled title={title => `Login`} />
       <div id="preloader-active">
         <div className="preloader d-flex align-items-center justify-content-center">
           <div className="preloader-inner position-relative">

@@ -3,9 +3,9 @@ import '../assets/tournest-master/assets/css/style.css';
 import '../assets/tournest-master/assets/css/animate.css';
 import '../assets/tournest-master/assets/css/responsive.css';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet';
 import { allPortfolio } from '../assets/data/portfolio';
 import { Link } from 'react-router-dom';
+import { Titled } from 'react-titled';
 export default function ITProjectDetail(props) {
   const { t } = useTranslation();
 
@@ -17,9 +17,7 @@ export default function ITProjectDetail(props) {
   }, [])
   return (
     <>
-      <Helmet>
-        <title>Development – DoubleDa. The Place.</title>
-      </Helmet>
+      <Titled title={title => `Portfolio | ${title}`} />
       <section className="discount-offer">
         <div className="container">
           <div className="row">

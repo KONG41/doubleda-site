@@ -2,14 +2,13 @@ import React from 'react'
 import '../assets/css/page_notfound.css'
 import { useTranslation } from 'react-i18next';
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import { Helmet } from "react-helmet";
+import { Titled } from 'react-titled';
 const NoPage = () => {
   const { t } = useTranslation();
+  console.log(window.location.pathname);
   return (
     <>
-      <Helmet>
-        <title>Page Not Found – DoubleDa. The Place.</title>
-      </Helmet>
+      <Titled title={title => `${window.location.pathname} | Page Not Found`} />
       <div id="main">
         <div className="fof">
           <div>

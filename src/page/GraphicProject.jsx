@@ -1,5 +1,4 @@
 import { React } from 'react';
-import Helmet from 'react-helmet';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
