@@ -17,7 +17,7 @@ export default function ITProjectDetail(props) {
   }, [])
   return (
     <>
-      <Titled title={title => `Portfolio | ${title}`} />
+      <Titled title={title => `${t('menus.portfolio')} | ${title}`} />
       <section className="discount-offer">
         <div className="container">
           <div className="row">
@@ -34,7 +34,7 @@ export default function ITProjectDetail(props) {
                 </div>
                 <div className="about-btn">
                   <button className="about-view discount-offer-btn">
-                    <a href="http://doubleda.net/?page_id=1239">{t('development.join_now')}</a>
+                    <a href="http://doubleda.net/?page_id=1239" target="_blank">{t('development.join_now')}</a>
                   </button>
                 </div>
               </div>

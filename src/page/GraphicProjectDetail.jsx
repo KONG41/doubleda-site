@@ -8,6 +8,7 @@ import useScript from '../appendScript/useScript';
 import { useTranslation } from 'react-i18next';
 import { allGraphicDesign } from '../assets/data/portfolio';
 import { Titled } from 'react-titled';
+import { Link } from 'react-router-dom';
 
 const data_title = [
 
@@ -60,8 +61,8 @@ const GraphicProjectDetail = () => {
                   <h1 className="text-uppercase">{t('graphic.create_initiative')}</h1>
                   <h5 className="text-uppercase">{t('graphic.graphic_design')}</h5>
                   <div className="d-flex align-items-center">
-                    <a className="primary_btn" href="#"><span>{t('graphic.portfolio')}</span></a>
-                    <a className="primary_btn tr-bg" href="/contact"><span>{t('graphic.contact_us')}</span></a>
+                    <Link to="/it" className="primary_btn" href="#"><span>{t('graphic.portfolio')}</span></Link>
+                    <Link to="/contact" className="primary_btn tr-bg"><span>{t('graphic.contact_us')}</span></Link>
                   </div>
                 </div>
               </div>
@@ -110,7 +111,7 @@ const GraphicProjectDetail = () => {
                         </a>
                       </div>
                       <div className="short_info">
-                        <h4><a href="portfolio-details.html">{t(`graphic.${item.title}`)}</a></h4>
+                        <h4><a>{t(`graphic.${item.title}`)}</a></h4>
                         <p>{t(`graphic.${item.type}`)}</p>
                       </div>
                     </div>

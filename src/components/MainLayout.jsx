@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => {
   return (
 
     <div>
-      <Titled title={() => 'Doubleda'}>
+      <Titled title={() => 'DoubleDa'}>
         <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">

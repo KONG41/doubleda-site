@@ -191,7 +191,6 @@ const Landing = () => {
             <div className="col-xl-5 col-lg-5 col-md-8 col-sm-10">
 
               <div className="about-img ">
-                {/* <img src="ecohosting-main/assets/img/gallery/about1.png" alt="" /> */}
                 <Player
                   autoplay
                   loop
@@ -210,7 +209,7 @@ const Landing = () => {
                 </div>
                 <p className="mb-40">{t('landing.doubleda_means_desc')}</p>
                 <div className="slider-btns">
-                  <a data-animation="fadeInLeft" data-delay="1s" href="/gd" className="btn radius-btn">{t('landing.doubleda_together')}</a>
+                  <Link to="/gd" data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">{t('landing.doubleda_together')}</Link>
                 </div>
               </div>
             </div>

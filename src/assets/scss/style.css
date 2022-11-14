@@ -183,6 +183,7 @@ a, a:hover, a:active, a:focus {
 .detail_container .detail_left p {
   margin: 20px 0px;
   font-size: 18px;
+  white-space: pre-line;
 }
 .detail_container .detail_left span {
   font-weight: 400;
