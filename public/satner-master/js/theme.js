@@ -63,7 +63,6 @@
 				columnWidth: '.all'
 			}
 		});
-		console.log($workGrid);
 	}
 	// });
 

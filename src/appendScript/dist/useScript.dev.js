@@ -11,9 +11,9 @@ var useScript = function useScript(url) {
   (0, _react.useEffect)(function () {
     var script = document.createElement("script");
     script.src = url;
-    document.body.appendChild(script);
+    document.head.appendChild(script);
     return function () {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     };
   }, [url]);
 };

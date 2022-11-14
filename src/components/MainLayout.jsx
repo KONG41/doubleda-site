@@ -1,8 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
-import useScript from '../appendScript/useScript';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
 import useCollapse from "react-collapsed";
@@ -110,10 +107,8 @@ const MainLayout = ({ children }) => {
                             <a href="/login" className="btn3">{t('menus.sign_in')}</a>
                           </li>
                         </ul>
-
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>

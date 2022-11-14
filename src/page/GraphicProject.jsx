@@ -1,5 +1,5 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import { React } from 'react';
+import Helmet from 'react-helmet';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
@@ -7,16 +7,14 @@ import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
 import '../assets/satner-master/css/style.css';
 import { allGraphicDesign } from '../assets/data/portfolio';
 import { useTranslation } from 'react-i18next';
+import useScript from "../appendScript/useScript";
 const GraphicProject = () => {
   const { t } = useTranslation();
+  useScript("/satner-master/js/popper.js");
+  useScript("/satner-master/js/stellar.js");
+  useScript("/satner-master/js/theme.js");
   return (
     <>
-      <Helmet>
-        <script src="satner-master/js/popper.js"></script>
-        <script src="satner-master/js/stellar.js"></script>
-        <script src="satner-master/js/theme.js"></script>
-      </Helmet>
-
       <div className="filters-content">
         <div className="row portfolio-grid justify-content-center">
           {
@@ -43,8 +41,6 @@ const GraphicProject = () => {
 
         </div>
       </div>
-
-
     </>
   )
 }

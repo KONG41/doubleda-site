@@ -5,6 +5,7 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import { branding } from '../assets/data/portfolio';
+import { Link } from 'react-router-dom';
 const Landing = () => {
   const { t } = useTranslation();
   return (
@@ -154,7 +155,7 @@ const Landing = () => {
                   <h4>{t('landing.system_development')}</h4>
                   <p>{t('landing.system_development_desc')}</p>
                 </div>
-                <div className="card-bottom"> <a href="/it" className="borders-btn ">{t('landing.get_start')}</a></div>
+                <div className="card-bottom"> <Link to="/it" className="borders-btn ">{t('landing.get_start')}</Link></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -165,7 +166,7 @@ const Landing = () => {
                   <p>{t('landing.web_mobile_development_desc')}</p>
 
                 </div>
-                <div className="card-bottom"> <a href="/it" className="borders-btn ">{t('landing.get_start')}</a></div>
+                <div className="card-bottom"> <Link to="/it" className="borders-btn ">{t('landing.get_start')}</Link></div>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-10 mb-5">
@@ -175,7 +176,7 @@ const Landing = () => {
                   <h4>{t('landing.blockchain_nft_solution')}</h4>
                   <p>{t('landing.blockchain_nft_solution_desc')}</p>
                 </div>
-                <div className="card-bottom"> <a href="/blockchain_&_nft" className="borders-btn ">{t('landing.get_start')}</a></div>
+                <div className="card-bottom"> <Link to="/blockchain_&_nft" className="borders-btn ">{t('landing.get_start')}</Link></div>
               </div>
             </div>
 
@@ -244,8 +245,8 @@ const Landing = () => {
           <GraphicProject />
         </div>
       </section>
-      <section class="brand_area section_gap_bottom">
-        <div class="container">
+      <section className="brand_area section_gap_bottom">
+        <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8">
               <div className="section-tittle text-center mb-90">
@@ -254,14 +255,14 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col">
-              <div class="row">
+          <div className="row justify-content-center">
+            <div className="col">
+              <div className="row">
                 {
                   branding.map((item, index) => (
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                      <div class="single-brand-items d-table">
-                        <div class="d-table-cell text-center">
+                    <div key={`logos_${index}`} className="col-lg-3 col-md-6 col-sm-6">
+                      <div className="single-brand-items d-table">
+                        <div className="d-table-cell text-center">
                           <img src={item.logo} alt="" />
                         </div>
                       </div>

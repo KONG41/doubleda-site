@@ -7,7 +7,6 @@ const PortfolioDetail = () => {
   const { t } = useTranslation();
   const { id } = useParams();
   let pid = id - 1;
-  console.log("useParams:", id);
 
   useEffect(() => {
     window.scrollTo({

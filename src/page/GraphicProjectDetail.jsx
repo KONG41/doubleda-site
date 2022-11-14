@@ -1,10 +1,11 @@
-import { React } from 'react';
-import Helmet from 'react-helmet';
+import { React, useEffect } from 'react';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
 import '../assets/satner-master/vendors/nice-select/css/nice-select.css';
 import '../assets/satner-master/css/style.css';
+import useScript from '../appendScript/useScript';
+import Helmet from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 import { allGraphicDesign } from '../assets/data/portfolio';
 
@@ -33,16 +34,23 @@ const data_title = [
 ]
 
 const GraphicProjectDetail = () => {
+
+  useScript("/satner-master/js/popper.js");
+  useScript("/satner-master/js/stellar.js");
+  useScript("/satner-master/js/theme.js");
+
   const { t } = useTranslation();
 
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+    });
+  }, [])
   return (
     <>
       <Helmet>
         <title>Graphic Design – DoubleDa. The Place.</title>
-        <script src="satner-master/js/popper.js"></script>
-        <script src="satner-master/js/stellar.js"></script>
-        <script src="satner-master/js/theme.js"></script>
       </Helmet>
 
       <section className="home_banner_area">

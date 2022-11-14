@@ -5,10 +5,10 @@ const useScript = (url) => {
     const script = document.createElement("script")
 
     script.src = url
-    document.body.appendChild(script)
+    document.head.appendChild(script)
 
     return () => {
-      document.body.removeChild(script)
+      document.head.removeChild(script)
     }
   }, [url])
 }

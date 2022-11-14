@@ -182,7 +182,7 @@
     "client_name": "Alternative Intelligent Solution Ltd",
     "release_date": "November 1, 2021",
     "project_type": "System, Website",
-   " title_1": "Solution",
+    "title_1": "Solution",
     "title_2": "Technologies And Tools",
     "desc_1": {
       "sub_1":"WordPress installation",
@@ -217,8 +217,8 @@
   }
   },
   "id_7":{
-   "title": "Dashi Restaurant",
-   " sub_title": "Japanese Restaurant",
+    "title": "Dashi Restaurant",
+    "sub_title": "Japanese Restaurant",
     "detail_title": "Interior Design",
     "detail_desc": "Dashi restaurant is a very first modern Japanese restaurant. Interior design and construction were of major design importance.",
     "client_name": "Dashi Restaurant",

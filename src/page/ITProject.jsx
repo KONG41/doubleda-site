@@ -36,11 +36,13 @@ const ITProject = () => {
                       </p>
                     </div>
                     <div className="about-btn p-0">
-                      <Link to={{ pathname: `/detail/${index + 1}` }}>
-                        <button className="about-view packages-btn" >
+
+                      <button className="about-view packages-btn" >
+                        <Link to={{ pathname: `/detail/${index + 1}` }}>
                           Case Study
-                        </button>
-                      </Link>
+                        </Link>
+                      </button>
+
 
                     </div>
                   </div>
