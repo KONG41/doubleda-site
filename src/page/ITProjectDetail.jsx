@@ -58,7 +58,6 @@ export default function ITProjectDetail(props) {
                       <img src={require(`../assets/image/portfolio/${item.img[0]}`)} alt="package-place" />
                       <div className="single-package-item-txt">
                         <h3>{t(`${item.title_id}.title`)} </h3>
-                        {/* <span className="pull-right">$499</span> */}
                         <div className="packages-para">
                           <p><i className="fa fa-angle-right"></i> {t(`${item.title_id}.detail_title`)}</p>
                           <p><i className="fa fa-angle-right"></i>  {t(`${item.title_id}.release_date`)}</p>
@@ -74,7 +73,7 @@ export default function ITProjectDetail(props) {
                           </p>
                         </div>
                         <div className="about-btn p-0">
-                          <Link to={{ pathname: `/detail/${index}` }} state={{ items: item }}>
+                          <Link to={{ pathname: `/detail/${index + 1}` }}>
                             <button className="about-view packages-btn" >
                               Case Study
                             </button>
