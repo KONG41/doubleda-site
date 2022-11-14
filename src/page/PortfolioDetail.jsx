@@ -18,7 +18,7 @@ const PortfolioDetail = () => {
 
   return (
     <>
-      <Titled title={title => `${t(`${allPortfolio[`${pid}`].title_id}.sub_title`)} | Portfolio`} />
+      <Titled title={title => `${t(`${allPortfolio[`${pid}`].title_id}.title`)} | Portfolio`} />
       <section className="portfolio-cover" style={{ backgroundImage: 'url(' + require(`../assets/image/portfolio/${allPortfolio[`${pid}`].img[0]}`) + ')' }} >
         <div className="container">
           <div className="row">
