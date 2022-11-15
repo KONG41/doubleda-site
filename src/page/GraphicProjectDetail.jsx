@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useState, } from 'react';
 import '../assets/satner-master/vendors/linericon/style.css';
 import '../assets/satner-master/css/font-awesome.min.css';
 import '../assets/satner-master/css/magnific-popup.css';
@@ -10,29 +10,41 @@ import { allGraphicDesign } from '../assets/data/portfolio';
 import { Titled } from 'react-titled';
 import { Link } from 'react-router-dom';
 
+
 const data_title = [
 
   {
     title: 'web_design',
-    filter: '.web'
+    data_filter: '.web',
+    filter: 'web'
+
+
   },
   {
     title: 'logo_design',
-    filter: '.logo'
+    data_filter: '.logo',
+    filter: 'logo'
+
   },
   {
     title: 'material_design',
-    filter: '.material'
+    data_filter: '.material',
+    filter: 'material'
+
   },
   {
     title: 'mobile_app',
-    filter: '.mobile'
+    data_filter: '.mobile',
+    filter: 'mobile'
   },
   {
     title: 'poster_design',
-    filter: '.poster'
+    data_filter: '.poster',
+    filter: 'poster'
   }
 ]
+
+
 
 const GraphicProjectDetail = () => {
 
@@ -40,6 +52,7 @@ const GraphicProjectDetail = () => {
   useScript("/satner-master/js/stellar.js");
   useScript("/satner-master/js/theme.js");
 
+  const [popAll, setPopAll] = useState(true);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -48,6 +61,7 @@ const GraphicProjectDetail = () => {
       behavior: 'auto',
     });
   }, [])
+
   return (
     <>
       <Titled title={title => `GraphicDesign | ${title}`} />
@@ -86,10 +100,10 @@ const GraphicProjectDetail = () => {
           </div>
           <div className="filters portfolio-filter">
             <ul>
-              <li className="active" data-filter="*">{t('graphic.all_project')}</li>
+              <li className="active" id="all" data-filter="*" onClick={() => setPopAll(true)}>{t('graphic.all_project')}</li>
               {
                 data_title.map((item, index) => (
-                  <li key={`${index}_li`} data-filter={item.filter}>{t(`graphic.${item.title}`)}</li>
+                  <li key={`${index}_li`} id={`${item.filter}`} data-filter={item.data_filter} onClick={() => setPopAll(false)}>{t(`graphic.${item.title}`)}</li>
                 ))
               }
             </ul>
@@ -98,13 +112,12 @@ const GraphicProjectDetail = () => {
             <div className="row portfolio-grid justify-content-center">
               {
                 allGraphicDesign.map((item, index) => (
-
-                  <div key={`${index}_item`} className={` filter-item col-lg-4 col-md-6 ${item.filter}`} data-tag="all latest">
+                  <div key={`${index}_item`} className={` filter-item col-lg-4 col-md-6 all ${item.filter}`} data-tag="all latest">
                     <div className="portfolio_box">
                       <div className="single_portfolio">
                         <img className="img-fluid w-100" src={require(`../assets/image/portfolio/${item.img}`)} alt="" />
                         <div className="overlay"></div>
-                        <a href={require(`../assets/image/portfolio/${item.img}`)} className="img-gal">
+                        <a href={require(`../assets/image/portfolio/${item.img}`)} id={popAll ? "all" : `${item.filter}`} className="pop-gal">
                           <div className="icon">
                             <span className="lnr lnr-cross"></span>
                           </div>
@@ -123,6 +136,7 @@ const GraphicProjectDetail = () => {
         </div>
 
       </section>
+
     </>
 
 

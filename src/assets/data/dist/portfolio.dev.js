@@ -229,56 +229,56 @@ var allGraphicDesign = [{
   type: "web_design",
   title: "paais_aviation_consulting",
   img: "paais_aviation_consulting.jpg",
-  filter: "all web"
+  filter: "web"
 }, {
   type: "logo_design",
   title: "kim_chung",
   img: "kim_chung.png",
-  filter: "all logo"
+  filter: "logo"
 }, {
   type: "material_design",
   title: "car_wrapping",
   img: "car_wrapping.png",
-  filter: "all material"
+  filter: "material"
 }, {
   type: "mobile_app",
   title: "mobile_app_landing_design",
   img: "dp-big-portfolio-09-650x433.jpg",
-  filter: "all mobile"
+  filter: "mobile"
 }, {
   type: "web_design",
   title: "ap_accountancy",
   img: "anp_accountancy.jpg",
-  filter: "all web"
+  filter: "web"
 }, {
   type: "web_design",
   title: "yuanta_securities",
   img: "yuanta_securities.jpg",
-  filter: "all web"
+  filter: "web"
 }, {
   type: "poster_design",
   title: "roji_monster",
   img: "roji_monster.jpg",
-  filter: "all poster"
+  filter: "poster"
 }, {
   type: "poster_design",
   title: "chicken_up",
   img: "ufosnow-650x433.png",
-  filter: "all poster"
+  filter: "poster"
 }, {
   type: "logo_design",
   title: "dans_uild",
   img: "dan_build.png",
-  filter: "all logo"
+  filter: "logo"
 }, {
   type: "material_design",
   title: "airtimes_agazine",
   img: "airtime_magazin.png",
-  filter: "all material"
+  filter: "material"
 }, {
   type: "material_design",
   title: "inflight_magazine",
   img: "inflignt_magazine.png",
-  filter: "all material"
+  filter: "material"
 }];
 exports.allGraphicDesign = allGraphicDesign;
