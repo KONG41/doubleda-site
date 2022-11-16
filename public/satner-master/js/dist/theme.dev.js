@@ -77,7 +77,7 @@
   }
 
   if ($('.pop-gal').length > 0) {
-    $('a#all.pop-gal').magnificPopup({
+    $('a#alls.pop-gal').magnificPopup({
       type: 'image',
       gallery: {
         enabled: true

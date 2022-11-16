@@ -77,41 +77,41 @@
 	}
 
 	if ($('.pop-gal').length > 0) {
-		$('a#all.pop-gal').magnificPopup({
+		$('a#alls.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
-
 		});
+
 		$('a#web.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
-
 		});
+
 		$('a#logo.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
-
 		});
+
 		$('a#material.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
-
 		});
+
 		$('a#mobile.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true
 			}
-
 		});
+
 		$('a#poster.pop-gal').magnificPopup({
 			type: 'image',
 			gallery: {

@@ -12,35 +12,25 @@ import { Link } from 'react-router-dom';
 
 
 const data_title = [
-
   {
     title: 'web_design',
-    data_filter: '.web',
-    filter: 'web'
-
-
+    data_filter: '.web'
   },
   {
     title: 'logo_design',
-    data_filter: '.logo',
-    filter: 'logo'
-
+    data_filter: '.logo'
   },
   {
     title: 'material_design',
-    data_filter: '.material',
-    filter: 'material'
-
+    data_filter: '.material'
   },
   {
     title: 'mobile_app',
-    data_filter: '.mobile',
-    filter: 'mobile'
+    data_filter: '.mobile'
   },
   {
     title: 'poster_design',
-    data_filter: '.poster',
-    filter: 'poster'
+    data_filter: '.poster'
   }
 ]
 
@@ -50,7 +40,7 @@ const GraphicProjectDetail = () => {
 
   useScript("/satner-master/js/popper.js");
   useScript("/satner-master/js/stellar.js");
-  useScript("/satner-master/js/theme.js");
+  // useScript("/satner-master/js/theme.js");
 
   const [popAll, setPopAll] = useState(true);
   const { t } = useTranslation();
@@ -61,6 +51,16 @@ const GraphicProjectDetail = () => {
       behavior: 'auto',
     });
   }, [])
+
+  useEffect(() => {
+    const script = document.createElement("script")
+    script.src = "/satner-master/js/theme.js"
+    document.head.appendChild(script)
+    return () => {
+      document.head.removeChild(script)
+    }
+
+  }, [popAll])
 
   return (
     <>
@@ -100,10 +100,10 @@ const GraphicProjectDetail = () => {
           </div>
           <div className="filters portfolio-filter">
             <ul>
-              <li className="active" id="all" data-filter="*" onClick={() => setPopAll(true)}>{t('graphic.all_project')}</li>
+              <li className="active" data-filter="*" onClick={() => setPopAll(true)}>{t('graphic.all_project')}</li>
               {
                 data_title.map((item, index) => (
-                  <li key={`${index}_li`} id={`${item.filter}`} data-filter={item.data_filter} onClick={() => setPopAll(false)}>{t(`graphic.${item.title}`)}</li>
+                  <li key={`${index}_li`} data-filter={item.data_filter} onClick={() => setPopAll(false)}>{t(`graphic.${item.title}`)}</li>
                 ))
               }
             </ul>
@@ -117,7 +117,7 @@ const GraphicProjectDetail = () => {
                       <div className="single_portfolio">
                         <img className="img-fluid w-100" src={require(`../assets/image/portfolio/${item.img}`)} alt="" />
                         <div className="overlay"></div>
-                        <a href={require(`../assets/image/portfolio/${item.img}`)} id={popAll ? "all" : `${item.filter}`} className="pop-gal">
+                        <a href={require(`../assets/image/portfolio/${item.img}`)} id={popAll ? "alls" : `${item.filter}`} className="pop-gal">
                           <div className="icon">
                             <span className="lnr lnr-cross"></span>
                           </div>
