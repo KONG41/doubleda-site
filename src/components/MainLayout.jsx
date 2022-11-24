@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => {
   return (
 
     <div>
-      <Titled title={() => 'DoubleDa'}>
+      <Titled title={() => 'DoubleDa'} currentTitle={() => `${window.location.pathname} | DoubleDa`}>
         <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">
@@ -42,7 +42,7 @@ const MainLayout = ({ children }) => {
                   <div className="row align-items-center">
                     <div className="col-xl-2 col-lg-2">
                       <div className="logo">
-                        <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" /></Link>
+                        <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" className="header-logo" /></Link>
                       </div>
                     </div>
                     <div className="col-xl-10 col-lg-10">

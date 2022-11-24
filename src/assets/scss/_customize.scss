@@ -20,8 +20,8 @@ a,a:hover,a:active,a:focus {
 .pricing-card-area .single-card .card-top p{
  color:#717081 !important;
 }
-.logo img{
-  width: 177px;
+.logo .header-logo{
+  height: 30px;
 }
 .my-about-btn{
   padding: 0px !important;
@@ -45,7 +45,7 @@ a,a:hover,a:active,a:focus {
 .mobile_menu_icon{
   float: right;
     position: relative;
-    top: -50px;
+    top: -33px;
     right: 10px;
     color: white;
     font-size: 30px;
@@ -53,12 +53,9 @@ a,a:hover,a:active,a:focus {
 }
 .mobile_menu_card{
   width: 100%;
-  position: relative;
-  top: -25px;
+  position: absolute;
+  top: 16px;
 }
-// .slicknav_nav{
-//   padding: 0px 19px 19px 19px !important;
-// }
 .play{
   width: 107px;
   height: 103px;
@@ -75,6 +72,7 @@ a,a:hover,a:active,a:focus {
 .mobile_menu {
  
       .slicknav_nav{
+        margin-top: 0px !important;
         li{
             ul.submenu{
              display:none;

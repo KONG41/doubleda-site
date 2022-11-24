@@ -127,7 +127,13 @@ const GraphicProjectDetail = () => {
                         <h4><a>{t(`graphic.${item.title}`)}</a></h4>
                         <p>{t(`graphic.${item.type}`)}</p>
                       </div>
+                      <button className="slider-btns my-slider-btn" >
+                        <a data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
+                          Case Study
+                        </a>
+                      </button>
                     </div>
+
                   </div>
                 ))
               }

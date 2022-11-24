@@ -201,11 +201,6 @@ export const allPortfolio = [
     img: ["skyangkor_1.png", "skyangkor_2.png", "skyangkor_3.png", "skyangkor_4.png"]
   },
 ]
-// "web_design": "Web Design",
-// "logo_design": "Logo Design",
-// "material_design": "Material Design",
-// "mobile_app": "Mobile App",
-// "poster_design": "Poster Design"
 export const allGraphicDesign = [
   {
     type: "web_design",

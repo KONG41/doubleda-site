@@ -218,12 +218,7 @@ var allPortfolio = [{
   desc_1: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5", "sub_6"],
   desc_2: ["sub_1", "sub_2", "sub_3", "sub_4", "sub_5"],
   img: ["skyangkor_1.png", "skyangkor_2.png", "skyangkor_3.png", "skyangkor_4.png"]
-}]; // "web_design": "Web Design",
-// "logo_design": "Logo Design",
-// "material_design": "Material Design",
-// "mobile_app": "Mobile App",
-// "poster_design": "Poster Design"
-
+}];
 exports.allPortfolio = allPortfolio;
 var allGraphicDesign = [{
   type: "web_design",

@@ -37,8 +37,8 @@ const ITProject = () => {
                     </div>
                     <div className="about-btn p-0">
 
-                      <button className="about-view packages-btn" >
-                        <Link to={{ pathname: `/detail/${index + 1}` }}>
+                      <button className="slider-btns my-slider-btn" >
+                        <Link to={{ pathname: `/detail/${index + 1}` }} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
                           Case Study
                         </Link>
                       </button>
@@ -52,6 +52,11 @@ const ITProject = () => {
           }
 
 
+        </div>
+        <div className="row">
+          <div className="col-12 view-more-btn">
+            <div className="card-bottom"> <Link to="/it" className="borders-btn ">View More Projects</Link></div>
+          </div>
         </div>
       </div>
     </>

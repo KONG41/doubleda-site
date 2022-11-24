@@ -32,13 +32,9 @@ const Landing = () => {
                       autoplay
                       loop
                       src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
-                      // src="https://assets3.lottiefiles.com/packages/lf20_l3sfdi9x.json"
-
                       style={{ height: "100%", width: "100%" }}
                     >
-
                     </Player>
-                    {/* <img src="ecohosting-main/assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s" /> */}
                   </div>
                 </div>
               </div>
@@ -197,7 +193,6 @@ const Landing = () => {
                   src="https://assets10.lottiefiles.com/packages/lf20_w5hernhv.json"
                   style={{ height: "100%", width: "100%" }}
                 >
-
                 </Player>
               </div>
             </div>
@@ -271,9 +266,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-
-
-
     </>
   )
 }

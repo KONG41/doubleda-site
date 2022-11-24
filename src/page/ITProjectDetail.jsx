@@ -76,11 +76,12 @@ export default function ITProjectDetail(props) {
                           </p>
                         </div>
                         <div className="about-btn p-0">
-                          <button className="about-view packages-btn" >
-                            <Link to={{ pathname: `/detail/${index + 1}` }}>
+                          <button className="slider-btns my-slider-btn" >
+                            <Link to={{ pathname: `/detail/${index + 1}` }} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
                               Case Study
                             </Link>
                           </button>
+
                         </div>
                       </div>
                     </div>
