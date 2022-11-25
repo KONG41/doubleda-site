@@ -5,7 +5,6 @@ import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import { Titled } from 'react-titled';
 const NoPage = () => {
   const { t } = useTranslation();
-  console.log(window.location.pathname);
   return (
     <>
       <Titled title={title => `${window.location.pathname} | Page Not Found`} />
