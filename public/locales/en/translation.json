@@ -278,5 +278,12 @@
     }
   },
   
-  "error_404":"Error 404"
+  "error_404":"Error 404",
+  "contact_us" : "Contact Us",
+  "Feel free to say Hi~": "Feel free to say Hi~",
+  "Submit Now" : "Submit Now",
+  "Your Name" : "Your Name",
+  "Your Email" : "Your Email",
+  "Your Subject": "Your Subject",
+  "Your Message": "Your Message"
 }

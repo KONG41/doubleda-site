@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { FiPhoneCall, FiMail } from 'react-icons/fi'
 import { FiMap } from 'react-icons/fi'
 import { Titled } from 'react-titled'
+import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslation } from 'react-i18next'
 const Contact = () => {
+  const { t } = useTranslation();
+  const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";
+  const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
+  const recaptchaRef = useRef()
   return (
     <section className="contact-container">
       <Titled title={title => `Contact Us | ${title}`} />
@@ -11,7 +17,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-sm-12">
               <div className="dicount-offer-content text-center pt-5 detail-cover-title ">
-                <h2 className="theme-gradient">Contact Us</h2>
+                <h2 className="theme-gradient">{t('contact_us')}</h2>
               </div>
             </div>
           </div>
@@ -37,7 +43,6 @@ const Contact = () => {
                 <li><a>doubleda01@gmail.com</a></li>
               </ul>
             </div>
-
           </div>
           <div className="item col-lg-4 col-md-6 col-sm-6 col-12" >
             <div className="grid">
@@ -46,21 +51,24 @@ const Contact = () => {
                 <li><a>KR: G223, 602 Yeongdong-daero, Gangnam-gu, Seoul, Korea (06083) KH: #34, St360, BKK1, Phnom Penh, Cambodia</a></li>
               </ul>
             </div>
-
           </div>
         </section>
         <section className="form-input row">
           <div className="form-text col-lg-6 col-md-6 col-sm-12">
-            <span className="tag-title">Feel free to say Hi~</span>
-            <h1 className="title">Contact Us</h1>
+            <span className="tag-title">{t('Feel free to say Hi~')}</span>
+            <h1 className="title">{t('contact_us')}</h1>
             <form className="form">
-              <input type="text" placeholder="Your Name *" />
-              <input type="text" placeholder="Your Email *" />
-              <input type="text" placeholder="Your Subject *" />
-              <input type="text" placeholder="Your Message *" />
+              <input type="text" placeholder={`${t('Your Name')} *`} />
+              <input type="text" placeholder={`${t('Your Email')} *`} />
+              <input type="text" placeholder={`${t('Your Subject')} *`} />
+              <input type="text" placeholder={`${t('Your Message')} *`} />
             </form>
+            <ReCAPTCHA
+              sitekey={recaptcha_site_key}
+              ref={recaptchaRef}
+            />
             <div className="submit-button">
-              <input type="submit" className="sb-btn" value="Submit Now" />
+              <input type="submit" className="sb-btn" value={t('Submit Now')} />
             </div>
           </div>
           <div className="image-banner col-lg-6 col-md-6 col-sm-12">
@@ -71,5 +79,4 @@ const Contact = () => {
     </section>
   )
 }
-
 export default Contact
