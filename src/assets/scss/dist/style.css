@@ -25,7 +25,7 @@ a, a:hover, a:active, a:focus {
   color: #717081 !important;
 }
 
-.logo img {
+.logo .header-logo {
   height: 30px;
 }
 
@@ -56,7 +56,7 @@ a, a:hover, a:active, a:focus {
 .mobile_menu_icon {
   float: right;
   position: relative;
-  top: -50px;
+  top: -33px;
   right: 10px;
   color: white;
   font-size: 30px;
@@ -65,8 +65,8 @@ a, a:hover, a:active, a:focus {
 
 .mobile_menu_card {
   width: 100%;
-  position: relative;
-  top: -25px;
+  position: absolute;
+  top: 16px;
 }
 
 .play {
@@ -83,6 +83,9 @@ a, a:hover, a:active, a:focus {
   border-radius: 50%;
 }
 
+.mobile_menu .slicknav_nav {
+  margin-top: 0px !important;
+}
 .mobile_menu .slicknav_nav li ul.submenu {
   display: none;
   visibility: hidden;
@@ -357,14 +360,14 @@ a, a:hover, a:active, a:focus {
 }
 @media screen and (min-width: 1170px) {
   .layout {
-    width: 60%;
+    width: 70%;
   }
 }
 
 .contact-grid {
   width: 100%;
   background-color: #F9F9F9;
-  padding: 120px 20px;
+  padding: 120px 5px;
   margin: 15rem 0;
 }
 .contact-grid .item {
@@ -399,7 +402,7 @@ a, a:hover, a:active, a:focus {
 
 .form-input {
   width: 100%;
-  margin-top: 15rem;
+  margin: auto;
   margin-bottom: 30rem;
 }
 .form-input .form-text {
@@ -504,8 +507,9 @@ a, a:hover, a:active, a:focus {
   background: none;
 }
 .my-slider-btn .btn {
-  padding: 22px 22px !important;
+  padding: 20px 20px !important;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .view-more-btn {
@@ -514,4 +518,11 @@ a, a:hover, a:active, a:focus {
 .view-more-btn .card-bottom {
   display: flex;
   justify-content: center;
+}
+.view-more-btn .card-bottom :hover {
+  background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+}
+
+.my-box {
+  margin-bottom: 30px !important;
 }

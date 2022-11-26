@@ -7,14 +7,15 @@ import { useTranslation } from 'react-i18next';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from "@hookform/resolvers/yup";
+import { ErrorMessage } from '@hookform/error-message';
 
-const messageRequired = "Field Required";
+const messageRequired = "The field is required.";
+const emailInvalid = "The e-mail address entered is invalid."
 const schema = yup.object({
   name: yup.string().required(messageRequired),
-  email: yup.string().email("Email would be email@gmail.com").required(messageRequired),
+  email: yup.string().email(emailInvalid).required(messageRequired),
   subject: yup.string().required(messageRequired),
   message: yup.string().required(messageRequired),
-
 })
 
 const Contact = () => {
@@ -23,7 +24,7 @@ const Contact = () => {
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
   const captchaRef = useRef(null)
 
-  const { register, handleSubmit, errors } = useForm({
+  const { register, handleSubmit, formState: { errors }, setError } = useForm({
     resolver: yupResolver(schema)
   });
   const onSubmit = (data) => {
@@ -31,7 +32,7 @@ const Contact = () => {
   };
 
   const onError = (errors) => {
-    console.log(errors.email.message);
+    console.log(errors);
   };
 
   return (
@@ -84,13 +85,22 @@ const Contact = () => {
             <h1 className="title">{t('contact_us')}</h1>
             <form onSubmit={handleSubmit(onSubmit, onError)}>
               <div className="form">
-                <input {...register("name", { required: true })} type="text" placeholder={`${t('Your Name')} *`} />
-
-                <input {...register("email", { required: true })} type="text" placeholder={`${t('Your Email')} *`} />
-
-                <input {...register("subject", { required: true })} type="text" placeholder={`${t('Your Subject')} *`} />
-
-                <input {...register("message", { required: true })} type="text" placeholder={`${t('Your Message')} *`} />
+                <span className="input-item">
+                  <input {...register("name", { required: true })} type="text" placeholder={`${t('Your Name')} *`} />
+                  <ErrorMessage errors={errors} name="name" render={({ message }) => <p>{message}</p>} />
+                </span>
+                <span className="input-item">
+                  <input {...register("email", { required: true })} type="text" placeholder={`${t('Your Email')} *`} />
+                  <ErrorMessage errors={errors} name="email" render={({ message }) => <p>{message}</p>} />
+                </span>
+                <span className="input-item">
+                  <input {...register("subject", { required: true })} type="text" placeholder={`${t('Your Subject')} *`} />
+                  <ErrorMessage errors={errors} name="subject" render={({ message }) => <p>{message}</p>} />
+                </span>
+                <span className="input-item">
+                  <textarea {...register("message", { required: true })} type="text" placeholder={`${t('Your Message')} *`} />
+                  <ErrorMessage errors={errors} name="message" render={({ message }) => <p>{message}</p>} />
+                </span>
 
               </div>
               <ReCAPTCHA
@@ -99,6 +109,7 @@ const Contact = () => {
               />
               <div className="submit-button">
                 <input type="submit" className="sb-btn" value={t('Submit Now')} />
+
               </div>
             </form>
 

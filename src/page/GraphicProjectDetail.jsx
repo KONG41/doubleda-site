@@ -65,39 +65,22 @@ const GraphicProjectDetail = () => {
   return (
     <>
       <Titled title={title => `GraphicDesign | ${title}`} />
-      <section className="home_banner_area">
-        <div className="banner_inner" style={{ background: "linear-gradient(180deg, rgba(76,30,81,1) 0%, rgba(255,255,255,1) 75%)" }}>
-          <div className="container">
+      <section>
+        <div className="banner_inner" style={{ backgroundImage: `url(${require('../assets/image/2491.jpg')})` }}>
+          <div className="container over-lay">
             <div className="row">
-              <div className="col-lg-7">
+              <div className="col-12">
                 <div className="banner_content">
-
-                  <h1 className="text-uppercase">{t('graphic.create_initiative')}</h1>
-                  <h5 className="text-uppercase">{t('graphic.graphic_design')}</h5>
-                  <div className="d-flex align-items-center">
-                    <Link to="/it" className="primary_btn" href="#"><span>{t('graphic.portfolio')}</span></Link>
-                    <Link to="/contact" className="primary_btn tr-bg"><span>{t('graphic.contact_us')}</span></Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-5">
-                <div className="home_right_img">
-                  <img className="" src="satner-master/img/banner/home-right.png" alt="" />
+                  <h5 className="text-uppercase sub-title">{t('graphic.graphic_design')}</h5>
+                  <h1 className="text-uppercase main-title"><span>Creative &</span><br /><span>Initiative</span></h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="portfolio_area section_gap_top" id="portfolio">
+      <section className="pb-40 portfolio_area section_gap_top sm-section_gap_top " id="portfolio">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="main_title text-left">
-                <h2>{t('graphic.graphic_design_project')}</h2>
-              </div>
-            </div>
-          </div>
           <div className="filters portfolio-filter">
             <ul>
               <li className="active" data-filter="*" onClick={() => setPopAll(true)}>{t('graphic.all_project')}</li>
@@ -127,22 +110,43 @@ const GraphicProjectDetail = () => {
                         <h4><a>{t(`graphic.${item.title}`)}</a></h4>
                         <p>{t(`graphic.${item.type}`)}</p>
                       </div>
-                      <button className="slider-btns my-slider-btn" >
-                        <a data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn">
-                          Case Study
-                        </a>
-                      </button>
                     </div>
-
                   </div>
                 ))
               }
             </div>
           </div>
         </div>
+      </section>
+      <section className="whole-wrap">
+
+        <div className="container">
+          <div className="row gallery-item">
+            <div className="col-md-6">
+              <div className="single-gallery-image single-gallery-youtube" >
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/brN82iaGFvs" title="Roji Monster Singapore / Ep1.01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-gallery-image single-gallery-youtube">
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/X-IFcrgufpE" title="Roji Monster Singapre / Toppings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-gallery-image single-gallery-youtube">
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/wf8IIsnPpl8" title="Initial Public Offering of ACLEDA Bank Plc." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="single-gallery-image single-gallery-youtube">
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/ofSh9LHCVuQ" title="5th Sky Angkor Airlines Advertisement video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
       </section>
-
     </>
 
 

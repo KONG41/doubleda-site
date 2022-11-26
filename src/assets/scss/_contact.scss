@@ -101,7 +101,15 @@
     .form{
         display: flex;
         flex-direction: column;
-        input{
+        .input-item{
+          margin-bottom: 20px;
+          p{
+            color: rgba(255, 61, 61, 0.897);
+            margin: 5px 0px;
+            font-size: 14px;
+          }
+        }
+        input, textarea{
           display: block;
           width: 100%;
           padding: 0 20px;
@@ -110,12 +118,16 @@
           transition: all 0.3s ease;
           height: 50px;
           line-height: 28px;
-          margin-bottom: 20px;
           outline: none;
           color: #1f1f25;
           font-size: 15px;
           letter-spacing: 0.1px;
           resize: none;
+}
+textarea{
+  padding-top: 10px;
+  resize: vertical;
+  height: 120px;
 }
         }
         input:focus {

@@ -105,7 +105,15 @@
   display: flex;
   flex-direction: column;
 }
-.form-input .form-text .form input {
+.form-input .form-text .form .input-item {
+  margin-bottom: 20px;
+}
+.form-input .form-text .form .input-item p {
+  color: rgba(255, 61, 61, 0.897);
+  margin: 5px 0px;
+  font-size: 14px;
+}
+.form-input .form-text .form input, .form-input .form-text .form textarea {
   display: block;
   width: 100%;
   padding: 0 20px;
@@ -114,12 +122,16 @@
   transition: all 0.3s ease;
   height: 50px;
   line-height: 28px;
-  margin-bottom: 20px;
   outline: none;
   color: #1f1f25;
   font-size: 15px;
   letter-spacing: 0.1px;
   resize: none;
+}
+.form-input .form-text .form textarea {
+  padding-top: 10px;
+  resize: vertical;
+  height: 120px;
 }
 .form-input .form-text input:focus {
   border-color: #FD4766;
