@@ -510,6 +510,11 @@ a, a:hover, a:active, a:focus {
   background: transparent;
 }
 
+.loading-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .footer-logo a img {
   height: 30px;
 }
@@ -601,4 +606,14 @@ a, a:hover, a:active, a:focus {
 
 .pb-40 {
   padding-bottom: 40px !important;
+}
+
+.alert-box {
+  margin: 0;
+  padding: 20px;
+  border: 0;
+  background: #fff5f7;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #1f1f25;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { FiPhoneCall, FiMail } from 'react-icons/fi'
 import { FiMap } from 'react-icons/fi'
 import { Titled } from 'react-titled'
@@ -8,33 +8,63 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { ErrorMessage } from '@hookform/error-message';
+import AlertInputError from '../components/AlertInputError';
+import { Player } from "@lottiefiles/react-lottie-player";
+import emailjs from 'emailjs-com'
+
 
 const messageRequired = "The field is required.";
-const emailInvalid = "The e-mail address entered is invalid."
+const emailInvalid = "The e-mail address entered is invalid.";
+const inputError = "One or more fields have an error. Please check and try again."
 const schema = yup.object({
   name: yup.string().required(messageRequired),
   email: yup.string().email(emailInvalid).required(messageRequired),
   subject: yup.string().required(messageRequired),
   message: yup.string().required(messageRequired),
 })
+const SERVICE_ID = "service_fu0nisz";
+const TEMPLATE_ID = "template_00vu2c2";
+const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const Contact = () => {
+
   const { t } = useTranslation();
   const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
   const captchaRef = useRef(null)
 
-  const { register, handleSubmit, formState: { errors }, setError } = useForm({
-    resolver: yupResolver(schema)
+  const { register, handleSubmit, formState: { errors }, setError, reset } = useForm({
+    resolver: yupResolver(schema),
   });
-  const onSubmit = (data) => {
-    console.log(data);
-  };
 
+  const [isError, setIsError] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const onSubmit = (data) => {
+    setIsLoading(true)
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY)
+      .then((result) => {
+        setIsSent(true);
+        setIsError(false);
+        setIsLoading(false)
+        reset();
+        const delay = setTimeout(() => {
+          setIsSent(false);
+        }, 5000)
+        return () => clearTimeout(delay)
+      }, (error) => {
+        setIsSent(false);
+        setIsError(true);
+        const delay = setTimeout(() => {
+          setIsError(false);
+        }, 5000)
+        return () => clearTimeout(delay)
+      },)
+
+  };
   const onError = (errors) => {
     console.log(errors);
   };
-
   return (
     <section className="contact-container">
       <Titled title={title => `Contact Us | ${title}`} />
@@ -109,8 +139,26 @@ const Contact = () => {
               />
               <div className="submit-button">
                 <input type="submit" className="sb-btn" value={t('Submit Now')} />
-
               </div>
+              {
+                isLoading &&
+                <div className="loading-icon">
+                  <Player
+                    autoplay
+                    loop
+                    src="https://assets8.lottiefiles.com/packages/lf20_LzRTWE.json"
+                    style={{ height: "100%", width: "100%" }}
+                  >
+                  </Player>
+                </div>
+              }
+
+              {
+                isSent && <AlertInputError message="Thank you for your message. It has been sent." />
+              }
+              {
+                isError && <AlertInputError message="Your message was error. " />
+              }
             </form>
 
           </div>
