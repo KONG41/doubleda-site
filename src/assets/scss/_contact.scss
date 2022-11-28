@@ -123,18 +123,21 @@
           font-size: 15px;
           letter-spacing: 0.1px;
           resize: none;
-}
-textarea{
-  padding-top: 10px;
-  resize: vertical;
-  height: 120px;
-}
         }
-        input:focus {
-          border-color: #FD4766;
+        textarea{
+          padding-top: 10px;
+          resize: vertical;
+          height: 120px;
         }
-    }
+      }
+      input:focus {
+        border-color: #FD4766;
+      }
+      textarea:focus{
+        border-color: #FD4766;
+      }
   }
+}
   .image-banner{
     padding:0px 35px;
     img{

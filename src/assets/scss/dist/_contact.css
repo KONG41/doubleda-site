@@ -136,6 +136,9 @@
 .form-input .form-text input:focus {
   border-color: #FD4766;
 }
+.form-input .form-text textarea:focus {
+  border-color: #FD4766;
+}
 
 .image-banner {
   padding: 0px 35px;

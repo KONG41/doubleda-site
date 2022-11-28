@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { FiPhoneCall, FiMail } from 'react-icons/fi'
 import { FiMap } from 'react-icons/fi'
 import { Titled } from 'react-titled'
@@ -19,8 +19,9 @@ const inputError = "One or more fields have an error. Please check and try again
 const schema = yup.object({
   name: yup.string().required(messageRequired),
   email: yup.string().email(emailInvalid).required(messageRequired),
-  subject: yup.string().required(messageRequired),
+  subject: yup.string(),
   message: yup.string().required(messageRequired),
+  captchaToken: yup.boolean().required(messageRequired)
 })
 const SERVICE_ID = "service_fu0nisz";
 const TEMPLATE_ID = "template_00vu2c2";
@@ -33,13 +34,14 @@ const Contact = () => {
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
   const captchaRef = useRef(null)
 
-  const { register, handleSubmit, formState: { errors }, setError, reset } = useForm({
+  const { register, handleSubmit, formState: { errors }, setError, reset, setValue } = useForm({
     resolver: yupResolver(schema),
   });
 
   const [isError, setIsError] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
   const onSubmit = (data) => {
     setIsLoading(true)
     emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY)
@@ -124,41 +126,43 @@ const Contact = () => {
                   <ErrorMessage errors={errors} name="email" render={({ message }) => <p>{message}</p>} />
                 </span>
                 <span className="input-item">
-                  <input {...register("subject", { required: true })} type="text" placeholder={`${t('Your Subject')} *`} />
+                  <input {...register("subject")} type="text" placeholder={`${t('Your Subject')}`} />
                   <ErrorMessage errors={errors} name="subject" render={({ message }) => <p>{message}</p>} />
                 </span>
                 <span className="input-item">
                   <textarea {...register("message", { required: true })} type="text" placeholder={`${t('Your Message')} *`} />
                   <ErrorMessage errors={errors} name="message" render={({ message }) => <p>{message}</p>} />
                 </span>
+                <span className="input-item">
+                  <ReCAPTCHA
+                    sitekey={recaptcha_site_key}
+                    ref={captchaRef}
+                    {...register("captchaToken", { required: true })}
 
+                  />
+                  <ErrorMessage errors={errors} name="captchaToken" render={({ message }) => <p>{message}</p>} />
+                </span>
               </div>
-              <ReCAPTCHA
-                sitekey={recaptcha_site_key}
-                ref={captchaRef}
-              />
               <div className="submit-button">
                 <input type="submit" className="sb-btn" value={t('Submit Now')} />
               </div>
-              {
-                isLoading &&
+
+              {isLoading &&
                 <div className="loading-icon">
                   <Player
                     autoplay
                     loop
+
                     src="https://assets8.lottiefiles.com/packages/lf20_LzRTWE.json"
                     style={{ height: "100%", width: "100%" }}
                   >
                   </Player>
-                </div>
-              }
+                </div>}
 
-              {
-                isSent && <AlertInputError message="Thank you for your message. It has been sent." />
-              }
-              {
-                isError && <AlertInputError message="Your message was error. " />
-              }
+              {isSent && <AlertInputError message="Thank you for your message. It has been sent." />}
+
+              {isError && <AlertInputError message="Your message was error. " />}
+
             </form>
 
           </div>
