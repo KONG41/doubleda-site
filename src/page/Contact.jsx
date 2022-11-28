@@ -24,14 +24,15 @@ const schema = yup.object({
   captchaToken: yup.string().required(messageRequired)
 })
 const SERVICE_ID = "service_fu0nisz";
-const TEMPLATE_ID = "template_00vu2c2";
+// const TEMPLATE_ID = "template_00vu2c2"; //template email me
+const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
 const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const Contact = () => {
 
   const { t } = useTranslation();
-  const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";
-  // const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+  // const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";
+  const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
   const captchaRef = useRef()
 
@@ -56,14 +57,14 @@ const Contact = () => {
         reset();
         const delay = setTimeout(() => {
           setIsSent(false);
-        }, 5000)
+        }, 15000)
         return () => clearTimeout(delay)
       }, (error) => {
         setIsSent(false);
         setIsError(true);
         const delay = setTimeout(() => {
           setIsError(false);
-        }, 5000)
+        }, 15000)
         return () => clearTimeout(delay)
       },)
 
@@ -143,7 +144,6 @@ const Contact = () => {
                     sitekey={recaptcha_site_key}
                     ref={captchaRef}
                     onChange={onChange}
-
                   />
                   <ErrorMessage errors={errors} name="captchaToken" render={({ message }) => <p>{message}</p>} />
                 </span>
@@ -157,7 +157,6 @@ const Contact = () => {
                   <Player
                     autoplay
                     loop
-
                     src="https://assets8.lottiefiles.com/packages/lf20_LzRTWE.json"
                     style={{ height: "100%", width: "100%" }}
                   >
