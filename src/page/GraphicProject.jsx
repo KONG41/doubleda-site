@@ -34,11 +34,11 @@ const GraphicProject = () => {
                     <h4><a>{t(`graphic.${item.title}`)}</a></h4>
                     <p>{t(`graphic.${item.type}`)}</p>
                   </div>
-                  <button className="slider-btns my-slider-btn" >
+                  {/* <button className="slider-btns my-slider-btn" >
                     <a href={require(`../assets/image/portfolio/${item.img}`)} data-animation="fadeInLeft" data-delay="1s" className="btn radius-btn img-gal">
                       Case Study
                     </a>
-                  </button>
+                  </button> */}
                 </div>
 
               </div>
