@@ -59,7 +59,8 @@
 			percentPosition: true,
 			masonry: {
 				columnWidth: '.all'
-			}
+			},
+			layoutMode: 'fitRows'
 		});
 	}
 	// });
