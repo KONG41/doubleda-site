@@ -42,7 +42,7 @@ const MainLayout = ({ children }) => {
                   <div className="row align-items-center">
                     <div className="col-xl-2 col-lg-2">
                       <div className="logo">
-                        <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" className="header-logo" /></Link>
+                        <Link to="/"><img src="/ecohosting-main/assets/img/logo/logo.png" alt="" className="header-logo" onClick={() => goToTop()} /></Link>
                       </div>
                     </div>
                     <div className="col-xl-10 col-lg-10">
@@ -51,14 +51,14 @@ const MainLayout = ({ children }) => {
                           <nav>
                             <ul id="navigation">
                               <li>
-                                <Link to="/it">{t('menus.dev')}</Link>
+                                <Link to="/it" >{t('menus.dev')}</Link>
                                 <ul className="submenu">
-                                  <li><Link to="/it">{t('menus.portfolio')}</Link></li>
+                                  <li><Link to="/it" >{t('menus.portfolio')}</Link></li>
                                 </ul>
                               </li>
-                              <li><Link to="/gd">{t('menus.graphic_design')}</Link></li>
-                              <li><Link to="/blockchain_&_nft">{t('menus.blockchain')}</Link></li>
-                              <li><Link to="/contact">{t('menus.contact')}</Link></li>
+                              <li><Link to="/gd" >{t('menus.graphic_design')}</Link></li>
+                              <li><Link to="/blockchain_&_nft" >{t('menus.blockchain')}</Link></li>
+                              <li><Link to="/contact" >{t('menus.contact')}</Link></li>
                               <li><a >{t("menus.lang.lng")}</a>
                                 <ul className="submenu">
                                   <li><a onClick={() => changeLanguage('eng')}>{t("menus.lang.eng")}</a></li>

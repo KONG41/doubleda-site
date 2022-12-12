@@ -5,12 +5,15 @@
   /* 1. Proloder */
   $(window).on('load', function () {
     var timeout = setTimeout(() => {
+      clearTimeout(timeout)
       $('#preloader-active').delay(450).fadeOut('slow');
       $('body').delay(450).css({
         'overflow': 'visible'
       });
-    });
-  }
+
+    }, 500)
+
+  });
 
   /* 2. sticky And Scroll UP */
   $(window).on('scroll', function () {
@@ -26,24 +29,25 @@
 
   // Scroll Up
   $('#back-top a').on("click", function () {
+    console.log("log from back-top");
     $('body,html').animate({
       scrollTop: 0
     }, 800);
+
     return false;
   });
 
 
   /* 3. slick Nav */
   // mobile_menu
-  var menu = $('ul#navigation');
+  var menu = $('ul#navigation').end();
   if (menu.length) {
     menu.slicknav({
       prependTo: ".mobile_menu",
       closedSymbol: '+',
       openedSymbol: '-'
-    });
+    })
   };
-
 
 
   /* 4. MainSlider-1 */
@@ -227,7 +231,7 @@
 
   // 11. ---- Mailchimp js --------//  
   function mailChimp() {
-    $('#mc_embed_signup').find('form').ajaxChimp();
+    // $('#mc_embed_signup').find('form').ajaxChimp();
   }
   mailChimp();
 
@@ -235,19 +239,19 @@
   // 12 Pop Up Img
   var popUp = $('.single_gallery_part, .img-pop-up');
   if (popUp.length) {
-    popUp.magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-    });
+    // popUp.magnificPopup({
+    //   type: 'image',
+    //   gallery: {
+    //     enabled: true
+    //   }
+    // });
   }
   // 12 Pop Up Video
   var popUp = $('.popup-video');
   if (popUp.length) {
-    popUp.magnificPopup({
-      type: 'iframe'
-    });
+    // popUp.magnificPopup({
+    //   type: 'iframe'
+    // });
   }
 
   /* 13. counterUp*/

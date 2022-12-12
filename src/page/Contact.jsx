@@ -30,13 +30,20 @@ const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const Contact = () => {
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto',
+    });
+  }, []);
+
   const { t } = useTranslation();
   // const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";  //real key
   const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
-  const captchaRef = useRef()
+  const captchaRef = useRef(null)
 
-  const { register, handleSubmit, formState: { errors }, setError, reset, setValue } = useForm({
+  const { register, handleSubmit, formState: { errors }, reset, setValue } = useForm({
     resolver: yupResolver(schema),
   });
 
@@ -47,7 +54,6 @@ const Contact = () => {
     setValue('captchaToken', value)
   }
   const onSubmit = (data) => {
-    console.log(data)
     setIsLoading(true)
     emailjs.send(SERVICE_ID, TEMPLATE_ID, data, PUBLIC_KEY)
       .then((result) => {
@@ -72,6 +78,7 @@ const Contact = () => {
   const onError = (errors) => {
     console.log(errors);
   };
+
 
   return (
     <section className="contact-container">
