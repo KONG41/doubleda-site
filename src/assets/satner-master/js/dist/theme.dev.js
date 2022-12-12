@@ -1,6 +1,7 @@
 "use strict";
 
 (function ($) {
+  // console.log("theme is runing success")
   'use strict';
 
   var nav_offset_top = $('header').height() + 50;
@@ -34,41 +35,80 @@
   }
 
   mailChimp();
-  $(document).ready(function () {
-    $('select').niceSelect();
-  });
+  $('select').niceSelect();
   /* ---------------------------------------------
   					Isotope js Starts
   			 --------------------------------------------- */
+  // $(document).on('load', function () {
+  // 	console.log("loading successful")
 
-  $(window).on('load', function () {
-    $('.portfolio-filter ul li').on('click', function () {
-      // console.log("clicked done")
-      $('.portfolio-filter ul li').removeClass('active');
-      $(this).addClass('active');
-      var data = $(this).attr('data-filter');
-      $workGrid.isotope({
-        filter: data
-      });
+  $('.portfolio-filter ul li').on('click', function () {
+    $('.portfolio-filter ul li').removeClass('active');
+    $(this).addClass('active');
+    var data = $(this).attr('data-filter');
+    $workGrid.isotope({
+      filter: data
     });
-
-    if (document.getElementById('portfolio')) {
-      var $workGrid = $('.portfolio-grid').isotope({
-        itemSelector: '.all',
-        percentPosition: true,
-        masonry: {
-          columnWidth: '.all'
-        }
-      });
-    }
   });
+
+  if (document.getElementById('portfolio')) {
+    var $workGrid = $('.portfolio-grid').isotope({
+      itemSelector: '.all',
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.all'
+      },
+      layoutMode: 'fitRows'
+    });
+  } // });
+
   /*----------------------------------------------------*/
 
   /* Start Magnific Pop Up
   /*----------------------------------------------------*/
 
+
   if ($('.img-gal').length > 0) {
     $('.img-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+  }
+
+  if ($('.pop-gal').length > 0) {
+    $('a#alls.pop-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+    $('a#web.pop-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+    $('a#logo.pop-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+    $('a#material.pop-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+    $('a#mobile.pop-gal').magnificPopup({
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
+    $('a#poster.pop-gal').magnificPopup({
       type: 'image',
       gallery: {
         enabled: true
@@ -83,7 +123,7 @@
   /*----------------------------------------------------*/
 
   /*  Testimonials Slider
-  	/*----------------------------------------------------*/
+  /*----------------------------------------------------*/
 
 
   function testimonials_slider() {

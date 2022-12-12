@@ -20,8 +20,8 @@ function App() {
         <Route path="/gd" element={<MainLayout><GraphicProjectDetail /></MainLayout>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/blockchain_&_nft" element={<MainLayout><NoPage /></MainLayout>} />
         <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+        <Route path="*" element={<MainLayout><NoPage /></MainLayout>} />
       </Routes>
     </BrowserRouter>
   );
