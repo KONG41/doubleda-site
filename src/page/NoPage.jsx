@@ -23,10 +23,7 @@ const NoPage = () => {
 
         </div>
       </div>
-
     </>
-
-
   )
 }
 

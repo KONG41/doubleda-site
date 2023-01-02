@@ -1,7 +1,6 @@
 (function ($) {
   "use strict"
 
-
   /* 1. Proloder */
   $(window).on('load', function () {
     var timeout = setTimeout(() => {
@@ -10,9 +9,7 @@
       $('body').delay(450).css({
         'overflow': 'visible'
       });
-
-    }, 500)
-
+    },0)
   });
 
   /* 2. sticky And Scroll UP */
@@ -37,18 +34,17 @@
     return false;
   });
 
-
+  
   /* 3. slick Nav */
   // mobile_menu
-  var menu = $('ul#navigation').end();
-  if (menu.length) {
-    menu.slicknav({
-      prependTo: ".mobile_menu",
-      closedSymbol: '+',
-      openedSymbol: '-'
-    })
-  };
-
+  // var menu = $('ul#navigation').end();
+  // if (menu.length) {
+  //   menu.slicknav({
+  //     prependTo: ".mobile_menu",
+  //     closedSymbol: '+',
+  //     openedSymbol: '-'
+  //   })
+  // };
 
   /* 4. MainSlider-1 */
   // h1-hero-active
@@ -113,10 +109,10 @@
       });
     }
   }
-  mainSlider();
-
-
-
+  var timeout = setTimeout(() => {
+    clearTimeout(timeout)
+     mainSlider();
+  }, 1600)
 
   /* 4. Testimonial Active*/
   var testimonial = $('.h1-testimonial-active');

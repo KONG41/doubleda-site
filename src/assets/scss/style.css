@@ -619,4 +619,89 @@ a, a:hover, a:active, a:focus {
   font-size: 16px;
   border-radius: 5px;
   color: #1f1f25;
+}
+
+.black-over-lay::before {
+  content: "";
+  background-color: rgba(26, 21, 21, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.nft-content {
+  text-align: center;
+}
+.nft-content .desc-title {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #F44D4D;
+  color: #F44D4D;
+  font-weight: 500;
+}
+
+.nft-main-title {
+  -webkit-text-fill-color: #fff !important;
+  color: #fff !important;
+}
+
+.nft-sub-title {
+  letter-spacing: 4px;
+}
+
+.nft-container {
+  width: 65%;
+  margin: auto;
+}
+
+.text-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 12rem 0;
+}
+.text-img .text {
+  width: 40%;
+}
+.text-img .text .use-desc {
+  padding: 40px 0px;
+  display: block;
+}
+.text-img .text .use-desc h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.text-img .text .use-desc p {
+  padding: 15px 0px 0px 0px;
+}
+.text-img .text .use-case {
+  padding: 40px 0px;
+  display: block;
+}
+.text-img .text .use-case h2 {
+  color: #27B7E3;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.text-img .text .use-case ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px;
+}
+.text-img .text .use-case ul li p {
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+.text-img .img {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reverse {
+  flex-direction: row-reverse !important;
 }/*# sourceMappingURL=style.css.map */
