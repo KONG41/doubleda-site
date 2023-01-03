@@ -612,6 +612,12 @@ a, a:hover, a:active, a:focus {
   padding-bottom: 40px !important;
 }
 
+.portfolio_box .single_portfolio img {
+  height: 255px !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
 .alert-box {
   margin: 0;
   padding: 20px;
