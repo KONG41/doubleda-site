@@ -117,30 +117,29 @@ const BlockchainNFT = () => {
       <section className="nft-container">
         <TextImg
             imgUrl = {require("../assets/image/3-2048x1152.jpg")}
-            topTitle="Private Blockchain Network"
-            descTitle={["We help create private decentralized blockchain network that provide increased traceability and security of data and transactions."]}
-            useCase={["Financial trading platform (Crypto & Fiat)","Supply chain and Logistics System","Identity and access management","Big Data Management","Asset ownership management (Copyright, Property)"]}
-            caseTitle="Use Cases"
+            topTitle={t("private_blockchain_network")}
+            descTitle={[t("private_blockchain_network_desc")]}
+            useCase={[t("private_blockchain_network_use_cases_1"),t("private_blockchain_network_use_cases_2"),t("private_blockchain_network_use_cases_3"),t("private_blockchain_network_use_cases_4"),t("private_blockchain_network_use_cases_5")]}
+            caseTitle={t('use_cases')}
             border={true}
         />
         <TextImg 
             className="reverse"
             imgUrl={require("../assets/image/2.jpg")}
-            topTitle="SMART CONTRACT"
-            descTitle={["We provide the benefits of business automation to your business with smart contracts.","Our smart contract platform enables you to use for following industries."]} 
-            useCase={["Intellectual Property Rights","Cryptocurrency Exchange","Fintech & Banking, Securities","Digital Asset Exchange","Real Estate Ownership Transfer","Trading & Remittance"]}
+            topTitle={t('smart_contract')}
+            descTitle={[t("smart_contract_desc_1"),t("smart_contract_desc_2")]} 
+            useCase={[t("smart_use_case_1"),t("smart_use_case_2"),t("smart_use_case_3"),t("smart_use_case_4"),t("smart_use_case_5"),t("smart_use_case_6")]}
             border={true}
         />
         <TextImg
            imgUrl={require("../assets/image/1-2048x1475.jpg")}
-           topTitle="Crypto Wallet"
-           descTitle={["It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors."
-                      ,"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."]}
+           topTitle={t("crypto_wallet")}
+           descTitle={[t('crypto_wallet_desc_1'),t('crypto_wallet_desc_2')]}
          />
         <TextImg 
             className="reverse"  imgUrl={require("../assets/image/1-1-2048x1384.jpg")}
-            topTitle="Tokenization & NFT"
-            descTitle={["Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.", "We provide services and platform that allow clients to create, manage and trade their tokens (including NFT platforms)."]}
+            topTitle={t("tokenization_nft")}
+            descTitle={[t("tokenization_nft_desc_1"), t("tokenization_nft_desc_2")]}
         />
       </section>
       <section className="layout">

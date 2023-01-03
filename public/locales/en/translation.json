@@ -285,5 +285,32 @@
   "Your Name" : "Your Name",
   "Your Email" : "Your Email",
   "Your Subject": "Your Subject",
-  "Your Message": "Your Message"
+  "Your Message": "Your Message",
+
+  "private_blockchain_network": "Private Blockchain Network",
+  "use_cases": "Use Cases",
+  "private_blockchain_network_desc": "We help create private decentralized blockchain network that provide increased traceability and security of data and transactions.",
+  "private_blockchain_network_use_cases_1": "Financial trading platform (Crypto & Fiat)",
+  "private_blockchain_network_use_cases_2": "Supply chain and Logistics System",
+  "private_blockchain_network_use_cases_3": "Identity and access management",
+  "private_blockchain_network_use_cases_4": "Big Data Management",
+  "private_blockchain_network_use_cases_5": "Asset ownership management (Copyright, Property)",
+   
+  "smart_contract": "SMART CONTRACT",
+  "smart_contract_desc_1": "We provide the benefits of business automation to your business with smart contracts.",
+  "smart_contract_desc_2": "Our smart contract platform enables you to use for following industries.",
+  "smart_use_case_1": "Intellectual Property Rights",
+  "smart_use_case_2": "Cryptocurrency Exchange",
+  "smart_use_case_3": "Fintech & Banking, Securities",
+  "smart_use_case_4": "Digital Asset Exchange",
+  "smart_use_case_5": "Real Estate Ownership Transfer",
+  "smart_use_case_6": "Trading & Remittance",
+
+  "crypto_wallet": "Crypto Wallet",
+  "crypto_wallet_desc_1":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors.",
+  "crypto_wallet_desc_2": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+  
+  "tokenization_nft":"Tokenization & NFT",
+  "tokenization_nft_desc_1": "Tokenization is the process of exchanging sensitive data for nonsensitive data called “tokens” that can be used in a database or internal system without bringing it into scope.",
+  "tokenization_nft_desc_2": "We provide services and platform that allow clients to create, manage and trade their tokens (including NFT platforms)."
 }
