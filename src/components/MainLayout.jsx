@@ -33,7 +33,6 @@ const MainLayout = ({ children }) => {
             </div>
           </div>
         </div>
-
         <header>
           <div className="header-transparent header-area " >
             <div className="main-header ">

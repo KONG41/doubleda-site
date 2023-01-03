@@ -27,6 +27,8 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-titled": "^1.1.1",
+    "react-tsparticles": "^2.7.1",
+    "tsparticles": "^2.7.1",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },

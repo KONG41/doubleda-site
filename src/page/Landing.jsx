@@ -27,7 +27,7 @@ const Landing = () => {
                   </div>
                 </div>
                 <div className="col-xl-6 col-lg-6">
-                  <div className="hero__img d-none d-lg-block f-right">
+                  <div className="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
                     <Player
                       autoplay
                       loop
