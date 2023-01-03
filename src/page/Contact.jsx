@@ -4,7 +4,6 @@ import { FiMap } from 'react-icons/fi'
 import { Titled } from 'react-titled'
 import { useTranslation } from 'react-i18next';
 import InputContact from '../components/InputContact';
-
 const Contact = () => {
 
   useEffect(() => {

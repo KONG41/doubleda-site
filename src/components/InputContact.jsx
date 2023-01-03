@@ -20,8 +20,8 @@ const schema = yup.object({
   captchaToken: yup.string().required(messageRequired)
 })
 const SERVICE_ID = "service_fu0nisz";
-const TEMPLATE_ID = "template_00vu2c2"; //template email me
-// const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
+// const TEMPLATE_ID = "template_00vu2c2"; //template email me
+const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
 const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const InputContact = () => {
@@ -33,8 +33,8 @@ const InputContact = () => {
       }, []);
     
       const { t } = useTranslation();
-      // const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";  //real key
-      const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
+      const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";  //real key
+      //const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
       const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
       const captchaRef = useRef(null)
     
