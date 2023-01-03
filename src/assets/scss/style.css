@@ -583,6 +583,7 @@ a, a:hover, a:active, a:focus {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .over-lay::before {
@@ -652,8 +653,13 @@ a, a:hover, a:active, a:focus {
 }
 
 .nft-container {
-  width: 65%;
+  width: 1240px;
   margin: auto;
+}
+@media screen and (max-width: 1240px) {
+  .nft-container {
+    width: 90%;
+  }
 }
 
 .text-img {
@@ -662,8 +668,18 @@ a, a:hover, a:active, a:focus {
   justify-content: space-around;
   margin: 12rem 0;
 }
+@media screen and (max-width: 1240px) {
+  .text-img {
+    flex-direction: column-reverse !important;
+  }
+}
 .text-img .text {
   width: 40%;
+}
+@media screen and (max-width: 1240px) {
+  .text-img .text {
+    width: 100%;
+  }
 }
 .text-img .text .use-desc {
   padding: 40px 0px;
@@ -701,7 +717,17 @@ a, a:hover, a:active, a:focus {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 1240px) {
+  .text-img .img {
+    width: 100%;
+  }
+}
 
 .reverse {
   flex-direction: row-reverse !important;
+}
+@media screen and (max-width: 1240px) {
+  .reverse {
+    flex-direction: column-reverse !important;
+  }
 }/*# sourceMappingURL=style.css.map */

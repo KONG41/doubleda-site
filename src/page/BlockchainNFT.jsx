@@ -40,6 +40,10 @@ const BlockchainNFT = () => {
                     value: "",
                 },
             },
+        fullScreen:{
+            enable: true,
+            zIndex: -2,
+        },
             fpsLimit: 120,
             interactivity: {
                 events: {
@@ -68,10 +72,10 @@ const BlockchainNFT = () => {
                     value: "#ffffff",
                 },
                 links: {
-                    color: "#ffffff",
-                    distance: 150,
+                    color: "#fff",
+                    distance: 100,
                     enable: true,
-                    opacity: 0.5,
+                    opacity: .6,
                     width: 1,
                 },
                 collisions: {
@@ -84,7 +88,7 @@ const BlockchainNFT = () => {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 1.2,
+                    speed: 2,
                     straight: false,
                 },
                 number: {
@@ -95,7 +99,7 @@ const BlockchainNFT = () => {
                     value: 80,
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0,
                 },
                 shape: {
                     type: "circle",
@@ -105,10 +109,10 @@ const BlockchainNFT = () => {
                 },
             },
             detectRetina: true,
+            
         }}
         />
         </div>
-        
       </section>
       <section className="nft-container">
         <TextImg
@@ -131,8 +135,7 @@ const BlockchainNFT = () => {
            imgUrl={require("../assets/image/1-2048x1475.jpg")}
            topTitle="Crypto Wallet"
            descTitle={["It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors."
-                      ,"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
-                    ]}
+                      ,"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."]}
          />
         <TextImg 
             className="reverse"  imgUrl={require("../assets/image/1-1-2048x1384.jpg")}
