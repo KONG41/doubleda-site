@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { branding } from '../assets/data/portfolio';
 import { Link } from 'react-router-dom';
 import { Titled } from 'react-titled';
+import SearchDomain from '../components/SearchDomain';
 const Landing = () => {
   const { t } = useTranslation();
   return (
@@ -46,48 +47,7 @@ const Landing = () => {
         </div>
       </div>
       {/* Domain-search start */}
-      <div className="domain-search-area section-bg1">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-4 col-lg-5">
-              <h2>{t('landing.search_new')}</h2>
-              <p>{t('landing.supercharge_your')}</p>
-            </div>
-            <div className="col-xl-8 col-lg-7">
-              <form action="#" className="search-box">
-                <div className="input-form">
-                  <input type="text" placeholder={t('landing.search_for')} />
-
-                  <div div className="search-form" >
-                    <button><i className="ti-search"></i></button>
-                  </div>
-
-                  <div className="world-form">
-                    <i className="fas fa-globe"></i>
-                  </div>
-                </div>
-              </form>
-              <div className="single-domain pt-30 pb-30">
-                <ul>
-                  <li><span>.com</span>
-                    <p>$15.99</p>
-                  </li>
-                  <li><span>.net</span>
-                    <p>$10.99</p>
-                  </li>
-                  <li><span>.rog</span>
-                    <p>$10.99</p>
-                  </li>
-                  <li><span>.me</span>
-                    <p>$10.99</p>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div >
+      <SearchDomain />
       {/* Domain-search end */}
       {/* service start */}
       <section className="team-area section-bg1 section-padding40">

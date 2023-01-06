@@ -124,22 +124,22 @@ const GraphicProjectDetail = () => {
           <div className="row gallery-item">
             <div className="col-md-6">
               <div className="single-gallery-image single-gallery-youtube" >
-                <iframe width="100%" height="309" src="https://www.youtube.com/embed/brN82iaGFvs" title="Roji Monster Singapore / Ep1.01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/brN82iaGFvs" title="Roji Monster Singapore / Ep1.01" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
             <div className="col-md-6">
               <div className="single-gallery-image single-gallery-youtube">
-                <iframe width="100%" height="309" src="https://www.youtube.com/embed/X-IFcrgufpE" title="Roji Monster Singapre / Toppings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/X-IFcrgufpE" title="Roji Monster Singapre / Toppings" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
             <div className="col-md-6">
               <div className="single-gallery-image single-gallery-youtube">
-                <iframe width="100%" height="309" src="https://www.youtube.com/embed/wf8IIsnPpl8" title="Initial Public Offering of ACLEDA Bank Plc." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/wf8IIsnPpl8" title="Initial Public Offering of ACLEDA Bank Plc." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
             <div className="col-md-6">
               <div className="single-gallery-image single-gallery-youtube">
-                <iframe width="100%" height="309" src="https://www.youtube.com/embed/ofSh9LHCVuQ" title="5th Sky Angkor Airlines Advertisement video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="309" src="https://www.youtube.com/embed/ofSh9LHCVuQ" title="5th Sky Angkor Airlines Advertisement video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
           </div>

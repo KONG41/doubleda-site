@@ -736,4 +736,91 @@ a, a:hover, a:active, a:focus {
   .reverse {
     flex-direction: column-reverse !important;
   }
+}
+
+.list-domain {
+  width: 100%;
+}
+.list-domain .list-header p {
+  color: #A5A7C5;
+  font-size: large;
+}
+.list-domain .list-body {
+  background-color: white;
+  border-radius: 15px;
+}
+.list-domain .list-body .item-domain {
+  padding: 18px 0px;
+  position: relative;
+}
+.list-domain .list-body .item-domain .domain {
+  color: #0050ff;
+}
+.list-domain .list-body .item-domain .keyface {
+  height: 25px;
+  cursor: pointer;
+}
+.list-domain .list-body .item-domain .tag img {
+  height: 25px;
+}
+.list-domain .list-body .item-domain .prem-tag {
+  position: absolute;
+  top: -17px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-domain .list-body .item-domain .price {
+  font-weight: 700;
+  font-size: 20px;
+  color: #4e4e4e;
+  position: relative;
+}
+.list-domain .list-body .item-domain .discount {
+  font-size: 20px;
+  padding: 0px 10px 0px 0px;
+  color: #bebebe;
+}
+.list-domain .list-body .item-domain .discount del {
+  color: inherit;
+}
+.list-domain .list-body .item-domain .purchase {
+  margin-left: 30px;
+}
+.list-domain .list-body .item-domain .purchase .add-to-card {
+  text-transform: uppercase;
+  font-size: 12px;
+  background: linear-gradient(to right bottom, #0EAC40, #0EAC40);
+  padding: 9px;
+  border-radius: 20px;
+  display: block;
+}
+.list-domain .list-body .item-domain .purchase .add-to-card p {
+  color: white;
+  padding: 0;
+  margin: 0;
+  transform: scale(0.8);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.list-domain .list-body .item-domain .purchase .add-to-card .arrow-right {
+  display: none;
+  padding-left: 1px;
+  font-size: 12px;
+}
+.list-domain .list-body .item-domain .purchase .add-to-card:hover {
+  cursor: pointer;
+}
+.list-domain .list-body .item-domain .purchase .add-to-card:hover p {
+  transform: scale(0.9);
+}
+.list-domain .list-body .item-domain .purchase .add-to-card:hover .arrow-right {
+  display: block;
+}
+.list-domain .list-body .item-domain .price-container {
+  display: flex;
+}
+.list-domain .list-body .item-domain:nth-child(2n) {
+  background-color: rgba(127, 127, 127, 0.1);
 }/*# sourceMappingURL=style.css.map */
