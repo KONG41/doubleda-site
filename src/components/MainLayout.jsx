@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
 import useCollapse from "react-collapsed";
 import { Titled } from 'react-titled';
+import {HiOutlineShoppingCart} from 'react-icons/hi';
 const MainLayout = ({ children }) => {
 
   const { t, i18n } = useTranslation();
@@ -65,6 +66,7 @@ const MainLayout = ({ children }) => {
                                   <li><a onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                                 </ul>
                               </li>
+                              <li className="cart"><HiOutlineShoppingCart /> <div className="cart-notify">9</div></li>
                               <li className="button-header margin-left "> <a href="/register" className="btn"> {t('menus.sign_up')}</a></li>
                               <li className="button-header"><a href="/login" className="btn3">{t('menus.sign_in')}</a>
                               </li>
@@ -110,6 +112,7 @@ const MainLayout = ({ children }) => {
                         </div>
                       </div>
                     </div>
+                   
                   </div>
                 </div>
               </div>
