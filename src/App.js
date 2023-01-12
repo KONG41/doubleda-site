@@ -9,6 +9,7 @@ import NoPage from './page/NoPage';
 import PortfolioDetail from './page/PortfolioDetail';
 import Contact from './page/Contact';
 import BlockchainNFT from './page/BlockchainNFT';
+import Server from './page/Server';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
         <Route path="/blockchain_&_nft" element={<MainLayout><BlockchainNFT /></MainLayout>} />
+        <Route path="/server" element={<MainLayout><Server /></MainLayout>} />
         <Route path="*" element={<MainLayout><NoPage /></MainLayout>} />
       </Routes>
     </BrowserRouter>

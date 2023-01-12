@@ -5,8 +5,9 @@ import { AiOutlineMenu } from "react-icons/ai";
 import useCollapse from "react-collapsed";
 import { Titled } from 'react-titled';
 import {HiOutlineShoppingCart} from 'react-icons/hi';
+import { useStateContext } from '../context/ContextProvider';
+import YourCart from './YourCart';
 const MainLayout = ({ children }) => {
-
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
@@ -17,14 +18,12 @@ const MainLayout = ({ children }) => {
       behavior: 'smooth',
     });
   };
-
   const { getCollapseProps, getToggleProps } = useCollapse({ defaultExpanded: false });
-
+  const {handleCartPopup,cartPopup} = useStateContext();
   return (
-
     <div>
       <Titled title={() => 'DoubleDa'} currentTitle={() => `${window.location.pathname} | DoubleDa`}>
-        <div id="preloader-active">
+        {/* <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">
               <div className="preloader-circle"></div>
@@ -33,7 +32,7 @@ const MainLayout = ({ children }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <header>
           <div className="header-transparent header-area " >
             <div className="main-header ">
@@ -56,6 +55,7 @@ const MainLayout = ({ children }) => {
                                   <li><Link to="/it" >{t('menus.portfolio')}</Link></li>
                                 </ul>
                               </li>
+                              <li><Link to="/server">Server</Link></li>
                               <li><Link to="/gd" >{t('menus.graphic_design')}</Link></li>
                               <li><Link to="/blockchain_&_nft" >{t('menus.blockchain')}</Link></li>
                               <li><Link to="/contact" >{t('menus.contact')}</Link></li>
@@ -66,7 +66,7 @@ const MainLayout = ({ children }) => {
                                   <li><a onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                                 </ul>
                               </li>
-                              <li className="cart"><HiOutlineShoppingCart /> <div className="cart-notify">9</div></li>
+                              {/* <li className="cart" onClick={handleCartPopup}><HiOutlineShoppingCart /> <div className="cart-notify">9</div></li> */}
                               <li className="button-header margin-left "> <a href="/register" className="btn"> {t('menus.sign_up')}</a></li>
                               <li className="button-header"><a href="/login" className="btn3">{t('menus.sign_in')}</a>
                               </li>
@@ -77,13 +77,10 @@ const MainLayout = ({ children }) => {
                     </div>
                     <div className="col-12">
                       <div className="mobile_menu d-block d-lg-none">
-
                         <div className="mobile_menu_icon" {...getToggleProps()}>
                           <AiOutlineMenu />
                         </div>
-
                         <div className="slicknav_menu mobile_menu_card" {...getCollapseProps()}>
-
                           <ul className="slicknav_nav">
                             <li>
                               <Link to="/it">{t('menus.dev')}</Link>
@@ -91,6 +88,7 @@ const MainLayout = ({ children }) => {
                                 <li><Link to="/it">{t('menus.portfolio')}</Link></li>
                               </ul>
                             </li>
+                            <li><Link to="/server">Server</Link></li>
                             <li><Link to="/gd">{t('menus.graphic_design')}</Link></li>
                             <li><Link to="/blockchain_&_nft">{t('menus.blockchain')}</Link></li>
                             <li><Link to="/contact">{t('menus.contact')}</Link></li>
@@ -111,19 +109,17 @@ const MainLayout = ({ children }) => {
                           </ul>
                         </div>
                       </div>
-                    </div>
-                   
+                    </div>            
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </header>
-
         <main>
           {children}
+          {cartPopup && <YourCart />}
         </main>
-
         <footer>
           <div className="footer-wrappr" style={{ backgroundImage: "url(" + "/ecohosting-main/assets/img/gallery/footer-bg.png" + ")" }}>
             <div className="footer-area footer-padding ">
@@ -171,9 +167,8 @@ const MainLayout = ({ children }) => {
                         <h4>{t('footer.contact_us')}</h4>
                         <ul>
                           <li><a href="mailto:admin@doubleda.net">admin@doubleda.net</a></li>
-                          <li><a href="#">+44)07487540640</a></li>
-                          <li><a href="#">+82)01027099254</a></li>
-
+                          <li><a href="#">+44 07487540640</a></li>
+                          <li><a href="#">+82 01027099254</a></li>
                         </ul>
                       </div>
                     </div>
@@ -227,7 +222,6 @@ const MainLayout = ({ children }) => {
             </div>
           </div>
         </footer>
-
         <div id="back-top">
           <span title="Go to Top" href="#" onClick={goToTop}> <i className="fas fa-level-up-alt"></i></span>
         </div>

@@ -342,25 +342,3 @@ a,a:hover,a:active,a:focus {
   .main-header .main-menu ul li a{
     cursor: pointer !important;
   }
-  .cart{
-    color: white;
-    font-size: 20px;
-    position: relative;
-    cursor: pointer;
-  }
-  .cart-notify{
-    font-size: 12px;
-    font-weight: bolder;
-    position: absolute;
-    top: -10px;
-    right: -15px;
-    color:  #fff;
-    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
-    border-radius: 100%;
-    width: 15px;
-    height: 15px;
-    padding: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }

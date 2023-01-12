@@ -9,7 +9,7 @@
       $('body').delay(450).css({
         'overflow': 'visible'
       });
-    },0)
+    },500)
   });
 
   /* 2. sticky And Scroll UP */

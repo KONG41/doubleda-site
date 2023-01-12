@@ -1,3 +1,27 @@
+// Header Cart Icon
+.cart{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .cart-notify{
+    font-size: 12px;
+    font-weight: bolder;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    color:  #fff;
+    background: linear-gradient(to bottom, #a077ff 0%, #ef67ff 100%);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+//Cart Box 
 .cart-container{
     height: 100vh;
     width: 100%;
@@ -11,14 +35,94 @@
 }
 .cart-box{
     width: 50%;
-    height: 50%;
     background-color: #fff;
     .title{
         border-bottom: 1px solid rgba(0, 0, 0, 0.281);
-        margin: 0 10px;
-        padding: 10px 20px;
+        margin: 0 10px 20px;
+        padding: 20px 20px;
         h1{
             color: gray;
         }
+    }
+    .cart-detail{
+        margin: 0 10px;
+        p{
+            font-size: 15px;
+        }
+        .detail{
+
+            .domain-info{
+                h2{
+                font-size:18px;
+                }
+            }
+            .domain-addons{
+                h2{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .period{
+            width: 100%;
+            div{
+                width: 100%;
+                ul{
+                    width: 100%;
+                }
+            }
+        }
+        .price{
+              display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+    
+            *{
+                color: rgb(22, 22, 22);
+                text-align: right;
+            }
+          
+            .amount-price, .total-price{
+                p{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    justify-content: flex-end;
+                }
+            }
+            .amount-price{
+                margin-bottom: 7rem;
+            }
+            .total-price{
+                p{
+                    margin: 0;
+                    line-height: 1.8em;
+                }
+                .profit{
+                    color: #0eac40;
+                }
+            }
+        }
+    }
+    .next-step{
+        display: flex;
+        margin: 7rem 0 3rem 0;
+        button{
+           margin: auto;
+          
+        }
+    }
+    .cancel{
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .cancel:hover{
+       transform: scale(1.5);
     }
 }

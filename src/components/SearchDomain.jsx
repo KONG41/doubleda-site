@@ -6,7 +6,8 @@ import identitydigitalicon from '../assets/image/features/identitydigitalicon.sv
 import PremTag from '../components/PremTag';
 import { useTranslation } from "react-i18next";
 import PurchaseBtn from "./PurchaseBtn";
-import YourCart from "./YourCart";
+
+
 const SearchDomain = () => {
   const { t } = useTranslation();
   const [domain, setDomain] = useState();
@@ -19,7 +20,7 @@ const SearchDomain = () => {
       axios.get('https://api.dnsimple.com/v2/whoami',{
         headers: {
             'Authorization': 'goPLEmgHfA7CVP3YHMSGF7xuI7tE8rdW',
-            'Access-Control-Allow-Origin': '*'
+            'Access-Control-Allow-Origin': 'http://localhost:3000/'
           },
       })
         .then(response => {
@@ -30,21 +31,6 @@ const SearchDomain = () => {
         });
   };
 
-// Called sometime after postMessage is called
-window.addEventListener("message", (event) => {
-  // Do we trust the sender of this message?
-  if (event.origin !== "https://iframe.dev.name.com")
-    return;
-  // event.source is window.opener
-  // event.data is "hello there!"
-  console.log(event.data);
-  var orders = event.data;
-  
-  if (orders.length){
-	//grab domain name, etc.
-  console.log(orders)
-  }
-});
   return (
     <>
      <div className="domain-search-area section-bg1">
@@ -99,7 +85,7 @@ window.addEventListener("message", (event) => {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col list-domain">
             <div className="row list-header">
               <div className="col-lg-4 col-md-4 col-sm-6">
@@ -173,14 +159,10 @@ window.addEventListener("message", (event) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      
     </div>
-    {/* <iframe className="container" src="https://iframe.dev.name.com/domain/search?partner_id=demo&key=b6bb87d41edca7eae5a2dbdc1c89bd82b7b25711" style={{ width: "100%", height: "100vh",}}></iframe> */}
-    <YourCart />
     </>
- 
 )};
 
 export default SearchDomain;
