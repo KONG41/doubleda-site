@@ -556,11 +556,9 @@ a, a:hover, a:active, a:focus {
 }
 .banner_content .main-title {
   background: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #67BBF2;
   color: #67BBF2;
-  font-size: 76px !important;
-  line-height: 100px !important;
+  font-size: 76px;
+  line-height: 100px;
   font-weight: bold;
 }
 .banner_content .main-title span:last-child {
@@ -762,6 +760,12 @@ a, a:hover, a:active, a:focus {
 
 .server-main-title {
   color: #fff !important;
+}
+@media screen and (max-width: 1240px) {
+  .server-main-title {
+    font-size: 55px !important;
+    line-height: 67px !important;
+  }
 }
 
 .server-desc-title {

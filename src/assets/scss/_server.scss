@@ -16,6 +16,10 @@
     }
     .server-main-title{
         color: #fff !important;
+        @media screen and (max-width: 1240px) {
+         font-size: 55px !important;
+         line-height: 67px !important;
+        }
     }
     .server-desc-title{
       color: #fff !important;
