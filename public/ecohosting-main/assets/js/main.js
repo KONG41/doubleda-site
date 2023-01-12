@@ -6,7 +6,7 @@
     var timeout = setTimeout(() => {
       clearTimeout(timeout)
       $('#preloader-active').delay(450).fadeOut('slow');
-      $('body').delay(450).css({
+      $('body').delay(0).css({
         'overflow': 'visible'
       });
     },500)

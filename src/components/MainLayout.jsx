@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from "react-icons/ai";
@@ -20,10 +20,15 @@ const MainLayout = ({ children }) => {
   };
   const { getCollapseProps, getToggleProps } = useCollapse({ defaultExpanded: false });
   const {handleCartPopup,cartPopup} = useStateContext();
+  const [spinner, setSpinner] = useState(true)
+  useEffect(() => {
+    setTimeout(()=>setSpinner(false),1500)
+  }, [])
   return (
     <div>
       <Titled title={() => 'DoubleDa'} currentTitle={() => `${window.location.pathname} | DoubleDa`}>
-        {/* <div id="preloader-active">
+        {spinner && 
+         <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">
               <div className="preloader-circle"></div>
@@ -32,7 +37,9 @@ const MainLayout = ({ children }) => {
               </div>
             </div>
           </div>
-        </div> */}
+         </div>
+        }
+       
         <header>
           <div className="header-transparent header-area " >
             <div className="main-header ">
