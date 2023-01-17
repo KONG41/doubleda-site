@@ -1,4 +1,8 @@
 body {
+  background: unset !important;
+}
+
+body {
   font-family: "Open Sans", sans-serif !important;
   font-weight: normal !important;
   font-style: normal !important;

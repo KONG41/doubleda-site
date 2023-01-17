@@ -190,7 +190,7 @@ const Landing = () => {
                 <Player
                   autoplay
                   loop
-                  src="https://assets10.lottiefiles.com/packages/lf20_w5hernhv.json"
+                  src="https://assets9.lottiefiles.com/packages/lf20_uZeVpjFav8.json"
                   style={{ height: "100%", width: "100%" }}
                 >
                 </Player>
