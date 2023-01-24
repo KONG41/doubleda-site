@@ -9,7 +9,7 @@
       $('body').delay(0).css({
         'overflow': 'visible'
       });
-    },500)
+    },3000)
   });
 
   /* 2. sticky And Scroll UP */
@@ -112,7 +112,7 @@
   var timeout = setTimeout(() => {
     clearTimeout(timeout)
      mainSlider();
-  }, 1600)
+  },3600)
 
   /* 4. Testimonial Active*/
   var testimonial = $('.h1-testimonial-active');

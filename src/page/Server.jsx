@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 const Server = () => {
   return (
    <>
-    <section>
+      <section>
         <div className="banner_inner" style={{ backgroundImage: `url(${require('../assets/image/server/web-hosting-company2.jpg')})` }}>
           <div className="container black-over-lay">
             <div className="row">
@@ -121,31 +121,29 @@ const Server = () => {
                   <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" class="btn radius-btn" href="/detail/1">Contact Us</a></Link>
                 </div>
                 </div>
-                
-                
               </div>
               <div className="col-xl-4 col-md-6 col-sm-12 price-item">
-              <div className="price-box">
-                <div className="price">
-                    <h3>Dedicated</h3>
-                    <h1>100</h1>
-                    <p>USD Per Month (starting)</p>
+                <div className="price-box">
+                  <div className="price">
+                      <h3>Dedicated</h3>
+                      <h1>100</h1>
+                      <p>USD Per Month (starting)</p>
+                  </div>
+                  <div className="benefit">
+                      <ul>
+                        <li><span><AiOutlineCheck /></span><span>Max. 5 Websites</span></li>
+                        <li><span><AiOutlineCheck /></span><span>8GB/2 CPUs</span></li>
+                        <li><span><AiOutlineCheck /></span><span>4TB Transfer</span></li>
+                        <li><span><AiOutlineCheck /></span><span>cPanel Access</span></li>
+                        <li><span><AiOutlineCheck /></span><span>Free SSL Certificate</span></li>
+                        <li><span><AiOutlineCheck /></span><span>Various OS</span></li>
+                        <li><span><AiOutlineCheck /></span><span>24/7 support</span></li>
+                      </ul>
+                  </div>
+                  <div className="next-step">
+                    <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" class="btn radius-btn" href="/detail/1">Contact Us</a></Link>
+                  </div>
                 </div>
-                <div className="benefit">
-                    <ul>
-                      <li><span><AiOutlineCheck /></span><span>Max. 5 Websites</span></li>
-                      <li><span><AiOutlineCheck /></span><span>8GB/2 CPUs</span></li>
-                      <li><span><AiOutlineCheck /></span><span>4TB Transfer</span></li>
-                      <li><span><AiOutlineCheck /></span><span>cPanel Access</span></li>
-                      <li><span><AiOutlineCheck /></span><span>Free SSL Certificate</span></li>
-                      <li><span><AiOutlineCheck /></span><span>Various OS</span></li>
-                      <li><span><AiOutlineCheck /></span><span>24/7 support</span></li>
-                    </ul>
-                </div>
-                <div className="next-step">
-                  <Link to="/contact" className="slider-btns my-slider-btn"><a data-animation="fadeInLeft" data-delay="1s" class="btn radius-btn" href="/detail/1">Contact Us</a></Link>
-                </div>
-              </div>
               </div>
             </div>
         </div>
@@ -153,5 +151,4 @@ const Server = () => {
    </>
   )
 }
-
 export default Server

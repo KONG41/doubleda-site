@@ -85,7 +85,7 @@ const SearchDomain = () => {
             </div>
           </div>
         </div>
-        {/* <div className="row">
+        <div className="row">
           <div className="col list-domain">
             <div className="row list-header">
               <div className="col-lg-4 col-md-4 col-sm-6">
@@ -159,7 +159,7 @@ const SearchDomain = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div> 
       </div>
     </div>
     </>

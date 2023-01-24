@@ -27,7 +27,7 @@ const MainLayout = ({ children }) => {
   return (
     <div>
       <Titled title={() => 'DoubleDa'} currentTitle={() => `${window.location.pathname} | DoubleDa`}>
-        {spinner && 
+        {/* {spinner &&  */}
          <div id="preloader-active">
           <div className="preloader d-flex align-items-center justify-content-center">
             <div className="preloader-inner position-relative">
@@ -38,7 +38,7 @@ const MainLayout = ({ children }) => {
             </div>
           </div>
          </div>
-        }
+        {/* } */}
        
         <header>
           <div className="header-transparent header-area " >
@@ -73,7 +73,7 @@ const MainLayout = ({ children }) => {
                                   <li><a onClick={() => changeLanguage('kh')}>{t("menus.lang.kh")}</a></li>
                                 </ul>
                               </li>
-                              {/* <li className="cart" onClick={handleCartPopup}><HiOutlineShoppingCart /> <div className="cart-notify">9</div></li> */}
+                              <li className="cart" onClick={handleCartPopup}><HiOutlineShoppingCart /> <div className="cart-notify">9</div></li>
                               <li className="button-header margin-left "> <a href="/register" className="btn"> {t('menus.sign_up')}</a></li>
                               <li className="button-header"><a href="/login" className="btn3">{t('menus.sign_in')}</a>
                               </li>
