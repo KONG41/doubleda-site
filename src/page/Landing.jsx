@@ -35,6 +35,9 @@ const Landing = () => {
                       style={{ height: "100%", width: "100%" }}
                     >
                     </Player>
+                    {/* backup links:
+                        https://assets5.lottiefiles.com/packages/lf20_Au6z826BEy.json
+                    */}
                   </div>
                 </div>
               </div>

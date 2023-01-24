@@ -14,11 +14,25 @@ const NoPage = () => {
             <Player
               autoplay
               loop
-              src="https://assets4.lottiefiles.com/packages/lf20_iq9koc12.json"
-              style={{ height: "100%", width: "100px" }}
+              src="https://assets1.lottiefiles.com/packages/lf20_0hMYgUHLg6.json"
+              style={{ height: "100%", width: "300px" }}
             >
             </Player>
-            <h1>{t("error_404")}</h1>
+            {/* <Player
+              autoplay
+              loop
+              src="https://assets1.lottiefiles.com/packages/lf20_owua8tsy.json"
+              style={{ height: "100%", width: "50%" }}
+            >
+            </Player> */}
+            {/* <h1>{t("error_404")}</h1> */}
+
+            {/* 
+                BackUp link:
+
+                https://assets1.lottiefiles.com/packages/lf20_m6k6uhad.json 
+                https://assets1.lottiefiles.com/packages/lf20_0hMYgUHLg6.json
+            */}
           </div>
 
         </div>
