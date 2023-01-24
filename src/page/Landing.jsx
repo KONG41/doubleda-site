@@ -32,7 +32,7 @@ const Landing = () => {
                     <Player
                       autoplay
                       loop
-                      src="https://lottie.host/101c75f2-4686-4237-9911-43062ad13824/ybejxWjwbR.json"
+                      src="https://assets5.lottiefiles.com/packages/lf20_Au6z826BEy.json"
                       style={{ height: "100%", width: "100%" }}
                     >
                     </Player>
@@ -150,7 +150,7 @@ const Landing = () => {
                 <Player
                   autoplay
                   loop
-                  src="https://assets10.lottiefiles.com/packages/lf20_w5hernhv.json"
+                  src="https://assets8.lottiefiles.com/packages/lf20_7x45GFUqeu.json"
                   style={{ height: "100%", width: "100%" }}
                 >
                 </Player>

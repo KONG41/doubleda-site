@@ -21,8 +21,8 @@ const schema = yup.object({
   captchaToken: yup.string().required(messageRequired)
 });
 const SERVICE_ID = "service_fu0nisz";
-// const TEMPLATE_ID = "template_00vu2c2"; //template email me
-const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
+const TEMPLATE_ID = "template_00vu2c2"; //template email me
+// const TEMPLATE_ID = "template_va8l58k"; //template email admin@doubleda.net
 const PUBLIC_KEY = "bALZTd6LgQDONa0nP";
 
 const InputContact = () => {
@@ -34,8 +34,8 @@ const InputContact = () => {
   }, []);
 
   const { t } = useTranslation();
-  const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg"; //real key
-  // const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
+  // const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg"; //real key
+  const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
   const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
   const captchaRef = useRef(null);
 
@@ -65,15 +65,16 @@ const InputContact = () => {
         reset();
         const delay = setTimeout(() => {
           setIsSent(false);
-        }, 15000);
+        }, 10000);
         return () => clearTimeout(delay);
       },
       error => {
         setIsSent(false);
         setIsError(true);
+        setIsLoading(false);
         const delay = setTimeout(() => {
           setIsError(false);
-        }, 15000);
+        }, 10000);
         return () => clearTimeout(delay);
       }
     );
@@ -93,108 +94,80 @@ const InputContact = () => {
         <form onSubmit={handleSubmit(onSubmit, onError)}>
           <div className="form">
             <span className="input-item">
-              <input
-                {...register("name", { required: true })}
-                type="text"
-                placeholder={`${t("Your Name")} *`}
-              />
-              <ErrorMessage
-                errors={errors}
-                name="name"
-                render={({ message }) =>
-                  <p>
+              <input {...register("name", {
+                  required: true
+                })} type="text" placeholder={`${t("Your Name")} *`} />
+              <ErrorMessage errors={errors} name="name" render={({ message }) => <p>
                     {message}
-                  </p>}
-              />
+                  </p>} />
             </span>
             <span className="input-item">
-              <input
-                {...register("email", { required: true })}
-                type="text"
-                placeholder={`${t("Your Email")} *`}
-              />
-              <ErrorMessage
-                errors={errors}
-                name="email"
-                render={({ message }) =>
-                  <p>
+              <input {...register("email", {
+                  required: true
+                })} type="text" placeholder={`${t("Your Email")} *`} />
+              <ErrorMessage errors={errors} name="email" render={({ message }) => <p>
                     {message}
-                  </p>}
-              />
+                  </p>} />
             </span>
             <span className="input-item">
-              <input
-                {...register("subject")}
-                type="text"
-                placeholder={`${t("Your Subject")}`}
-              />
-              <ErrorMessage
-                errors={errors}
-                name="subject"
-                render={({ message }) =>
-                  <p>
+              <input {...register("subject")} type="text" placeholder={`${t("Your Subject")}`} />
+              <ErrorMessage errors={errors} name="subject" render={({ message }) => <p>
                     {message}
-                  </p>}
-              />
+                  </p>} />
             </span>
             <span className="input-item">
-              <textarea
-                {...register("message", { required: true })}
-                type="text"
-                placeholder={`${t("Your Message")} *`}
-              />
-              <ErrorMessage
-                errors={errors}
-                name="message"
-                render={({ message }) =>
-                  <p>
+              <textarea {...register("message", {
+                  required: true
+                })} type="text" placeholder={`${t("Your Message")} *`} />
+              <ErrorMessage errors={errors} name="message" render={({ message }) => <p>
                     {message}
-                  </p>}
-              />
+                  </p>} />
             </span>
             <span className="input-item">
-              <ReCAPTCHA
-                sitekey={recaptcha_site_key}
-                ref={captchaRef}
-                onChange={onChange}
-              />
-              <ErrorMessage
-                errors={errors}
-                name="captchaToken"
-                render={({ message }) =>
-                  <p>
+              <ReCAPTCHA sitekey={recaptcha_site_key} ref={captchaRef} onChange={onChange} />
+              <ErrorMessage errors={errors} name="captchaToken" render={({ message }) => <p>
                     {message}
-                  </p>}
-              />
+                  </p>} />
             </span>
           </div>
           <div className="submit-button">
             <input type="submit" className="sb-btn" value={t("Submit Now")} />
-          </div>
-
-          {isLoading &&
-            <div className="loading-icon">
-              <Player
+            {isLoading ? 
+              <div className="loading-icon">
+                  <Player autoplay loop src="https://assets2.lottiefiles.com/packages/lf20_HBXF2O.json" style={{ height: "100%", width: "100%" }} />
+                  {/* <Player
                 autoplay
                 loop
                 src="https://assets8.lottiefiles.com/packages/lf20_LzRTWE.json"
                 style={{ height: "100%", width: "100%" }}
-              />
-            </div>}
+              /> */}
 
-          {isSent &&
-            <AlertInputError message="Thank you for your message. It has been sent." />}
+                  {/* backup link: 
+                https://assets2.lottiefiles.com/packages/lf20_HBXF2O.json 
+                https://assets2.lottiefiles.com/packages/lf20_ah1zbzo1.json
+                https://assets5.lottiefiles.com/packages/lf20_cmf6a3.json
+              */}
+              </div> :
+              isSent ? 
+                <div className="loading-icon">
+                  <Player autoplay loop src="https://assets8.lottiefiles.com/packages/lf20_jtl6gife.json" style={{ height: "100%", width: "100%" }} />
+                </div> : 
+              isError &&
+                <div className="loading-icon">
+                  <Player autoplay loop src="https://assets1.lottiefiles.com/private_files/lf30_otgvr80u.json" style={{ height: "100%", width: "100%" }} />
+                </div>
+            }
+          </div>
+
+          {isSent && <AlertInputError message="Thank you for your message. It has been sent." bgColor="rgb(24 233 136 / 18%)" />}
 
           {isError && <AlertInputError message="Your message was error. " />}
         </form>
       </div>
       <div className="image-banner col-lg-6 col-md-6 col-sm-12">
-        <img
-          src={`${require("../assets/image/PSD_9_-scaled-pkc6v7a13euiimjy5crvz533smx50ul7pwl5iqcoxw.jpg")}`}
-        />
+        <img src={`${require("../assets/image/PSD_9_-scaled-pkc6v7a13euiimjy5crvz533smx50ul7pwl5iqcoxw.jpg")}`} />
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default InputContact;

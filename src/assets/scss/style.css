@@ -484,6 +484,11 @@ a, a:hover, a:active, a:focus {
   display: inline-block;
 }
 
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .submit-button .sb-btn {
   display: block;
   color: #ffffff;
@@ -499,7 +504,7 @@ a, a:hover, a:active, a:focus {
   transition: all 0.3s ease;
   height: 50px;
   line-height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   outline: none;
   font-weight: 500;
   margin-top: 30px;
@@ -514,8 +519,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .loading-icon {
-  width: 40px;
-  height: 40px;
+  width: 80px;
 }
 
 .footer-logo a img {

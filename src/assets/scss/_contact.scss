@@ -157,6 +157,9 @@
   display: inline-block;
 }
 .submit-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   .sb-btn{
     display: block;
     color: #ffffff;
@@ -172,7 +175,7 @@
     transition: all 0.3s ease;
     height: 50px;
     line-height: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     outline: none;
     font-weight: 500;
     margin-top: 30px;
@@ -187,6 +190,6 @@
   }
 }
 .loading-icon{
-  width:40px;
-  height:40px;
+  width:80px;
+  // height:40px;
 }
