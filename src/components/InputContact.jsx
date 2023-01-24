@@ -33,9 +33,9 @@ const InputContact = () => {
       }, []);
     
       const { t } = useTranslation();
-      const recaptcha_site_key = "6LfcZDIjAAAAAEjsm_I8nlo-u_D9L1bkgg4unTvg";  //real key
+      const recaptcha_site_key = "6LdDjyEkAAAAAPwf7VS9BSZjohDC15Cd81yghSA-";  //real key
       // const recaptcha_site_key = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; //test key
-      const recaptcha_secret_key = "6LfcZDIjAAAAAALBsxqXhFc1W4czb3fCI2-0QA8H";
+      const recaptcha_secret_key = "6LdDjyEkAAAAAIgjQkSCKH8dHcwVq-kHEe2juvlf";
       const captchaRef = useRef(null)
     
       const { register, handleSubmit, formState: { errors }, reset, setValue } = useForm({
