@@ -32,7 +32,7 @@
 .nft-container {
     width: 1240px;
     margin: auto;
-    @media screen and(max-width: 1240px) {
+    @media screen and (max-width: 1240px) {
         width: 90%;
     }
 }
@@ -42,7 +42,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 12rem 0;
-    @media screen and(max-width: 1240px) {
+    @media screen and (max-width: 1240px) {
         flex-direction: column-reverse !important;
     }
     .text {
@@ -97,7 +97,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        @media screen and(max-width: 1240px) {
+        @media screen and (max-width: 1240px) {
             width: 100%;
         }
     }
@@ -105,7 +105,7 @@
 
 .reverse {
     flex-direction: row-reverse !important;
-    @media screen and(max-width: 1240px) {
+    @media screen and (max-width: 1240px) {
         flex-direction: column-reverse !important;
     }
 }

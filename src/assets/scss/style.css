@@ -246,10 +246,11 @@ a, a:hover, a:active, a:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .image-container .image-box {
   width: 50%;
-  height: auto;
+  max-height: 500px;
   padding: 12px;
 }
 .image-container .image-box img {
@@ -415,7 +416,6 @@ a, a:hover, a:active, a:focus {
   padding: 0 35px;
 }
 .form-input .form-text .tag-title {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: 600;
@@ -553,7 +553,6 @@ a, a:hover, a:active, a:focus {
 
 .banner_content {
   padding: 23.9rem 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
